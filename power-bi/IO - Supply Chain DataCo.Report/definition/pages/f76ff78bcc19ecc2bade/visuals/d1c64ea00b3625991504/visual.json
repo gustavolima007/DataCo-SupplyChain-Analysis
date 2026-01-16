@@ -1,0 +1,194 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "d1c64ea00b3625991504",
+  "position": {
+    "x": 98.857602574416731,
+    "y": 50.458567980691875,
+    "z": 0,
+    "height": 274.94770716009657,
+    "width": 1104.9396621078038,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DataCoSupplyChainDataset_transformed"
+                    }
+                  },
+                  "Property": "Category Name"
+                }
+              },
+              "queryRef": "DataCoSupplyChainDataset_transformed.Category Name",
+              "nativeQueryRef": "Category Name"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DataCoSupplyChainDataset_transformed"
+                    }
+                  },
+                  "Property": "Customer City"
+                }
+              },
+              "queryRef": "DataCoSupplyChainDataset_transformed.Customer City",
+              "nativeQueryRef": "Customer City"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DataCoSupplyChainDataset_transformed"
+                        }
+                      },
+                      "Property": "Sales"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(DataCoSupplyChainDataset_transformed.Sales)",
+              "nativeQueryRef": "Soma de Sales"
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DataCoSupplyChainDataset_transformed"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "shipping date (DateOrders)"
+                        }
+                      },
+                      "Hierarchy": "Hierarquia de datas"
+                    }
+                  },
+                  "Level": "Ano"
+                }
+              },
+              "queryRef": "DataCoSupplyChainDataset_transformed.shipping date (DateOrders).Variation.Hierarquia de datas.Ano",
+              "nativeQueryRef": "shipping date (DateOrders) Ano"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "DataCoSupplyChainDataset_transformed"
+                      }
+                    },
+                    "Property": "Sales"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "9e3dde110322674d4c45",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DataCoSupplyChainDataset_transformed"
+              }
+            },
+            "Property": "Category Name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "73de1cfbad084240c515",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DataCoSupplyChainDataset_transformed"
+              }
+            },
+            "Property": "Customer City"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b93d80830e8c0c417c47",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DataCoSupplyChainDataset_transformed"
+                  }
+                },
+                "Property": "Sales"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "139fa15170420a580b22",
+        "field": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "DataCoSupplyChainDataset_transformed"
+                      }
+                    },
+                    "Name": "Variation",
+                    "Property": "shipping date (DateOrders)"
+                  }
+                },
+                "Hierarchy": "Hierarquia de datas"
+              }
+            },
+            "Level": "Ano"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

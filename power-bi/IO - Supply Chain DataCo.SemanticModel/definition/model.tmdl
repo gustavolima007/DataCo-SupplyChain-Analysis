@@ -1,0 +1,24 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["tokenized_access_logs_transformed","DescriptionDataCoSupplyChain","DataCoSupplyChainDataset_transformed"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table tokenized_access_logs_transformed
+ref table DateTableTemplate_5150429d-f930-4073-8aca-8f1543d42355
+ref table LocalDateTable_a214e0e8-50aa-43b5-87fb-6d42ef8891e6
+ref table DescriptionDataCoSupplyChain
+ref table DataCoSupplyChainDataset_transformed
+ref table LocalDateTable_dc57ed42-dc67-4ce3-97bf-7c1353daa3c7
+ref table LocalDateTable_beaaad36-cb79-4321-9d0e-b76cebdc88e2
+
+ref cultureInfo pt-BR
+
