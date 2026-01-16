@@ -17,24 +17,13 @@
           "projections": [
             {
               "field": {
-                "HierarchyLevel": {
+                "Column": {
                   "Expression": {
-                    "Hierarchy": {
-                      "Expression": {
-                        "PropertyVariationSource": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "DataCoSupplyChainDataset_transformed"
-                            }
-                          },
-                          "Name": "Variation",
-                          "Property": "shipping date (DateOrders)"
-                        }
-                      },
-                      "Hierarchy": "Hierarquia de datas"
+                    "SourceRef": {
+                      "Entity": "DataCoSupplyChainDataset_transformed"
                     }
                   },
-                  "Level": "Ano"
+                  "Property": "shipping date (DateOrders)"
                 }
               },
               "queryRef": "DataCoSupplyChainDataset_transformed.shipping date (DateOrders).Variation.Hierarquia de datas.Ano",
@@ -71,24 +60,13 @@
         "sort": [
           {
             "field": {
-              "HierarchyLevel": {
+              "Column": {
                 "Expression": {
-                  "Hierarchy": {
-                    "Expression": {
-                      "PropertyVariationSource": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "DataCoSupplyChainDataset_transformed"
-                          }
-                        },
-                        "Name": "Variation",
-                        "Property": "shipping date (DateOrders)"
-                      }
-                    },
-                    "Hierarchy": "Hierarquia de datas"
+                  "SourceRef": {
+                    "Entity": "DataCoSupplyChainDataset_transformed"
                   }
                 },
-                "Level": "Ano"
+                "Property": "shipping date (DateOrders)"
               }
             },
             "direction": "Ascending"
@@ -104,24 +82,13 @@
       {
         "name": "294ff8dd35340b687088",
         "field": {
-          "HierarchyLevel": {
+          "Column": {
             "Expression": {
-              "Hierarchy": {
-                "Expression": {
-                  "PropertyVariationSource": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "DataCoSupplyChainDataset_transformed"
-                      }
-                    },
-                    "Name": "Variation",
-                    "Property": "shipping date (DateOrders)"
-                  }
-                },
-                "Hierarchy": "Hierarquia de datas"
+              "SourceRef": {
+                "Entity": "DataCoSupplyChainDataset_transformed"
               }
             },
-            "Level": "Ano"
+            "Property": "shipping date (DateOrders)"
           }
         },
         "type": "Advanced"

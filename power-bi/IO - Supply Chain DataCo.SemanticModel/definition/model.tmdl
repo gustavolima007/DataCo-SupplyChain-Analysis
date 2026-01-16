@@ -17,8 +17,8 @@ ref table DateTableTemplate_5150429d-f930-4073-8aca-8f1543d42355
 ref table LocalDateTable_a214e0e8-50aa-43b5-87fb-6d42ef8891e6
 ref table DescriptionDataCoSupplyChain
 ref table DataCoSupplyChainDataset_transformed
-ref table LocalDateTable_dc57ed42-dc67-4ce3-97bf-7c1353daa3c7
-ref table LocalDateTable_beaaad36-cb79-4321-9d0e-b76cebdc88e2
+ref table LocalDateTable_3793822a-7b83-414b-b451-d5e0d67d8be5
+ref table LocalDateTable_6cc43d06-e844-4eac-8e7b-68f6d6481500
 
 ref cultureInfo pt-BR
 
