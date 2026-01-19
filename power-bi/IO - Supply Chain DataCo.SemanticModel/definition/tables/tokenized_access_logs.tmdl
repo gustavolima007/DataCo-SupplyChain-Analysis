@@ -1,0 +1,89 @@
+table tokenized_access_logs
+	lineageTag: 1824a1ff-04b7-4852-a38d-0349737e17de
+
+	column Product
+		dataType: string
+		lineageTag: 260f3311-c503-469f-bf87-efaad7464b38
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 10e39407-882f-4f43-ae66-119736eb917e
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 2ce0f9e3-55b0-49b4-acfe-623fa4447ab5
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: 910e64a7-b707-479e-97de-c8304bc0f3d6
+			defaultHierarchy: LocalDateTable_cd70fbb8-0d1e-4b64-a14f-53ef4091279c.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: string
+		lineageTag: cc91dfbf-fc11-4d35-9ca0-76dc75a0486f
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hour
+		dataType: int64
+		formatString: 0
+		lineageTag: 7f71aa75-1010-40a0-bc78-c670127aff19
+		summarizeBy: sum
+		sourceColumn: Hour
+
+		annotation SummarizationSetBy = Automatic
+
+	column Department
+		dataType: string
+		lineageTag: 7449094e-7db5-462e-9536-c1a7f0cb10ad
+		summarizeBy: none
+		sourceColumn: Department
+
+		annotation SummarizationSetBy = Automatic
+
+	column ip
+		dataType: int64
+		formatString: 0
+		lineageTag: c9b0cd34-d25b-41b3-8717-aa51ebfc896b
+		summarizeBy: sum
+		sourceColumn: ip
+
+		annotation SummarizationSetBy = Automatic
+
+	column url
+		dataType: string
+		lineageTag: d1021e92-306b-4b81-a1fc-b3d3dc0fb448
+		summarizeBy: none
+		sourceColumn: url
+
+		annotation SummarizationSetBy = Automatic
+
+	partition tokenized_access_logs = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Git\Github\DataCo-SupplyChain-Analysis\data\tokenized_access_logs.csv"),[Delimiter=",", Columns=8, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"Product", type text}, {"Category", type text}, {"Date", type datetime}, {"Month", type text}, {"Hour", Int64.Type}, {"Department", type text}, {"ip", Int64.Type}, {"url", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

@@ -1,15 +1,15 @@
-relationship 7dc420a2-620d-491d-9591-d8f1cef81add
+relationship 2fe54d3d-b224-48a8-889e-c693b879c151
 	joinOnDateBehavior: datePartOnly
-	fromColumn: tokenized_access_logs_transformed.Date
-	toColumn: LocalDateTable_a214e0e8-50aa-43b5-87fb-6d42ef8891e6.Date
+	fromColumn: DataCoSupplyChainDataset.'order date (DateOrders)'
+	toColumn: LocalDateTable_7475a7b5-43af-4ba6-a0db-e6dda31cba04.Date
 
-relationship 62ae7547-f28d-4702-ab21-0b69cca64e54
+relationship 5b0d407d-9918-430f-b3e1-d15eca36976a
 	joinOnDateBehavior: datePartOnly
-	fromColumn: DataCoSupplyChainDataset_transformed.'order date (DateOrders)'
-	toColumn: LocalDateTable_3793822a-7b83-414b-b451-d5e0d67d8be5.Date
+	fromColumn: DataCoSupplyChainDataset.'shipping date (DateOrders)'
+	toColumn: LocalDateTable_f1b071d3-781d-4abe-8f78-8acbc321d948.Date
 
-relationship cb3d14db-d7f0-436f-9f06-9e7ccdb660dc
+relationship 910e64a7-b707-479e-97de-c8304bc0f3d6
 	joinOnDateBehavior: datePartOnly
-	fromColumn: DataCoSupplyChainDataset_transformed.'shipping date (DateOrders)'
-	toColumn: LocalDateTable_6cc43d06-e844-4eac-8e7b-68f6d6481500.Date
+	fromColumn: tokenized_access_logs.Date
+	toColumn: LocalDateTable_cd70fbb8-0d1e-4b64-a14f-53ef4091279c.Date
 

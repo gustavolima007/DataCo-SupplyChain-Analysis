@@ -1,0 +1,656 @@
+table DataCoSupplyChainDataset
+	lineageTag: 7bb7311b-1eae-411a-b18a-805f1c4a5226
+
+	measure 'Total Sales' = ```
+			
+			SUM('DataCoSupplyChainDataset'[Order Item Total])
+			
+			```
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: b620c077-3606-4190-af1b-df6d37a9a805
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total Quantity' = ```
+			
+			SUM('DataCoSupplyChainDataset'[Order Item Quantity])
+			
+			
+			```
+		formatString: 0
+		lineageTag: 0c39c836-eb8a-48a5-90e5-01db07165a34
+
+	measure 'Average Unit Price' = ```
+			
+			AVERAGE('DataCoSupplyChainDataset'[Product Price])
+			
+			```
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: b493556e-12df-4433-8643-900f223388e3
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column Type
+		dataType: string
+		lineageTag: ef649c27-ae6d-4336-b14f-20c50e6dfd6a
+		summarizeBy: none
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Days for shipping (real)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4ea3661c-339d-4a95-9dc8-bd2c0ed0333c
+		summarizeBy: sum
+		sourceColumn: Days for shipping (real)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Days for shipment (scheduled)'
+		dataType: int64
+		formatString: 0
+		lineageTag: e75eb70a-e0eb-4e50-9367-28d4eb6dccc0
+		summarizeBy: sum
+		sourceColumn: Days for shipment (scheduled)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Benefit per order'
+		dataType: double
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 048ec38c-909e-4a56-8517-821cc2459625
+		summarizeBy: sum
+		sourceColumn: Benefit per order
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Sales per customer'
+		dataType: double
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: fe0d8eb0-4c0c-4a44-9d58-5ed584b7a417
+		summarizeBy: sum
+		sourceColumn: Sales per customer
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Delivery Status'
+		dataType: string
+		lineageTag: 991fcd5a-1900-48b0-b5ec-b3129520c8b3
+		summarizeBy: none
+		sourceColumn: Delivery Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Late_delivery_risk
+		dataType: int64
+		formatString: 0
+		lineageTag: bd22612e-3765-4c46-9b79-e97a53bd258c
+		summarizeBy: sum
+		sourceColumn: Late_delivery_risk
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Category Id'
+		dataType: int64
+		formatString: 0
+		lineageTag: d9d9b698-ccc0-4a84-bc8d-ffb084fea843
+		summarizeBy: count
+		sourceColumn: Category Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Category Name'
+		dataType: string
+		lineageTag: 4591e865-065f-4d42-995b-aff032dcc67e
+		summarizeBy: none
+		sourceColumn: Category Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer City'
+		dataType: string
+		lineageTag: 5464b28f-ce9f-4f9f-8f20-ce91b2085f28
+		summarizeBy: none
+		sourceColumn: Customer City
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Country'
+		dataType: string
+		lineageTag: acb2c910-263d-479c-ab92-59c105400809
+		summarizeBy: none
+		sourceColumn: Customer Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Email'
+		dataType: string
+		lineageTag: ea363297-d217-41eb-b127-f3e88bc3094e
+		summarizeBy: none
+		sourceColumn: Customer Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Fname'
+		dataType: string
+		lineageTag: 98397710-64b0-489f-a451-c09d70d79fd0
+		summarizeBy: none
+		sourceColumn: Customer Fname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Id'
+		dataType: int64
+		formatString: 0
+		lineageTag: ea12d21c-9760-4ebc-a122-47fc208414e1
+		summarizeBy: count
+		sourceColumn: Customer Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Lname'
+		dataType: string
+		lineageTag: 07addf90-ce09-4da0-b129-7f063eea3873
+		summarizeBy: none
+		sourceColumn: Customer Lname
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Password'
+		dataType: string
+		lineageTag: 396396e4-c702-48df-aa71-e0fcd1d50fec
+		summarizeBy: none
+		sourceColumn: Customer Password
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Segment'
+		dataType: string
+		lineageTag: bf448727-d61e-4401-a3b7-bf596ec10dd9
+		summarizeBy: none
+		sourceColumn: Customer Segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer State'
+		dataType: string
+		lineageTag: 9bede4b1-7109-413e-b8c1-b785d42d5434
+		summarizeBy: none
+		sourceColumn: Customer State
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Street'
+		dataType: string
+		lineageTag: c723353c-3e15-4bf0-84cf-63ffdecd37b7
+		summarizeBy: none
+		sourceColumn: Customer Street
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Zipcode'
+		dataType: int64
+		formatString: 0
+		lineageTag: 785cae30-2f7d-430c-be61-73d8227a17ca
+		summarizeBy: sum
+		sourceColumn: Customer Zipcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Department Id'
+		dataType: int64
+		formatString: 0
+		lineageTag: ceefe8f9-7705-460e-b5df-5800eacbe08e
+		summarizeBy: count
+		sourceColumn: Department Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Department Name'
+		dataType: string
+		lineageTag: 6bc9886d-8c2e-4b57-a688-836c90111c2f
+		summarizeBy: none
+		sourceColumn: Department Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Latitude
+		dataType: double
+		lineageTag: eb165c6b-878e-4446-887f-060852f327e8
+		summarizeBy: sum
+		sourceColumn: Latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Longitude
+		dataType: double
+		lineageTag: 79c1e042-04ac-4658-aae8-68b67e01d7cb
+		summarizeBy: sum
+		sourceColumn: Longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Market
+		dataType: string
+		lineageTag: f2220fb8-3fb0-4ac2-834d-5e80aee59dd9
+		summarizeBy: none
+		sourceColumn: Market
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order City'
+		dataType: string
+		lineageTag: 8ce71114-1b93-4cd7-956a-49a085e35eee
+		summarizeBy: none
+		sourceColumn: Order City
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Country'
+		dataType: string
+		lineageTag: f3c70861-f017-4a02-a002-ec6dd59b342c
+		summarizeBy: none
+		sourceColumn: Order Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Customer Id'
+		dataType: int64
+		formatString: 0
+		lineageTag: 270686f0-bddb-471c-a553-aa701fc3cbbf
+		summarizeBy: count
+		sourceColumn: Order Customer Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'order date (DateOrders)'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: cb8ec1f3-da99-4aff-834a-bd003b9eb967
+		summarizeBy: none
+		sourceColumn: order date (DateOrders)
+
+		variation Variation
+			isDefault
+			relationship: 2fe54d3d-b224-48a8-889e-c693b879c151
+			defaultHierarchy: LocalDateTable_7475a7b5-43af-4ba6-a0db-e6dda31cba04.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Id'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9422c3e8-5914-466d-8b38-9a634feaaaf9
+		summarizeBy: count
+		sourceColumn: Order Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Item Cardprod Id'
+		dataType: int64
+		formatString: 0
+		lineageTag: d8268795-dfd3-4d7a-bb6f-cdab370cb340
+		summarizeBy: count
+		sourceColumn: Order Item Cardprod Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Item Discount'
+		dataType: double
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 5f366d5c-0ca5-4499-b433-18abed60a72f
+		summarizeBy: sum
+		sourceColumn: Order Item Discount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Order Item Discount Rate'
+		dataType: double
+		lineageTag: 4bd1c44d-338d-402d-88c1-5ab0a6a86400
+		summarizeBy: sum
+		sourceColumn: Order Item Discount Rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Order Item Id'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2505fa6f-d349-4f91-9a10-1f05285ad847
+		summarizeBy: count
+		sourceColumn: Order Item Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Item Product Price'
+		dataType: double
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 3c01d0ae-9313-4ef3-926b-d88fe1f4d279
+		summarizeBy: sum
+		sourceColumn: Order Item Product Price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Order Item Profit Ratio'
+		dataType: double
+		lineageTag: 70833e1e-98f1-42e1-917f-1583b1faa7e6
+		summarizeBy: sum
+		sourceColumn: Order Item Profit Ratio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Order Item Quantity'
+		dataType: int64
+		formatString: 0
+		lineageTag: 60b8b8ce-a2ab-400f-99ca-240125eec028
+		summarizeBy: sum
+		sourceColumn: Order Item Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sales
+		dataType: double
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 9e26e903-e183-496d-bc49-17bbbedf50e9
+		summarizeBy: sum
+		sourceColumn: Sales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Order Item Total'
+		dataType: double
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 93c96375-676d-4264-a2b3-4ea42da84652
+		summarizeBy: sum
+		sourceColumn: Order Item Total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Order Profit Per Order'
+		dataType: double
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: ba7e8972-cfeb-4e31-9037-191ee38a353c
+		summarizeBy: sum
+		sourceColumn: Order Profit Per Order
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Order Region'
+		dataType: string
+		lineageTag: 63ae0186-f5b3-4fe0-945b-b59af4b318a4
+		summarizeBy: none
+		sourceColumn: Order Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order State'
+		dataType: string
+		lineageTag: 1057749b-5b99-4d9f-b0a9-224ba3a314e4
+		summarizeBy: none
+		sourceColumn: Order State
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Status'
+		dataType: string
+		lineageTag: 694ae5b2-fe56-451a-8c97-b0b558beef49
+		summarizeBy: none
+		sourceColumn: Order Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Zipcode'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3202b305-3e5e-4753-8437-1633adc198f4
+		summarizeBy: sum
+		sourceColumn: Order Zipcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Card Id'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4216df44-5ecc-46cf-8fb0-2be39e366a7d
+		summarizeBy: count
+		sourceColumn: Product Card Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Category Id'
+		dataType: int64
+		formatString: 0
+		lineageTag: 75cca520-e435-442a-afd8-0fd0d3a6cdd3
+		summarizeBy: count
+		sourceColumn: Product Category Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Description'
+		dataType: string
+		lineageTag: 6292feaa-2389-4251-8abc-5d3807459879
+		summarizeBy: none
+		sourceColumn: Product Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Image'
+		dataType: string
+		lineageTag: 6a412f3a-d9d0-41c4-9885-d833f043f827
+		dataCategory: WebUrl
+		summarizeBy: none
+		sourceColumn: Product Image
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Name'
+		dataType: string
+		lineageTag: 66df6d8f-c6e7-43fe-a7b1-610c251a97bd
+		summarizeBy: none
+		sourceColumn: Product Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Price'
+		dataType: double
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		lineageTag: 1989786d-ac8b-4c7f-9475-c53fffcdf9c1
+		summarizeBy: sum
+		sourceColumn: Product Price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column 'Product Status'
+		dataType: int64
+		formatString: 0
+		lineageTag: 5c7e020a-d50e-4a55-a218-69b9e52249e4
+		summarizeBy: sum
+		sourceColumn: Product Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'shipping date (DateOrders)'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 09f8dff2-c239-4eca-acc6-1e15cd15afa6
+		summarizeBy: none
+		sourceColumn: shipping date (DateOrders)
+
+		variation Variation
+			isDefault
+			relationship: 5b0d407d-9918-430f-b3e1-d15eca36976a
+			defaultHierarchy: LocalDateTable_f1b071d3-781d-4abe-8f78-8acbc321d948.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Shipping Mode'
+		dataType: string
+		lineageTag: 7e054d0f-8a7a-4930-8df7-b220dd90ceda
+		summarizeBy: none
+		sourceColumn: Shipping Mode
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DataCoSupplyChainDataset = m
+		mode: import
+		source =
+				let
+				    Fonte =
+				        Csv.Document(
+				            File.Contents("C:\Git\Github\DataCo-SupplyChain-Analysis\data\DataCoSupplyChainDataset.csv"),
+				            [Delimiter=",", Columns=53, Encoding=65001, QuoteStyle=QuoteStyle.None]
+				        ),
+				
+				    // Promove cabeçalhos
+				    #"Cabeçalhos Promovidos" =
+				        Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				
+				    // Garante que colunas monetárias começam como texto
+				    #"Monetarios como Texto" =
+				        Table.TransformColumnTypes(
+				            #"Cabeçalhos Promovidos",
+				            {
+				                {"Product Price", type text},
+				                {"Order Item Product Price", type text},
+				                {"Order Item Total", type text},
+				                {"Sales", type text},
+				                {"Order Profit Per Order", type text},
+				                {"Benefit per order", type text},
+				                {"Sales per customer", type text},
+				                {"Order Item Discount", type text}
+				            }
+				        ),
+				
+				    // Converte monetários usando localidade correta (pt-BR)
+				    #"Monetarios Convertidos" =
+				        Table.TransformColumnTypes(
+				            #"Monetarios como Texto",
+				            {
+				                {"Product Price", type number},
+				                {"Order Item Product Price", type number},
+				                {"Order Item Total", type number},
+				                {"Sales", type number},
+				                {"Order Profit Per Order", type number},
+				                {"Benefit per order", type number},
+				                {"Sales per customer", type number},
+				                {"Order Item Discount", type number}
+				            },
+				            "pt-BR"
+				        ),
+				
+				    // Corrige escala (dataset vem multiplicado por 10.000.000)
+				    #"Monetarios Escala Corrigida" =
+				        Table.TransformColumns(
+				            #"Monetarios Convertidos",
+				            {
+				                {"Product Price", each _ / 10000000, type number},
+				                {"Order Item Product Price", each _ / 10000000, type number},
+				                {"Order Item Total", each _ / 10000000, type number},
+				                {"Sales", each _ / 10000000, type number},
+				                {"Order Profit Per Order", each _ / 10000000, type number},
+				                {"Benefit per order", each _ / 10000000, type number},
+				                {"Sales per customer", each _ / 10000000, type number},
+				                {"Order Item Discount", each _ / 10000000, type number}
+				            }
+				        ),
+				
+				    // Arredonda todos os monetários para 2 casas decimais (padrão USD)
+				    #"Monetarios USD" =
+				        Table.TransformColumns(
+				            #"Monetarios Escala Corrigida",
+				            {
+				                {"Product Price", each Number.Round(_, 2), type number},
+				                {"Order Item Product Price", each Number.Round(_, 2), type number},
+				                {"Order Item Total", each Number.Round(_, 2), type number},
+				                {"Sales", each Number.Round(_, 2), type number},
+				                {"Order Profit Per Order", each Number.Round(_, 2), type number},
+				                {"Benefit per order", each Number.Round(_, 2), type number},
+				                {"Sales per customer", each Number.Round(_, 2), type number},
+				                {"Order Item Discount", each Number.Round(_, 2), type number}
+				            }
+				        ),
+				
+				    // Tipagem final das demais colunas
+				    #"Tipo Alterado" =
+				        Table.TransformColumnTypes(
+				            #"Monetarios USD",
+				            {
+				                {"Type", type text},
+				                {"Days for shipping (real)", Int64.Type},
+				                {"Days for shipment (scheduled)", Int64.Type},
+				                {"Delivery Status", type text},
+				                {"Late_delivery_risk", Int64.Type},
+				                {"Category Id", Int64.Type},
+				                {"Category Name", type text},
+				                {"Customer City", type text},
+				                {"Customer Country", type text},
+				                {"Customer Email", type text},
+				                {"Customer Fname", type text},
+				                {"Customer Id", Int64.Type},
+				                {"Customer Lname", type text},
+				                {"Customer Password", type text},
+				                {"Customer Segment", type text},
+				                {"Customer State", type text},
+				                {"Customer Street", type text},
+				                {"Customer Zipcode", Int64.Type},
+				                {"Department Id", Int64.Type},
+				                {"Department Name", type text},
+				                {"Latitude", type number},
+				                {"Longitude", type number},
+				                {"Market", type text},
+				                {"Order City", type text},
+				                {"Order Country", type text},
+				                {"Order Customer Id", Int64.Type},
+				                {"order date (DateOrders)", type datetime},
+				                {"Order Id", Int64.Type},
+				                {"Order Item Cardprod Id", Int64.Type},
+				                {"Order Item Discount Rate", type number},
+				                {"Order Item Id", Int64.Type},
+				                {"Order Item Profit Ratio", type number},
+				                {"Order Item Quantity", Int64.Type},
+				                {"Order Region", type text},
+				                {"Order State", type text},
+				                {"Order Status", type text},
+				                {"Order Zipcode", Int64.Type},
+				                {"Product Card Id", Int64.Type},
+				                {"Product Category Id", Int64.Type},
+				                {"Product Description", type text},
+				                {"Product Image", type text},
+				                {"Product Name", type text},
+				                {"Product Status", Int64.Type},
+				                {"shipping date (DateOrders)", type datetime},
+				                {"Shipping Mode", type text}
+				            }
+				        )
+				
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

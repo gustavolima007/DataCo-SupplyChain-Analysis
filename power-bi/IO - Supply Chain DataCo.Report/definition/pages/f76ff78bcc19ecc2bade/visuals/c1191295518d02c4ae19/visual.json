@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "c1191295518d02c4ae19",
   "position": {
-    "x": 98.857602574416731,
-    "y": 374.8350764279968,
+    "x": 0,
+    "y": 0,
     "z": 1,
-    "height": 274.94770716009657,
-    "width": 1104.9396621078038,
+    "height": 274.7122861586314,
+    "width": 1104.8211508553654,
     "tabOrder": 1
   },
   "visual": {
@@ -17,18 +17,107 @@
           "projections": [
             {
               "field": {
-                "Column": {
+                "HierarchyLevel": {
                   "Expression": {
-                    "SourceRef": {
-                      "Entity": "DataCoSupplyChainDataset_transformed"
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DataCoSupplyChainDataset"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "shipping date (DateOrders)"
+                        }
+                      },
+                      "Hierarchy": "Hierarquia de datas"
                     }
                   },
-                  "Property": "shipping date (DateOrders)"
+                  "Level": "Ano"
                 }
               },
-              "queryRef": "DataCoSupplyChainDataset_transformed.shipping date (DateOrders).Variation.Hierarquia de datas.Ano",
+              "queryRef": "DataCoSupplyChainDataset.shipping date (DateOrders).Variation.Hierarquia de datas.Ano",
               "nativeQueryRef": "shipping date (DateOrders) Ano",
               "active": true
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DataCoSupplyChainDataset"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "shipping date (DateOrders)"
+                        }
+                      },
+                      "Hierarchy": "Hierarquia de datas"
+                    }
+                  },
+                  "Level": "Trimestre"
+                }
+              },
+              "queryRef": "DataCoSupplyChainDataset.shipping date (DateOrders).Variation.Hierarquia de datas.Trimestre",
+              "nativeQueryRef": "shipping date (DateOrders) Trimestre",
+              "active": false
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DataCoSupplyChainDataset"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "shipping date (DateOrders)"
+                        }
+                      },
+                      "Hierarchy": "Hierarquia de datas"
+                    }
+                  },
+                  "Level": "Mês"
+                }
+              },
+              "queryRef": "DataCoSupplyChainDataset.shipping date (DateOrders).Variation.Hierarquia de datas.Mês",
+              "nativeQueryRef": "shipping date (DateOrders) Mês",
+              "active": false
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "DataCoSupplyChainDataset"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "shipping date (DateOrders)"
+                        }
+                      },
+                      "Hierarchy": "Hierarquia de datas"
+                    }
+                  },
+                  "Level": "Dia"
+                }
+              },
+              "queryRef": "DataCoSupplyChainDataset.shipping date (DateOrders).Variation.Hierarquia de datas.Dia",
+              "nativeQueryRef": "shipping date (DateOrders) Dia",
+              "active": false
             }
           ]
         },
@@ -41,7 +130,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "DataCoSupplyChainDataset_transformed"
+                          "Entity": "DataCoSupplyChainDataset"
                         }
                       },
                       "Property": "Sales"
@@ -50,29 +139,11 @@
                   "Function": 0
                 }
               },
-              "queryRef": "Sum(DataCoSupplyChainDataset_transformed.Sales)",
+              "queryRef": "Sum(DataCoSupplyChainDataset.Sales)",
               "nativeQueryRef": "Soma de Sales"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "DataCoSupplyChainDataset_transformed"
-                  }
-                },
-                "Property": "shipping date (DateOrders)"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ],
-        "isDefaultSort": true
       }
     },
     "drillFilterOtherVisuals": true
@@ -80,28 +151,114 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "294ff8dd35340b687088",
+        "name": "6d80b01983b7d04b9b7d",
         "field": {
-          "Column": {
+          "HierarchyLevel": {
             "Expression": {
-              "SourceRef": {
-                "Entity": "DataCoSupplyChainDataset_transformed"
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "DataCoSupplyChainDataset"
+                      }
+                    },
+                    "Name": "Variation",
+                    "Property": "shipping date (DateOrders)"
+                  }
+                },
+                "Hierarchy": "Hierarquia de datas"
               }
             },
-            "Property": "shipping date (DateOrders)"
+            "Level": "Ano"
           }
         },
         "type": "Advanced"
       },
       {
-        "name": "7143b88601a0c2047c7e",
+        "name": "dbc0d5027b8cc36e9938",
+        "field": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "DataCoSupplyChainDataset"
+                      }
+                    },
+                    "Name": "Variation",
+                    "Property": "shipping date (DateOrders)"
+                  }
+                },
+                "Hierarchy": "Hierarquia de datas"
+              }
+            },
+            "Level": "Trimestre"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "7aeff1aad9c000984daa",
+        "field": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "DataCoSupplyChainDataset"
+                      }
+                    },
+                    "Name": "Variation",
+                    "Property": "shipping date (DateOrders)"
+                  }
+                },
+                "Hierarchy": "Hierarquia de datas"
+              }
+            },
+            "Level": "Mês"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "88b52e1a5d5006463638",
+        "field": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "DataCoSupplyChainDataset"
+                      }
+                    },
+                    "Name": "Variation",
+                    "Property": "shipping date (DateOrders)"
+                  }
+                },
+                "Hierarchy": "Hierarquia de datas"
+              }
+            },
+            "Level": "Dia"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "4d0e9a0ab03a96e10698",
         "field": {
           "Aggregation": {
             "Expression": {
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "DataCoSupplyChainDataset_transformed"
+                    "Entity": "DataCoSupplyChainDataset"
                   }
                 },
                 "Property": "Sales"

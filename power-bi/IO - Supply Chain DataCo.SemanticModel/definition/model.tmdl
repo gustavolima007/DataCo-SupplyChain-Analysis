@@ -8,17 +8,17 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["tokenized_access_logs_transformed","DescriptionDataCoSupplyChain","DataCoSupplyChainDataset_transformed"]
+annotation PBI_QueryOrder = ["DataCoSupplyChainDataset","tokenized_access_logs","DescriptionDataCoSupplyChain"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
-ref table tokenized_access_logs_transformed
-ref table DateTableTemplate_5150429d-f930-4073-8aca-8f1543d42355
-ref table LocalDateTable_a214e0e8-50aa-43b5-87fb-6d42ef8891e6
+ref table DataCoSupplyChainDataset
+ref table DateTableTemplate_8e2f95f1-1c05-444c-8e26-b7109f15a1cf
+ref table LocalDateTable_7475a7b5-43af-4ba6-a0db-e6dda31cba04
+ref table LocalDateTable_f1b071d3-781d-4abe-8f78-8acbc321d948
+ref table tokenized_access_logs
+ref table LocalDateTable_cd70fbb8-0d1e-4b64-a14f-53ef4091279c
 ref table DescriptionDataCoSupplyChain
-ref table DataCoSupplyChainDataset_transformed
-ref table LocalDateTable_3793822a-7b83-414b-b451-d5e0d67d8be5
-ref table LocalDateTable_6cc43d06-e844-4eac-8e7b-68f6d6481500
 
 ref cultureInfo pt-BR
 

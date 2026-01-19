@@ -1,19 +1,19 @@
 table DescriptionDataCoSupplyChain
-	lineageTag: 10986da6-b64b-43f6-b77d-162b0964c8c8
+	lineageTag: 3f920462-5cca-44ee-a594-48f20b03fa04
 
-	column Column1
+	column FIELDS
 		dataType: string
-		lineageTag: f3168135-00a9-4b92-9a31-c276427adff7
+		lineageTag: 117272f1-2439-4ee6-9a55-fadc93178fd7
 		summarizeBy: none
-		sourceColumn: Column1
+		sourceColumn: FIELDS
 
 		annotation SummarizationSetBy = Automatic
 
-	column Column2
+	column DESCRIPTION
 		dataType: string
-		lineageTag: 6792272a-ac69-4fe3-b876-8ef2d3dc49bd
+		lineageTag: 8de52089-1e8f-4d5b-81a4-fbad8c5f5781
 		summarizeBy: none
-		sourceColumn: Column2
+		sourceColumn: DESCRIPTION
 
 		annotation SummarizationSetBy = Automatic
 
@@ -21,10 +21,44 @@ table DescriptionDataCoSupplyChain
 		mode: import
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("C:\Git\Github\DataCo-SupplyChain-Analysis\datasets\DataCo_Smart_Supply\DescriptionDataCoSupplyChain.csv"),[Delimiter=",", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]),
-				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Column1", type text}, {"Column2", type text}})
+				    Fonte =
+				        Csv.Document(
+				            File.Contents("C:\Git\Github\DataCo-SupplyChain-Analysis\datasets\DataCo_Smart_Supply\DescriptionDataCoSupplyChain.csv"),
+				            [Delimiter=",", Columns=2, Encoding=1252, QuoteStyle=QuoteStyle.None]
+				        ),
+				
+				    // Tipagem inicial
+				    #"Tipo Alterado" =
+				        Table.TransformColumnTypes(
+				            Fonte,
+				            {{"Column1", type text}, {"Column2", type text}}
+				        ),
+				
+				    // Promove cabeçalhos
+				    #"Cabeçalhos Promovidos" =
+				        Table.PromoteHeaders(#"Tipo Alterado", [PromoteAllScalars=true]),
+				
+				    // Garante tipo texto
+				    #"Tipo Alterado1" =
+				        Table.TransformColumnTypes(
+				            #"Cabeçalhos Promovidos",
+				            {{"FIELDS", type text}, {"DESCRIPTION", type text}}
+				        ),
+				
+				    // Remove ":" e espaços extras da descrição
+				    #"Descricao Limpa" =
+				        Table.TransformColumns(
+				            #"Tipo Alterado1",
+				            {
+				                {
+				                    "DESCRIPTION",
+				                    each Text.Trim(Text.Replace(_, ":", "")),
+				                    type text
+				                }
+				            }
+				        )
 				in
-				    #"Tipo Alterado"
+				    #"Descricao Limpa"
 
 	annotation PBI_NavigationStepName = Navegação
 
