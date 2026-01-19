@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "2a72595410bb189dd71a",
+  "position": {
+    "x": 823.581616481775,
+    "y": 0,
+    "z": 3,
+    "height": 178.51030110935022,
+    "width": 199.80982567353408,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DataCoSupplyChainDataset"
+                    }
+                  },
+                  "Property": "Market"
+                }
+              },
+              "queryRef": "DataCoSupplyChainDataset.Market",
+              "nativeQueryRef": "Market"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "04e81f841cc3d5700b8a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DataCoSupplyChainDataset"
+              }
+            },
+            "Property": "Market"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

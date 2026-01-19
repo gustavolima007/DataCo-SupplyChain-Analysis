@@ -16,40 +16,79 @@
           "nodeIndex": "DataCoSupplyChainDataset",
           "nodeLineageTag": "7bb7311b-1eae-411a-b18a-805f1c4a5226",
           "size": {
-            "height": 434,
+            "height": 1000,
             "width": 281
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
-            "x": 302,
-            "y": 8
+            "x": 1059.0132533127251,
+            "y": 0
           },
           "nodeIndex": "DescriptionDataCoSupplyChain",
           "nodeLineageTag": "3f920462-5cca-44ee-a594-48f20b03fa04",
           "size": {
-            "height": 148,
+            "height": 166,
             "width": 322
           },
-          "zIndex": 0
+          "zIndex": 2
         },
         {
           "location": {
-            "x": 646,
-            "y": 0
+            "x": 445.298716539976,
+            "y": 706.07590676668667
           },
           "nodeIndex": "tokenized_access_logs",
           "nodeLineageTag": "1824a1ff-04b7-4852-a38d-0349737e17de",
           "size": {
-            "height": 301,
+            "height": 309,
             "width": 261
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 526.39075059525794,
+            "y": 0
+          },
+          "nodeIndex": "Dim_Calendario",
+          "nodeLineageTag": "d573e5bc-5e94-4cb2-8314-8bbf91285bbe",
+          "size": {
+            "height": 450.86130020852346,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1429,
+            "y": 0
+          },
+          "nodeIndex": "_Medidas",
+          "nodeLineageTag": "a84cffb2-cca5-48c0-b65b-519145e65e2b",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1022.4267578529414,
+            "y": 395.58994835879349
+          },
+          "nodeIndex": "fato_vendas",
+          "nodeLineageTag": "3a2227c8-6fcf-4b01-bef9-630ee7ba409e",
+          "size": {
+            "height": 300,
+            "width": 234
           },
           "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 100,
+      "zoomValue": 70.95554390096882,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

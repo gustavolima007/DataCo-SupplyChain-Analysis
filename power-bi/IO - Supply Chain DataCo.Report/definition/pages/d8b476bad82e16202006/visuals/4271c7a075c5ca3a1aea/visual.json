@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "4271c7a075c5ca3a1aea",
+  "position": {
+    "x": 599.42947702060223,
+    "y": 0,
+    "z": 9,
+    "height": 118.66877971473851,
+    "width": 199.80982567353408,
+    "tabOrder": 9
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DataCoSupplyChainDataset"
+                    }
+                  },
+                  "Property": "Shipping Mode"
+                }
+              },
+              "queryRef": "DataCoSupplyChainDataset.Shipping Mode",
+              "nativeQueryRef": "Shipping Mode"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e2d8c4660130a3c53544",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DataCoSupplyChainDataset"
+              }
+            },
+            "Property": "Shipping Mode"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

@@ -279,11 +279,6 @@ table DataCoSupplyChainDataset
 		summarizeBy: none
 		sourceColumn: order date (DateOrders)
 
-		variation Variation
-			isDefault
-			relationship: 2fe54d3d-b224-48a8-889e-c693b879c151
-			defaultHierarchy: LocalDateTable_7475a7b5-43af-4ba6-a0db-e6dda31cba04.'Hierarquia de datas'
-
 		annotation SummarizationSetBy = Automatic
 
 	column 'Order Id'
@@ -456,15 +451,6 @@ table DataCoSupplyChainDataset
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Product Image'
-		dataType: string
-		lineageTag: 6a412f3a-d9d0-41c4-9885-d833f043f827
-		dataCategory: WebUrl
-		summarizeBy: none
-		sourceColumn: Product Image
-
-		annotation SummarizationSetBy = Automatic
-
 	column 'Product Name'
 		dataType: string
 		lineageTag: 66df6d8f-c6e7-43fe-a7b1-610c251a97bd
@@ -500,11 +486,6 @@ table DataCoSupplyChainDataset
 		summarizeBy: none
 		sourceColumn: shipping date (DateOrders)
 
-		variation Variation
-			isDefault
-			relationship: 5b0d407d-9918-430f-b3e1-d15eca36976a
-			defaultHierarchy: LocalDateTable_f1b071d3-781d-4abe-8f78-8acbc321d948.'Hierarquia de datas'
-
 		annotation SummarizationSetBy = Automatic
 
 	column 'Shipping Mode'
@@ -517,14 +498,15 @@ table DataCoSupplyChainDataset
 
 	partition DataCoSupplyChainDataset = m
 		mode: import
-		source =
+		source = ```
 				let
-				    Fonte =
+				    // Alteração da fonte: de local (File.Contents) para Web (Web.Contents)
+				    // Importante usar a URL do raw.githubusercontent
+				    Fonte = 
 				        Csv.Document(
-				            File.Contents("C:\Git\Github\DataCo-SupplyChain-Analysis\data\DataCoSupplyChainDataset.csv"),
+				            Web.Contents("https://raw.githubusercontent.com/gustavolima007/DataCo-SupplyChain-Analysis/refs/heads/main/data/DataCoSupplyChainDataset.csv"),
 				            [Delimiter=",", Columns=53, Encoding=65001, QuoteStyle=QuoteStyle.None]
 				        ),
-				
 				    // Promove cabeçalhos
 				    #"Cabeçalhos Promovidos" =
 				        Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
@@ -645,10 +627,11 @@ table DataCoSupplyChainDataset
 				                {"shipping date (DateOrders)", type datetime},
 				                {"Shipping Mode", type text}
 				            }
-				        )
-				
+				        ),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Product Image"})
 				in
-				    #"Tipo Alterado"
+				    #"Colunas Removidas"
+				```
 
 	annotation PBI_NavigationStepName = Navegação
 

@@ -1,0 +1,230 @@
+table fato_vendas
+	lineageTag: 3a2227c8-6fcf-4b01-bef9-630ee7ba409e
+
+	column 'Data do Pedido'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: e5b504f7-29d1-4596-b955-40f401cc3dcf
+		summarizeBy: none
+		sourceColumn: Data do Pedido
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Data de Envio'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: f9b70bf8-1cab-43d8-be29-84ced0cfca35
+		summarizeBy: none
+		sourceColumn: Data de Envio
+
+		variation Variation
+			isDefault
+			relationship: 738e1857-904a-456d-87b0-6ff89a31deb1
+			defaultHierarchy: LocalDateTable_03f298f8-7b6d-4e3a-bfd8-9a9f99005ec7.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Type
+		dataType: string
+		lineageTag: 5759cd26-9084-4787-a5d8-fd17a79c0c22
+		summarizeBy: none
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dias Envio Real'
+		dataType: int64
+		formatString: 0
+		lineageTag: 1c4d2365-a5a9-403b-8571-913d755e8d32
+		summarizeBy: sum
+		sourceColumn: Dias Envio Real
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dias Envio Programado'
+		dataType: int64
+		formatString: 0
+		lineageTag: 9b06fbdd-1c5a-4066-9466-d900c7f604b6
+		summarizeBy: sum
+		sourceColumn: Dias Envio Programado
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Delivery Status'
+		dataType: string
+		lineageTag: cf2a8b34-182a-4596-a217-8f3fffe04c53
+		summarizeBy: none
+		sourceColumn: Delivery Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Late_delivery_risk
+		dataType: double
+		lineageTag: c0fbbf16-61ec-4a56-98c9-e70cc7f17e8f
+		summarizeBy: sum
+		sourceColumn: Late_delivery_risk
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Category Name'
+		dataType: string
+		lineageTag: 6b6c01a0-a0f1-4ea2-9bdd-162e238712c0
+		summarizeBy: none
+		sourceColumn: Category Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Segment'
+		dataType: string
+		lineageTag: 5ca844e7-32ee-4fe9-9490-728e83b2fd0f
+		summarizeBy: none
+		sourceColumn: Customer Segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Department Name'
+		dataType: string
+		lineageTag: 8e93acbb-dc98-44b7-9978-3218f2738e71
+		summarizeBy: none
+		sourceColumn: Department Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Market
+		dataType: string
+		lineageTag: c1c03c2c-b25a-4d95-ac9a-b3d2fbda4274
+		summarizeBy: none
+		sourceColumn: Market
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order City'
+		dataType: string
+		lineageTag: 2e7b0569-f00e-4bfd-8895-07d950779706
+		summarizeBy: none
+		sourceColumn: Order City
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Country'
+		dataType: string
+		lineageTag: 9e75e3b5-1543-4142-aacc-235af3fc9fd7
+		summarizeBy: none
+		sourceColumn: Order Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Region'
+		dataType: string
+		lineageTag: 6014c761-5619-4ba6-810c-2a55fa9ade6b
+		summarizeBy: none
+		sourceColumn: Order Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Status'
+		dataType: string
+		lineageTag: 76576158-df58-435a-a4ce-5e7f5544208e
+		summarizeBy: none
+		sourceColumn: Order Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Name'
+		dataType: string
+		lineageTag: 6949bb3a-947f-4099-9d0e-afc8434d7273
+		summarizeBy: none
+		sourceColumn: Product Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Vendas
+		dataType: double
+		lineageTag: 426498e2-9e87-4eb0-b680-a9dc4daef8c1
+		summarizeBy: sum
+		sourceColumn: Vendas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Lucro do Pedido'
+		dataType: double
+		lineageTag: 8c3a33d5-983b-4d77-9bbe-ff6156c64cde
+		summarizeBy: sum
+		sourceColumn: Lucro do Pedido
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Shipping Mode'
+		dataType: string
+		lineageTag: d97f19ad-7d83-49e2-87fe-47f78ac640ed
+		summarizeBy: none
+		sourceColumn: Shipping Mode
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fato_vendas = m
+		mode: import
+		source = ```
+				let
+				    // Referencia a sua tabela base que ja foi limpa no passo anterior
+				    Fonte = DataCoSupplyChainDataset,
+				
+				    // Seleção das colunas estratégicas para Inteligência Operacional e Logística
+				    ColunasSelecionadas = Table.SelectColumns(Fonte, {
+				        "order date (DateOrders)", 
+				        "shipping date (DateOrders)", 
+				        "Type", 
+				        "Days for shipping (real)", 
+				        "Days for shipment (scheduled)", 
+				        "Delivery Status", 
+				        "Late_delivery_risk", 
+				        "Category Name", 
+				        "Customer Segment", 
+				        "Department Name", 
+				        "Market", 
+				        "Order City", 
+				        "Order Country", 
+				        "Order Region", 
+				        "Order Status", 
+				        "Product Name", 
+				        "Sales", 
+				        "Order Profit Per Order", 
+				        "Shipping Mode"
+				    }),
+				
+				    // Garantindo que as datas não possuam horas se não for necessário (melhora o relacionamento)
+				    AjustarDatas = Table.TransformColumnTypes(ColunasSelecionadas, {
+				        {"order date (DateOrders)", type date}, 
+				        {"shipping date (DateOrders)", type date}
+				    }),
+				
+				    // Tratamento de valores nulos ou erros em colunas numéricas vitais
+				    TratarNulos = Table.ReplaceValue(AjustarDatas, null, 0, Replacer.ReplaceValue, {"Sales", "Order Profit Per Order", "Late_delivery_risk"}),
+				
+				    // Renomeando colunas para nomes mais amigáveis no Dashboard (Storytelling)
+				    RenomearColunas = Table.RenameColumns(TratarNulos, {
+				        {"order date (DateOrders)", "Data do Pedido"},
+				        {"shipping date (DateOrders)", "Data de Envio"},
+				        {"Days for shipping (real)", "Dias Envio Real"},
+				        {"Days for shipment (scheduled)", "Dias Envio Programado"},
+				        {"Order Profit Per Order", "Lucro do Pedido"},
+				        {"Sales", "Vendas"}
+				    })
+				in
+				    RenomearColunas
+				```
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

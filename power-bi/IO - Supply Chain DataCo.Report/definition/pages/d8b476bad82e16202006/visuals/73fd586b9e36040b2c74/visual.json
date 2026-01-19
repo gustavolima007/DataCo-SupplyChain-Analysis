@@ -1,0 +1,201 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "73fd586b9e36040b2c74",
+  "position": {
+    "x": 533.50237717908078,
+    "y": 118.66877971473851,
+    "z": 7,
+    "height": 378.3201267828843,
+    "width": 746.4976228209191,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "esriVisual",
+    "query": {
+      "queryState": {
+        "Color": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DataCoSupplyChainDataset"
+                    }
+                  },
+                  "Property": "Delivery Status"
+                }
+              },
+              "queryRef": "DataCoSupplyChainDataset.Delivery Status",
+              "nativeQueryRef": "Delivery Status"
+            }
+          ]
+        },
+        "Location": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DataCoSupplyChainDataset"
+                    }
+                  },
+                  "Property": "Order Country"
+                }
+              },
+              "queryRef": "DataCoSupplyChainDataset.Order Country",
+              "nativeQueryRef": "Order Country"
+            }
+          ]
+        },
+        "Size": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DataCoSupplyChainDataset"
+                    }
+                  },
+                  "Property": "Total Sales"
+                }
+              },
+              "queryRef": "DataCoSupplyChainDataset.Total Sales",
+              "nativeQueryRef": "Total Sales"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DataCoSupplyChainDataset"
+                  }
+                },
+                "Property": "Total Sales"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "featureInfo": [
+        {
+          "properties": {
+            "selectedLayerKeys": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "mapObject": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\"portalUrl\":\"https://www.arcgis.com\",\"version\":\"2.4\",\"isAuthorNamedUser\":false,\"map\":{\"webmap\":{\"is3d\":false,\"itemData\":{\"operationalLayers\":[{\"id\":\"MyLayer\",\"visibility\":true,\"opacity\":1,\"minScale\":0,\"maxScale\":0,\"refreshInterval\":0,\"title\":\"Order Country\",\"objectIdField\":\"objectId\",\"type\":\"DataLayer\",\"layerType\":\"ArcGISFeatureLayer\",\"popupEnabled\":true,\"disablePopup\":false,\"visible\":true,\"geometryType\":\"polygon\",\"source\":[{\"attributes\":{},\"geometry\":{\"rings\":[],\"type\":\"polygon\",\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100}}}],\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100},\"esriMaps\":{\"isTimeEnabled\":\"false\",\"clusterInfo\":null,\"lastShareInfo\":null},\"timeInfo\":null,\"showLabels\":false,\"featureCollection\":{\"layers\":[{\"popupInfo\":{\"popupElements\":[{\"type\":\"fields\",\"fieldInfos\":[{\"fieldName\":\"DataCoSupplyChainDataset_Order_20Country\",\"isEditable\":true,\"label\":\"Order Country\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"DataCoSupplyChainDataset_Total_20Sales\",\"format\":{\"digitSeparator\":true,\"places\":2},\"isEditable\":true,\"label\":\"Total Sales\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"DataCoSupplyChainDataset_Delivery_20Status\",\"isEditable\":true,\"label\":\"Delivery Status\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"ROW_ID\",\"format\":{\"digitSeparator\":true,\"places\":0},\"isEditable\":true,\"label\":\"ROW_ID\",\"tooltip\":\"\",\"visible\":true}]}],\"expressionInfos\":[],\"fieldInfos\":[{\"fieldName\":\"DataCoSupplyChainDataset_Order_20Country\",\"isEditable\":true,\"label\":\"Order Country\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"DataCoSupplyChainDataset_Total_20Sales\",\"format\":{\"digitSeparator\":true,\"places\":2},\"isEditable\":true,\"label\":\"Total Sales\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"DataCoSupplyChainDataset_Delivery_20Status\",\"isEditable\":true,\"label\":\"Delivery Status\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"ROW_ID\",\"format\":{\"digitSeparator\":true,\"places\":0},\"isEditable\":true,\"label\":\"ROW_ID\",\"tooltip\":\"\",\"visible\":true}],\"title\":\"\",\"actions\":[]},\"effect\":null,\"layerDefinition\":{\"objectIdField\":\"objectId\",\"fields\":[{\"alias\":\"objectId\",\"editable\":false,\"name\":\"objectId\",\"nullable\":false,\"type\":\"esriFieldTypeOID\"},{\"alias\":\"Order Country\",\"editable\":true,\"length\":-1,\"name\":\"DataCoSupplyChainDataset_Order_20Country\",\"nullable\":true,\"type\":\"esriFieldTypeString\"},{\"alias\":\"Total Sales\",\"editable\":true,\"name\":\"DataCoSupplyChainDataset_Total_20Sales\",\"nullable\":true,\"type\":\"esriFieldTypeDouble\"},{\"alias\":\"Delivery Status\",\"editable\":true,\"length\":-1,\"name\":\"DataCoSupplyChainDataset_Delivery_20Status\",\"nullable\":true,\"type\":\"esriFieldTypeString\"},{\"alias\":\"ROW_ID\",\"editable\":true,\"name\":\"ROW_ID\",\"nullable\":true,\"type\":\"esriFieldTypeInteger\"}],\"geometryType\":\"polygon\",\"drawingInfo\":{\"renderer\":{\"authoringInfo\":{\"visualVariables\":[{\"theme\":\"high-to-low\",\"type\":\"sizeInfo\"}]},\"type\":\"uniqueValue\",\"visualVariables\":[{\"type\":\"sizeInfo\",\"field\":\"DataCoSupplyChainDataset_Total_20Sales\",\"maxDataValue\":2988290.17000011,\"maxSize\":30,\"minDataValue\":0,\"minSize\":3,\"valueUnit\":\"unknown\"}],\"field1\":\"DataCoSupplyChainDataset_Delivery_20Status\",\"legendOptions\":{\"title\":\"Delivery Status\"},\"defaultLabel\":\"Outro\",\"defaultSymbol\":{\"type\":\"esriSFS\",\"color\":[170,170,170,255],\"outline\":{\"type\":\"esriSLS\",\"color\":[153,153,153,64],\"width\":0.75,\"style\":\"esriSLSSolid\"},\"style\":\"esriSFSSolid\"},\"uniqueValueGroups\":[{\"classes\":[{\"description\":\"\",\"label\":\"Late delivery\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[237,81,81,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"values\":[[\"Late delivery\"]]},{\"description\":\"\",\"label\":\"Advance shipping\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[20,158,206,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"values\":[[\"Advance shipping\"]]},{\"description\":\"\",\"label\":\"Shipping on time\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[167,198,54,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"values\":[[\"Shipping on time\"]]},{\"description\":\"\",\"label\":\"Shipping canceled\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[158,85,156,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"values\":[[\"Shipping canceled\"]]}]}],\"uniqueValueInfos\":[{\"description\":\"\",\"label\":\"Late delivery\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[237,81,81,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"value\":\"Late delivery\"},{\"description\":\"\",\"label\":\"Advance shipping\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[20,158,206,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"value\":\"Advance shipping\"},{\"description\":\"\",\"label\":\"Shipping on time\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[167,198,54,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"value\":\"Shipping on time\"},{\"description\":\"\",\"label\":\"Shipping canceled\",\"symbol\":{\"type\":\"esriSMS\",\"color\":[158,85,156,178],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":10,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}},\"value\":\"Shipping canceled\"}]},\"transparency\":0},\"featureReduction\":null,\"locationProvider\":{\"type\":\"cachedstdgeo\",\"adminLevel\":\"countries\",\"targetSR\":{\"latestWkid\":3857,\"wkid\":102100},\"useExactMatch\":false,\"sourceCountry\":\"world\",\"geographyLevel\":\"countries\",\"lookupFields\":[{\"lookupField\":\"Location\",\"outField\":\"DataCoSupplyChainDataset_Order_20Country\"}]},\"minScale\":0,\"maxScale\":0,\"definitionExpression\":null,\"templates\":[{\"name\":\"New Feature\",\"description\":\"\",\"prototype\":{\"attributes\":{\"DataCoSupplyChainDataset_Order_20Country\":null,\"DataCoSupplyChainDataset_Total_20Sales\":null,\"DataCoSupplyChainDataset_Delivery_20Status\":null,\"ROW_ID\":null}}}],\"elevationInfo\":null,\"name\":\"Order Country\",\"type\":\"DataLayer\",\"queryParameters\":{\"tableId\":\"\"}},\"featureSet\":{\"features\":[{\"attributes\":{},\"geometry\":{\"rings\":[],\"type\":\"polygon\",\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100}}}]}}]}}],\"tables\":[],\"baseMap\":{\"baseMapLayers\":[{\"id\":\"VectorTile_1970\",\"opacity\":1,\"title\":\"Light Gray Base\",\"visibility\":true,\"layerType\":\"VectorTileLayer\",\"styleUrl\":\"https://cdn.arcgis.com/sharing/rest/content/items/291da5eab3a0412593b66d384379f89f/resources/styles/root.json\"},{\"id\":\"VectorTile_7117\",\"opacity\":1,\"title\":\"Light Gray Reference\",\"visibility\":true,\"layerType\":\"VectorTileLayer\",\"styleUrl\":\"https://cdn.arcgis.com/sharing/rest/content/items/1768e8369a214dfab4e2167d5c5f2454/resources/styles/root.json\",\"isReference\":true}],\"title\":\"Light Gray Canvas\"},\"version\":\"2.26\",\"authoringApp\":\"ArcGIS for Power BI\",\"bookmarks\":[],\"initialState\":{\"viewpoint\":{\"targetGeometry\":{\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100},\"xmin\":-1629072.2101810102,\"ymin\":4154962.101790362,\"xmax\":5571907.35050696,\"ymax\":7569557.029344848}}}}},\"webmapExtensions\":{\"format\":2}},\"embedCheckPassed\":false}'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "mapTools": [
+        {
+          "properties": {
+            "basemaps": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "share": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Visuais Geográficos e Operacionais'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f26748901dce92c63485",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DataCoSupplyChainDataset"
+              }
+            },
+            "Property": "Order Country"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "bd42a790c5bb36097250",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DataCoSupplyChainDataset"
+              }
+            },
+            "Property": "Total Sales"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ba26579b15c70a76c71b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DataCoSupplyChainDataset"
+              }
+            },
+            "Property": "Delivery Status"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

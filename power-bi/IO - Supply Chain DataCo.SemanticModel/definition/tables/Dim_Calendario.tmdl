@@ -1,0 +1,153 @@
+table Dim_Calendario
+	lineageTag: d573e5bc-5e94-4cb2-8314-8bbf91285bbe
+
+	column Date
+		formatString: General Date
+		lineageTag: fcd1eaf4-0b73-4c31-808b-7b2ac7dbe094
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: 1a0ce3e2-fb92-41c6-940b-f20dcb2819a0
+			defaultHierarchy: LocalDateTable_ce19dc86-b8e7-41d4-9a0d-37c93712ff44.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano
+		formatString: 0
+		lineageTag: a47bb2ef-193f-42d3-9891-45190a3f9c06
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ano]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mês Num'
+		formatString: 0
+		lineageTag: 166512ef-6c43-40dc-b602-920884e6d587
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Mês Num]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mês Nome'
+		lineageTag: 21970eab-46f9-4ea0-89bd-a289ab1ff872
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mês Nome]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mês Abrev'
+		lineageTag: 4def423a-3d9e-4677-a027-727ab508a909
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mês Abrev]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mês/Ano
+		lineageTag: fb7a6888-7a49-4512-a459-3d976b118075
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Mês/Ano]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mês/Ano Sort'
+		formatString: 0
+		lineageTag: a8936cea-f3d3-43e4-a8a0-b6a159282616
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Mês/Ano Sort]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		lineageTag: 829a0539-d078-4ba3-ab2e-fa72b57de59a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Trimestre]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre/Ano
+		lineageTag: 1297d09c-5fba-43f0-8c71-7023a8111e53
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Trimestre/Ano]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Semana Num'
+		formatString: 0
+		lineageTag: 7bee1b3e-6532-41c4-8e2c-29783d4d0590
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Semana Num]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dia da Semana'
+		lineageTag: ca4bece0-f503-4b11-bd8f-6932872a7d6f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Dia da Semana]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dia Semana Num'
+		formatString: 0
+		lineageTag: af08cb43-fd74-4ce6-8da5-bde48ae89b7d
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Dia Semana Num]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Semestre
+		lineageTag: 36e4905a-e395-4d2e-9a3c-d6d2a3a7069f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Semestre]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano/Mês
+		lineageTag: 0139148d-ea75-4c3e-8a37-979dd63e7291
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Ano/Mês]
+		sortByColumn: 'Mês/Ano Sort'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Calendario = calculated
+		mode: import
+		source =
+				
+				VAR DataInicial = DATE(2014, 01, 01) -- Ajuste conforme seu dataset (DataCo começa por volta de 2015)
+				VAR DataFinal = DATE(2020, 01, 01)   -- Ajuste para o fim do seu dataset
+				RETURN
+				ADDCOLUMNS (
+				    CALENDAR (DataInicial, DataFinal),
+				    "Ano", YEAR ( [Date] ),
+				    "Mês Num", MONTH ( [Date] ),
+				    "Mês Nome", FORMAT ( [Date], "MMMM", "pt-BR" ),
+				    "Mês Abrev", UPPER( FORMAT ( [Date], "MMM", "pt-BR" ) ),
+				    "Mês/Ano", FORMAT ( [Date], "MM/yyyy" ),
+				    "Mês/Ano Sort", YEAR ( [Date] ) * 100 + MONTH ( [Date] ),
+				    "Trimestre", "T" & QUARTER ( [Date] ),
+				    "Trimestre/Ano", QUARTER ( [Date] ) & "º Trim " & YEAR ( [Date] ),
+				    "Semana Num", WEEKNUM ( [Date], 2 ),
+				    "Dia da Semana", FORMAT ( [Date], "dddd", "pt-BR" ),
+				    "Dia Semana Num", WEEKDAY ( [Date], 2 ), -- 1 = Segunda
+				    "Semestre", IF(MONTH([Date]) <= 6, "1º Sem", "2º Sem"),
+				    "Ano/Mês", FORMAT([Date], "YYYY/MM")
+				)
+
+	annotation PBI_Id = d278e9b78de14aea92b74a412aeb5a34
+

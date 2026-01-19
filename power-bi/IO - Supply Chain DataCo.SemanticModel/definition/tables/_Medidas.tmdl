@@ -1,0 +1,65 @@
+table _Medidas
+	lineageTag: a84cffb2-cca5-48c0-b65b-519145e65e2b
+
+	measure 'Média Móvel 3M Vendas' = ```
+			
+			VAR MesesVisiveis = 3
+			VAR UltimaData = MAX('Dim_Calendario'[Date])
+			VAR Periodo = 
+			    DATESINPERIOD(
+			        'Dim_Calendario'[Date], 
+			        UltimaData, 
+			        -MesesVisiveis, 
+			        MONTH
+			    )
+			RETURN
+			    IF(
+			        ISFILTERED('Dim_Calendario'[Date]),
+			        AVERAGEX(
+			            Periodo,
+			            [Total Sales] -- Certifique-se de já ter uma medida simples de [Total Sales]
+			        ),
+			        BLANK()
+			    )
+			```
+		lineageTag: d056560d-8d46-45a1-a98f-f72351879c9d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Profit Margin %' = DIVIDE(SUM('DataCoSupplyChainDataset'[Order Profit Per Order]), [Total Sales], 0)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 17eef69a-97ad-42f9-8d05-bf5985edc560
+
+	measure 'OTD %' = ```
+			
+			VAR PedidosNoPrazo = 
+			    CALCULATE(
+			        [Total Orders], 
+			        'DataCoSupplyChainDataset'[Days for shipping (real)] <= 'DataCoSupplyChainDataset'[Days for shipment (scheduled)]
+			    )
+			RETURN 
+			    DIVIDE(PedidosNoPrazo, [Total Orders], 0)
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: ba6a6adc-2474-49c4-a208-eb0c5872a213
+
+	measure 'Total Orders' = COUNTROWS('DataCoSupplyChainDataset')
+		formatString: 0
+		lineageTag: 20ce25a0-bb3c-4aec-afe7-7bae61b92d66
+
+	column Column
+		isHidden
+		formatString: 0
+		lineageTag: ea6bcb9d-48c4-480a-8dc0-5853d843818f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Medidas = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = b0e2d989e9384c34b5bc2b7b13a7412b
+

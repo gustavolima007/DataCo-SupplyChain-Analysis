@@ -1,0 +1,114 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "c375a598d90c0b32dc17",
+  "position": {
+    "x": 533.50237717908078,
+    "y": 511.188589540412,
+    "z": 5,
+    "height": 208.93819334389858,
+    "width": 746.4976228209191,
+    "tabOrder": 5
+  },
+  "visual": {
+    "visualType": "areaChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Calendario"
+                    }
+                  },
+                  "Property": "Ano/Mês"
+                }
+              },
+              "queryRef": "Dim_Calendario.Ano/Mês",
+              "nativeQueryRef": "Ano/Mês",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fato_vendas"
+                        }
+                      },
+                      "Property": "Vendas"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(fato_vendas.Vendas)",
+              "nativeQueryRef": "Soma de Vendas"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Vendas vs. Média Móvel'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f2bba51c448801732054",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fato_vendas"
+                  }
+                },
+                "Property": "Vendas"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5eb0f213db7bd5b64e0d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Calendario"
+              }
+            },
+            "Property": "Ano/Mês"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

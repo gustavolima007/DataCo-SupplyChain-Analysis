@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "bfc5e99b82c801c0004b",
+  "position": {
+    "x": 199.80982567353408,
+    "y": 0,
+    "z": 2,
+    "height": 97.369255150554679,
+    "width": 199.80982567353408,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "OTD %"
+                }
+              },
+              "queryRef": "_Medidas.OTD %",
+              "nativeQueryRef": "OTD %"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "fb4a75b46300e4c549da",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "OTD %"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
