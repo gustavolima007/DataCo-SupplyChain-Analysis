@@ -70,10 +70,15 @@ def enforce_numeric_types(df: pd.DataFrame) -> pd.DataFrame:
 # =========================
 def main() -> None:
     repo_root = Path(__file__).resolve().parent.parent
-    data_dir = repo_root / "datasets" / "DataCo_Smart_Supply"
+    data_in_dir = repo_root / "datasets" / "DataCo_Smart_Supply"
+    data_out_dir = repo_root / "data"
+
+    # Cria o diretório de saída se não existir
+    data_out_dir.mkdir(exist_ok=True)
+    logger.info(f"Diretório de saída: {data_out_dir}")
 
     # 1️⃣ tokenized_access_logs.csv
-    log_path = data_dir / "tokenized_access_logs.csv"
+    log_path = data_in_dir / "tokenized_access_logs.csv"
     logger.info(f"Processando {log_path.name}")
     log_df = load_dataset(log_path)
 
@@ -84,7 +89,7 @@ def main() -> None:
     log_df.to_csv(log_path, index=False)
 
     # 2️⃣ DataCoSupplyChainDataset.csv
-    main_path = data_dir / "DataCoSupplyChainDataset.csv"
+    main_path = data_in_dir / "DataCoSupplyChainDataset.csv"
     logger.info(f"Processando {main_path.name}")
     main_df = load_dataset(main_path, encoding="latin-1")
 
@@ -94,7 +99,15 @@ def main() -> None:
     # sobrescreve o arquivo original
     main_df.to_csv(main_path, index=False)
 
-    logger.info("Arquivos tratados e salvos com os mesmos nomes originais")
+    # 3️⃣ DescriptionDataCoSupplyChain.csv (copia para a pasta data)
+    desc_path = data_in_dir / "DescriptionDataCoSupplyChain.csv"
+    logger.info(f"Copiando {desc_path.name} para a pasta 'data'")
+    desc_df = load_dataset(desc_path)
+    desc_df.to_csv(data_out_dir / desc_path.name, index=False)
+
+
+    logger.info("Arquivos de dados tratados e salvos nos locais de origem.")
+    logger.info("Arquivo de descrição copiado para a pasta 'data'.")
 
 
 if __name__ == "__main__":

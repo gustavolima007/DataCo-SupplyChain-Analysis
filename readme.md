@@ -1,6 +1,6 @@
 # Supply Chain Operational KPIs - DataCo Analysis
 
-Análise avançada de supply chain usando o dataset **DataCo SMART SUPPLY CHAIN FOR BIG DATA ANALYSIS**. O projeto foca na criação de **KPIs operacionais** para monitoramento de desempenho logístico, atrasos, lucratividade e eficiência, com tratamento de dados em Python e visualização estratégica em Power BI.
+Análise avançada de supply chain usando o dataset **DataCo SMART SUPPLY CHAIN FOR BIG DATA ANALYSIS**. O projeto foca na criação de **KPIs operacionais** para monitoramento de desempenho logístico, atrasos, lucratividade e eficiência, com pré-processamento de dados em Python e visualização e transformação estratégica em Power BI.
 
 Ideal para demonstrar habilidades em análise de dados operacionais, modelagem de KPIs e apresentação de insights para diretoria/stakeholders.
 
@@ -15,11 +15,13 @@ Extrair insights acionáveis de uma base de supply chain com ~180.000 registros,
 
 ## Tecnologias Utilizadas
 
-- **Python** → Limpeza, transformação e cálculo de métricas (Pandas, NumPy)
-- **Power BI** → Modelagem de dados, DAX avançado, dashboards interativos e visualizações
+- **Python (Pandas)** → Pré-processamento e limpeza inicial de tipos de dados.
+- **Power BI (Linguagem M & DAX)** → Modelagem de dados, transformações avançadas, DAX, dashboards interativos e visualizações.
 - **Dataset**: [DataCo SMART SUPPLY CHAIN FOR BIG DATA ANALYSIS](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis) (~180k linhas)
 
-## KPIs Criados
+## KPIs Desenvolvidos no Power BI
+
+Os seguintes KPIs foram modelados diretamente no Power BI utilizando DAX para permitir a análise dinâmica e interativa dos dados.
 
 | KPI                         | Descrição                                  | Fórmula Principal (DAX/Exemplo)                       | Impacto Estratégico                       |
 | --------------------------- | -------------------------------------------- | ------------------------------------------------------ | ------------------------------------------ |
@@ -33,34 +35,32 @@ Extrair insights acionáveis de uma base de supply chain com ~180.000 registros,
 
 ## Estrutura do Repositório
 
-- `datasets/` → dados brutos: `tokenized_access_logs.csv` e `DataCoSupplyChainDataset.csv`
-- `data/` → arquivos transformados gerados pela pipeline (`tokenized_access_logs_transformed.csv`, `DataCoSupplyChainDataset_transformed.csv`)
-- `pipe/01-transform.py` → script Python responsável por normalizar datas, exibir shape/stats/amostras e salvar os dois CSVs formatados
-- `power-bi/` → artefatos de dashboard e relatórios interativos (modelos `.pbix`, imagens etc.)
+- `datasets/` → Dados brutos do DataCo (`tokenized_access_logs.csv` e `DataCoSupplyChainDataset.csv`). **Atenção:** os arquivos são modificados pelo script Python.
+- `pipe/01-transform.py` → Script Python para correção de tipos de dados (datas e colunas financeiras) diretamente nos arquivos da pasta `datasets/`.
+- `power-bi/` → Projeto do Power BI (`.pbip`) contendo o modelo de dados, transformações (Linguagem M) e o relatório visual.
 
-## Como rodar a transformação
+## Como rodar o pré-processamento
 
-1. Instale dependências em um ambiente virtual (recomendado):
+O script Python serve para garantir que as colunas de data e valores financeiros sejam carregadas corretamente no Power BI, evitando erros de tipo.
+
+1. Instale as dependências:
 
 ```bash
-python -m venv .venv
-.venv/Scripts/activate    # Windows
-.venv/bin/activate       # macOS/Linux
 pip install pandas
 ```
 
-2. Execute o pipeline principal:
+2. Execute o pipeline de pré-processamento:
 
 ```bash
 python pipe/01-transform.py
 ```
 
-O script:
+O script fará o seguinte:
+- **Normaliza colunas de data** para o formato `datetime`.
+- **Converte colunas financeiras** para o tipo `numeric`.
+- **Sobrescreve os arquivos originais** em `datasets/DataCo_Smart_Supply/` com os tipos corrigidos.
 
-- normaliza a coluna `Date` do `tokenized_access_logs.csv` para `DD/MM/AAAA`.
-- converte `order date (DateOrders)` e `shipping date (DateOrders)` em `DataCoSupplyChainDataset.csv`.
-- imprime shape, estatísticas e amostras das duas tabelas.
-- salva os resultados limpos em `data/tokenized_access_logs_transformed.csv` e `data/DataCoSupplyChainDataset_transformed.csv`.
+Após a execução, os dados estão prontos para serem atualizados no Power BI, onde as transformações principais são realizadas.
 
 ## Dados
 
