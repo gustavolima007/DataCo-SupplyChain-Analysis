@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "4271c7a075c5ca3a1aea",
   "position": {
-    "x": 599.42947702060223,
-    "y": 0,
+    "x": 326.67222685571306,
+    "y": 39.499582985821519,
     "z": 9,
-    "height": 118.66877971473851,
-    "width": 199.80982567353408,
+    "height": 114.22852376980816,
+    "width": 154.79566305254377,
     "tabOrder": 9
   },
   "visual": {
-    "visualType": "tableEx",
+    "visualType": "slicer",
     "query": {
       "queryState": {
         "Values": {
@@ -27,18 +27,79 @@
                 }
               },
               "queryRef": "DataCoSupplyChainDataset.Shipping Mode",
-              "nativeQueryRef": "Shipping Mode"
+              "nativeQueryRef": "Shipping Mode",
+              "active": true
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DataCoSupplyChainDataset"
+                  }
+                },
+                "Property": "Shipping Mode"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Basic'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "orientation": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "e2d8c4660130a3c53544",
+        "name": "0cade93510c63ac105cb",
         "field": {
           "Column": {
             "Expression": {

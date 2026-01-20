@@ -37,6 +37,17 @@
           "type": "BaseTheme"
         }
       ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Torre_controle_v19786503722576754.png",
+          "path": "Torre_controle_v19786503722576754.png",
+          "type": "Image"
+        }
+      ]
     }
   ],
   "settings": {

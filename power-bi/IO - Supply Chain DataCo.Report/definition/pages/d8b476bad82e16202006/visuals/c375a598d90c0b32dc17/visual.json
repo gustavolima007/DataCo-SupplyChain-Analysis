@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "c375a598d90c0b32dc17",
   "position": {
-    "x": 533.50237717908078,
-    "y": 511.188589540412,
+    "x": 492.14345287739781,
+    "y": 420.61718098415344,
     "z": 5,
-    "height": 208.93819334389858,
-    "width": 746.4976228209191,
+    "height": 290.37531276063385,
+    "width": 762.23519599666383,
     "tabOrder": 5
   },
   "visual": {
@@ -65,6 +65,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'Vendas vs. Média Móvel'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
                 }
               }
             }

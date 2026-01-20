@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "b6ba91ffc5c05a960ad2",
   "position": {
-    "x": 0,
-    "y": 118.66877971473851,
+    "x": 499.61634695579647,
+    "y": 143.05254378648874,
     "z": 6,
-    "height": 378.3201267828843,
-    "width": 533.50237717908078,
+    "height": 267.95663052543784,
+    "width": 754.76230191826517,
     "tabOrder": 6
   },
   "visual": {
@@ -96,6 +96,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'Vendas por Categoria'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
                 }
               }
             }

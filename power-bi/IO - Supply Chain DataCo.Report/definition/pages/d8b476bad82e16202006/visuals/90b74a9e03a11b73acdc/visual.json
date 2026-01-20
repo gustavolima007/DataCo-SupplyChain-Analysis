@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "90b74a9e03a11b73acdc",
   "position": {
-    "x": 0,
-    "y": 496.98890649762279,
+    "x": 29.891576313594662,
+    "y": 175.07923269391159,
     "z": 8,
-    "height": 223.13787638668779,
-    "width": 533.50237717908078,
+    "height": 235.929941618015,
+    "width": 462.25187656380314,
     "tabOrder": 8
   },
   "visual": {
@@ -78,6 +78,19 @@
               "expr": {
                 "Literal": {
                   "Value": "'Status de Entrega'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
                 }
               }
             }
