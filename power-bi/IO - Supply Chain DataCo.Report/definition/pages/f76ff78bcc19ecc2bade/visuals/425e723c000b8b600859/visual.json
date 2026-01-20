@@ -4,10 +4,10 @@
   "position": {
     "x": 0,
     "y": 274.77638640429336,
-    "z": 2,
+    "z": 1000,
     "height": 445.36672629695886,
     "width": 1280,
-    "tabOrder": 2
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "tableEx",
@@ -103,20 +103,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "2fc0f3f797a8430ae14d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DataCoSupplyChainDataset"
-              }
-            },
-            "Property": "Product Price"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

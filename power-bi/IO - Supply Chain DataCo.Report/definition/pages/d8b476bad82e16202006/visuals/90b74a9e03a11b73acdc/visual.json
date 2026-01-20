@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "90b74a9e03a11b73acdc",
   "position": {
-    "x": 29.891576313594662,
-    "y": 175.07923269391159,
-    "z": 8,
-    "height": 235.929941618015,
-    "width": 462.25187656380314,
-    "tabOrder": 8
+    "x": 213.33333333333331,
+    "y": 127.77777777777777,
+    "z": 7000,
+    "height": 267.77777777777777,
+    "width": 426.66666666666663,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "donutChart",
@@ -23,12 +23,13 @@
                       "Entity": "DataCoSupplyChainDataset"
                     }
                   },
-                  "Property": "Delivery Status"
+                  "Property": "Delivery_Status_br"
                 }
               },
-              "queryRef": "DataCoSupplyChainDataset.Delivery Status",
-              "nativeQueryRef": "Delivery Status",
-              "active": true
+              "queryRef": "DataCoSupplyChainDataset.Delivery_Status_br",
+              "nativeQueryRef": "Status do Pedido",
+              "active": true,
+              "displayName": "Status do Pedido"
             }
           ]
         },
@@ -70,6 +71,112 @@
         "isDefaultSort": true
       }
     },
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "fillTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Bottom'"
+                }
+              }
+            },
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'outside'"
+                }
+              }
+            },
+            "labelStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Data'"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
     "visualContainerObjects": {
       "title": [
         {
@@ -77,7 +184,26 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Status de Entrega'"
+                  "Value": "'Status do Pedido'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -96,6 +222,19 @@
             }
           }
         }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -103,21 +242,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "a2ceb387eee4a6903029",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DataCoSupplyChainDataset"
-              }
-            },
-            "Property": "Delivery Status"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "73a8e446ad68608ac249",
+        "name": "8bae2b9ec26d98608c05",
         "field": {
           "Measure": {
             "Expression": {
@@ -129,6 +254,20 @@
           }
         },
         "type": "Advanced"
+      },
+      {
+        "name": "3e670c05b42a6d790d97",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DataCoSupplyChainDataset"
+              }
+            },
+            "Property": "Delivery_Status_br"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

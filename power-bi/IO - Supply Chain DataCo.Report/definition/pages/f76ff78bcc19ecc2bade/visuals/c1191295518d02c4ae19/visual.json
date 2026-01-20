@@ -4,10 +4,10 @@
   "position": {
     "x": 0,
     "y": 0,
-    "z": 1,
+    "z": 0,
     "height": 274.7122861586314,
     "width": 1104.8211508553654,
-    "tabOrder": 1
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "columnChart",
@@ -58,84 +58,5 @@
       }
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "6d80b01983b7d04b9b7d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DataCoSupplyChainDataset"
-              }
-            },
-            "Property": "shipping date (DateOrders)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "dbc0d5027b8cc36e9938",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DataCoSupplyChainDataset"
-              }
-            },
-            "Property": "shipping date (DateOrders)"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "7aeff1aad9c000984daa",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DataCoSupplyChainDataset"
-              }
-            },
-            "Property": "shipping date (DateOrders)"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "88b52e1a5d5006463638",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DataCoSupplyChainDataset"
-              }
-            },
-            "Property": "shipping date (DateOrders)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "4d0e9a0ab03a96e10698",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "DataCoSupplyChainDataset"
-                  }
-                },
-                "Property": "Sales"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

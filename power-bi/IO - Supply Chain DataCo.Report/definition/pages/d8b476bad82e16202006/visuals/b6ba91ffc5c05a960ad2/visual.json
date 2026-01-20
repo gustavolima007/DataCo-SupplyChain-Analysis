@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "b6ba91ffc5c05a960ad2",
   "position": {
-    "x": 499.61634695579647,
-    "y": 143.05254378648874,
-    "z": 6,
-    "height": 267.95663052543784,
-    "width": 754.76230191826517,
-    "tabOrder": 6
+    "x": 655.583543240974,
+    "y": 127.89252728799329,
+    "z": 5000,
+    "height": 267.60705289672546,
+    "width": 598.623005877414,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -88,6 +88,89 @@
         "isDefaultSort": true
       }
     },
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#014A9D'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "labelColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "visualContainerObjects": {
       "title": [
         {
@@ -96,6 +179,25 @@
               "expr": {
                 "Literal": {
                   "Value": "'Vendas por Categoria'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -121,7 +223,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "2b6f658f9a9d3aae60ec",
+        "name": "e83aa2bbe02b8c0a4d49",
         "field": {
           "Column": {
             "Expression": {
@@ -135,21 +237,7 @@
         "type": "Categorical"
       },
       {
-        "name": "afade5817a7b828bb807",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DataCoSupplyChainDataset"
-              }
-            },
-            "Property": "Total Sales"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "166d1d53b0cc7cb7ae56",
+        "name": "98708d22aa3dc4c31882",
         "field": {
           "Measure": {
             "Expression": {
@@ -158,6 +246,20 @@
               }
             },
             "Property": "Profit Margin %"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "76a46b0e6d63260910d9",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DataCoSupplyChainDataset"
+              }
+            },
+            "Property": "Total Sales"
           }
         },
         "type": "Advanced"

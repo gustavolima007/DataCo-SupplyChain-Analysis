@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "b61d4ec25d4045894957",
   "position": {
-    "x": 492.14345287739781,
-    "y": 28.824020016680567,
-    "z": 4,
-    "height": 97.147623019182646,
-    "width": 195.36280233527938,
-    "tabOrder": 4
+    "x": 21.111111111111111,
+    "y": 32.222222222222221,
+    "z": 3000,
+    "height": 73.333333333333329,
+    "width": 180,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "slicer",
@@ -54,7 +54,7 @@
             "orientation": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "0D"
                 }
               }
             },
@@ -101,6 +101,60 @@
             }
           }
         }
+      ],
+      "items": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1E4169'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -116,6 +170,38 @@
             }
           }
         }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Ano'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -123,7 +209,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "0ae94af4151114ce8010",
+        "name": "46c5810bcc50a5b867e4",
         "field": {
           "Column": {
             "Expression": {

@@ -496,6 +496,30 @@ table DataCoSupplyChainDataset
 
 		annotation SummarizationSetBy = Automatic
 
+	column Market_br
+		dataType: string
+		lineageTag: b02c6da2-557f-4968-bb1e-33faa4a1e3ca
+		summarizeBy: none
+		sourceColumn: Market_br
+
+		annotation SummarizationSetBy = Automatic
+
+	column Shipping_Mode_br
+		dataType: string
+		lineageTag: 783034d2-b681-447f-ab92-c63e6c8b3b92
+		summarizeBy: none
+		sourceColumn: Shipping_Mode_br
+
+		annotation SummarizationSetBy = Automatic
+
+	column Delivery_Status_br
+		dataType: string
+		lineageTag: e34c2ecd-4e70-4fa5-9c11-7651c938e0a1
+		summarizeBy: none
+		sourceColumn: Delivery_Status_br
+
+		annotation SummarizationSetBy = Automatic
+
 	partition DataCoSupplyChainDataset = m
 		mode: import
 		source = ```
@@ -628,9 +652,25 @@ table DataCoSupplyChainDataset
 				                {"Shipping Mode", type text}
 				            }
 				        ),
-				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Product Image"})
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Product Image"}),
+				    #"Personalização Adicionada" = Table.AddColumn(#"Colunas Removidas", "Market_br", each if [Market] = "Europe" then "Europa"
+				else if [Market] = "Pacific Asia" then "Ásia-Pacífico"
+				else if [Market] = "LATAM" then "América Latina"
+				else if [Market] = "Africa" then "África"
+				else if [Market] = "USCA" then "EUA e Canadá"
+				else [Market]),
+				    #"Personalização Adicionada1" = Table.AddColumn(#"Personalização Adicionada", "Shipping_Mode_br", each if [Shipping Mode] = "First Class" then "Primeira Classe"
+				else if [Shipping Mode] = "Second Class" then "Segunda Classe"
+				else if [Shipping Mode] = "Standard Class" then "Classe Padrão"
+				else if [Shipping Mode] = "Same Day" then "Entrega no Mesmo Dia"
+				else [Shipping Mode]),
+				    #"Personalização Adicionada2" = Table.AddColumn(#"Personalização Adicionada1", "Delivery_Status_br", each if [Delivery Status] = "Shipping on time" then "Entrega no Prazo"
+				else if [Delivery Status] = "Late delivery" then "Entrega em Atraso"
+				else if [Delivery Status] = "Shipping canceled" then "Envio Cancelado"
+				else if [Delivery Status] = "Advance shipping" then "Envio Antecipado"
+				else [Delivery Status])
 				in
-				    #"Colunas Removidas"
+				    #"Personalização Adicionada2"
 				```
 
 	annotation PBI_NavigationStepName = Navegação

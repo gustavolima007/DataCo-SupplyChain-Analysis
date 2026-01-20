@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "4271c7a075c5ca3a1aea",
   "position": {
-    "x": 326.67222685571306,
-    "y": 39.499582985821519,
-    "z": 9,
-    "height": 114.22852376980816,
-    "width": 154.79566305254377,
-    "tabOrder": 9
+    "x": 21.111111111111111,
+    "y": 408.88888888888886,
+    "z": 8000,
+    "height": 277.77777777777777,
+    "width": 180,
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "slicer",
@@ -23,32 +23,16 @@
                       "Entity": "DataCoSupplyChainDataset"
                     }
                   },
-                  "Property": "Shipping Mode"
+                  "Property": "Shipping_Mode_br"
                 }
               },
-              "queryRef": "DataCoSupplyChainDataset.Shipping Mode",
-              "nativeQueryRef": "Shipping Mode",
-              "active": true
+              "queryRef": "DataCoSupplyChainDataset.Shipping_Mode_br",
+              "nativeQueryRef": "Modalidade de Entrega",
+              "active": true,
+              "displayName": "Modalidade de Entrega"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "DataCoSupplyChainDataset"
-                  }
-                },
-                "Property": "Shipping Mode"
-              }
-            },
-            "direction": "Descending"
-          }
-        ]
       }
     },
     "objects": {
@@ -71,7 +55,61 @@
             "orientation": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "1D"
+                }
+              }
+            },
+            "outlineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "background": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1E4169'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -92,6 +130,45 @@
             }
           }
         }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Modalidade de Entrega'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -99,7 +176,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "0cade93510c63ac105cb",
+        "name": "c92e0d1f274aae0c210d",
         "field": {
           "Column": {
             "Expression": {
@@ -107,7 +184,7 @@
                 "Entity": "DataCoSupplyChainDataset"
               }
             },
-            "Property": "Shipping Mode"
+            "Property": "Shipping_Mode_br"
           }
         },
         "type": "Categorical"
