@@ -1,25 +1,6 @@
 table DataCoSupplyChainDataset
 	lineageTag: 7bb7311b-1eae-411a-b18a-805f1c4a5226
 
-	measure 'Total Sales' = ```
-			
-			SUM('DataCoSupplyChainDataset'[Order Item Total])
-			
-			```
-		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
-		lineageTag: b620c077-3606-4190-af1b-df6d37a9a805
-
-		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
-
-	measure 'Total Quantity' = ```
-			
-			SUM('DataCoSupplyChainDataset'[Order Item Quantity])
-			
-			
-			```
-		formatString: 0
-		lineageTag: 0c39c836-eb8a-48a5-90e5-01db07165a34
-
 	measure 'Average Unit Price' = ```
 			
 			AVERAGE('DataCoSupplyChainDataset'[Product Price])
@@ -279,6 +260,11 @@ table DataCoSupplyChainDataset
 		summarizeBy: none
 		sourceColumn: order date (DateOrders)
 
+		variation Variation
+			isDefault
+			relationship: 8fcbdf97-c9be-439f-a00e-240e2b57e2e3
+			defaultHierarchy: LocalDateTable_7efebd43-0c89-4633-80f7-977c9ba50429.'Hierarquia de datas'
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Order Id'
@@ -485,6 +471,11 @@ table DataCoSupplyChainDataset
 		lineageTag: 09f8dff2-c239-4eca-acc6-1e15cd15afa6
 		summarizeBy: none
 		sourceColumn: shipping date (DateOrders)
+
+		variation Variation
+			isDefault
+			relationship: 3867ebd1-9578-4d1e-932f-ead8b7e7c305
+			defaultHierarchy: LocalDateTable_ddd5e2f8-2a21-43cd-b397-9bdfeb79bf57.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
 

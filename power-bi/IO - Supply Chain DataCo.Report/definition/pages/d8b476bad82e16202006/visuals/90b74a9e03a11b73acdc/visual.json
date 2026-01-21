@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "90b74a9e03a11b73acdc",
   "position": {
-    "x": 213.33333333333331,
-    "y": 127.77777777777777,
+    "x": 214.11592076302273,
+    "y": 127.7182685253118,
     "z": 7000,
-    "height": 267.77777777777777,
-    "width": 426.66666666666663,
+    "height": 267.6449009537784,
+    "width": 426.35363169479086,
     "tabOrder": 7000
   },
   "visual": {
@@ -20,16 +20,15 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DataCoSupplyChainDataset"
+                      "Entity": "fato_vendas"
                     }
                   },
-                  "Property": "Delivery_Status_br"
+                  "Property": "Status do Pedido"
                 }
               },
-              "queryRef": "DataCoSupplyChainDataset.Delivery_Status_br",
+              "queryRef": "fato_vendas.Status do Pedido",
               "nativeQueryRef": "Status do Pedido",
-              "active": true,
-              "displayName": "Status do Pedido"
+              "active": true
             }
           ]
         },
@@ -37,17 +36,37 @@
           "projections": [
             {
               "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "DataCoSupplyChainDataset"
+                "Arithmetic": {
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total Sales"
                     }
                   },
-                  "Property": "Total Sales"
+                  "Right": {
+                    "ScopedEval": {
+                      "Expression": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "_Medidas"
+                            }
+                          },
+                          "Property": "Total Sales"
+                        }
+                      },
+                      "Scope": []
+                    }
+                  },
+                  "Operator": 3
                 }
               },
-              "queryRef": "DataCoSupplyChainDataset.Total Sales",
-              "nativeQueryRef": "Total Sales"
+              "queryRef": "_Medidas.Total Sales",
+              "nativeQueryRef": "%GT Total Sales"
             }
           ]
         }
@@ -56,13 +75,33 @@
         "sort": [
           {
             "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "DataCoSupplyChainDataset"
+              "Arithmetic": {
+                "Left": {
+                  "Measure": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "_Medidas"
+                      }
+                    },
+                    "Property": "Total Sales"
                   }
                 },
-                "Property": "Total Sales"
+                "Right": {
+                  "ScopedEval": {
+                    "Expression": {
+                      "Measure": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "_Medidas"
+                          }
+                        },
+                        "Property": "Total Sales"
+                      }
+                    },
+                    "Scope": []
+                  }
+                },
+                "Operator": 3
               }
             },
             "direction": "Descending"
@@ -118,6 +157,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
                 }
               }
             }
@@ -254,20 +300,6 @@
           }
         },
         "type": "Advanced"
-      },
-      {
-        "name": "3e670c05b42a6d790d97",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DataCoSupplyChainDataset"
-              }
-            },
-            "Property": "Delivery_Status_br"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

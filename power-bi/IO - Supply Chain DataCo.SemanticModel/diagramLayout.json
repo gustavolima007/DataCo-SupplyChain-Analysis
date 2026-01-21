@@ -23,7 +23,7 @@
         },
         {
           "location": {
-            "x": 1059.0132533127251,
+            "x": 915.9576977571694,
             "y": 0
           },
           "nodeIndex": "DescriptionDataCoSupplyChain",
@@ -62,7 +62,7 @@
         },
         {
           "location": {
-            "x": 1429,
+            "x": 1341.5,
             "y": 0
           },
           "nodeIndex": "_Medidas",
@@ -81,14 +81,14 @@
           "nodeIndex": "fato_vendas",
           "nodeLineageTag": "3a2227c8-6fcf-4b01-bef9-630ee7ba409e",
           "size": {
-            "height": 300,
-            "width": 234
+            "height": 602.77777777777783,
+            "width": 259
           },
           "zIndex": 0
         }
       ],
       "name": "Todas as tabelas",
-      "zoomValue": 70.95554390096882,
+      "zoomValue": 72,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

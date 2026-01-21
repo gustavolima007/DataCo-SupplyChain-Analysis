@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DataCoSupplyChainDataset"
+                      "Entity": "fato_vendas"
                     }
                   },
-                  "Property": "Order Country"
+                  "Property": "Região do Pedido"
                 }
               },
-              "queryRef": "DataCoSupplyChainDataset.Order Country",
-              "nativeQueryRef": "Order Country"
+              "queryRef": "fato_vendas.Região do Pedido",
+              "nativeQueryRef": "Região do Pedido"
             }
           ]
         },
@@ -38,13 +38,13 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DataCoSupplyChainDataset"
+                      "Entity": "_Medidas"
                     }
                   },
                   "Property": "Total Sales"
                 }
               },
-              "queryRef": "DataCoSupplyChainDataset.Total Sales",
+              "queryRef": "_Medidas.Total Sales",
               "nativeQueryRef": "Total Sales"
             }
           ]
@@ -57,7 +57,7 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "DataCoSupplyChainDataset"
+                    "Entity": "_Medidas"
                   }
                 },
                 "Property": "Total Sales"
@@ -96,7 +96,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "'{\"portalUrl\":\"https://www.arcgis.com\",\"version\":\"2.4\",\"isAuthorNamedUser\":false,\"map\":{\"webmap\":{\"is3d\":false,\"itemData\":{\"operationalLayers\":[{\"id\":\"MyLayer\",\"visibility\":true,\"opacity\":1,\"minScale\":0,\"maxScale\":0,\"refreshInterval\":0,\"title\":\"Order Country\",\"objectIdField\":\"objectId\",\"type\":\"DataLayer\",\"layerType\":\"ArcGISFeatureLayer\",\"popupEnabled\":true,\"disablePopup\":false,\"visible\":true,\"geometryType\":\"polygon\",\"source\":[{\"attributes\":{},\"geometry\":{\"rings\":[],\"type\":\"polygon\",\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100}}}],\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100},\"esriMaps\":{\"isTimeEnabled\":\"false\",\"clusterInfo\":null,\"lastShareInfo\":null},\"timeInfo\":null,\"showLabels\":false,\"featureCollection\":{\"layers\":[{\"popupInfo\":{\"popupElements\":[{\"type\":\"fields\",\"fieldInfos\":[{\"fieldName\":\"DataCoSupplyChainDataset_Order_20Country\",\"isEditable\":true,\"label\":\"Order Country\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"DataCoSupplyChainDataset_Total_20Sales\",\"format\":{\"digitSeparator\":true,\"places\":2},\"isEditable\":true,\"label\":\"Total Sales\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"ROW_ID\",\"format\":{\"digitSeparator\":true,\"places\":0},\"isEditable\":true,\"label\":\"ROW_ID\",\"tooltip\":\"\",\"visible\":true}]}],\"expressionInfos\":[],\"fieldInfos\":[{\"fieldName\":\"DataCoSupplyChainDataset_Order_20Country\",\"isEditable\":true,\"label\":\"Order Country\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"DataCoSupplyChainDataset_Total_20Sales\",\"format\":{\"digitSeparator\":true,\"places\":2},\"isEditable\":true,\"label\":\"Total Sales\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"ROW_ID\",\"format\":{\"digitSeparator\":true,\"places\":0},\"isEditable\":true,\"label\":\"ROW_ID\",\"tooltip\":\"\",\"visible\":true}],\"title\":\"\",\"actions\":[]},\"effect\":null,\"layerDefinition\":{\"objectIdField\":\"objectId\",\"fields\":[{\"alias\":\"objectId\",\"editable\":false,\"name\":\"objectId\",\"nullable\":false,\"type\":\"esriFieldTypeOID\"},{\"alias\":\"Order Country\",\"editable\":true,\"length\":-1,\"name\":\"DataCoSupplyChainDataset_Order_20Country\",\"nullable\":true,\"type\":\"esriFieldTypeString\"},{\"alias\":\"Total Sales\",\"editable\":true,\"name\":\"DataCoSupplyChainDataset_Total_20Sales\",\"nullable\":true,\"type\":\"esriFieldTypeDouble\"},{\"alias\":\"ROW_ID\",\"editable\":true,\"name\":\"ROW_ID\",\"nullable\":true,\"type\":\"esriFieldTypeInteger\"}],\"geometryType\":\"polygon\",\"drawingInfo\":{\"renderer\":{\"authoringInfo\":{\"classificationMethod\":\"esriClassifyNaturalBreaks\",\"type\":\"classedSize\"},\"type\":\"classBreaks\",\"visualVariables\":[],\"backgroundFillSymbol\":{\"type\":\"esriSFS\",\"color\":null,\"outline\":{\"type\":\"esriSLS\",\"color\":[153,153,153,64],\"width\":0.75,\"style\":\"esriSLSSolid\"},\"style\":\"esriSFSSolid\"},\"classBreakInfos\":[{\"classMaxValue\":144663,\"symbol\":{\"type\":\"esriSMS\",\"color\":[17,141,255,255],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":3,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}}},{\"classMaxValue\":510153.86,\"symbol\":{\"type\":\"esriSMS\",\"color\":[17,141,255,255],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":9.75,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}}},{\"classMaxValue\":1417702.28,\"symbol\":{\"type\":\"esriSMS\",\"color\":[17,141,255,255],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":16.5,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}}},{\"classMaxValue\":2883096.64,\"symbol\":{\"type\":\"esriSMS\",\"color\":[17,141,255,255],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":23.25,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}}},{\"classMaxValue\":5414702.8700001,\"symbol\":{\"type\":\"esriSMS\",\"color\":[17,141,255,255],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":30,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}}}],\"defaultLabel\":\"Outro\",\"defaultSymbol\":{\"type\":\"esriSMS\",\"color\":[128,128,128,255],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":3,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,64],\"width\":0.75,\"style\":\"esriSLSSolid\"}},\"field\":\"DataCoSupplyChainDataset_Total_20Sales\",\"minValue\":0},\"transparency\":0},\"featureReduction\":null,\"locationProvider\":{\"type\":\"cachedstdgeo\",\"adminLevel\":\"countries\",\"targetSR\":{\"latestWkid\":3857,\"wkid\":102100},\"useExactMatch\":false,\"sourceCountry\":\"world\",\"geographyLevel\":\"countries\",\"lookupFields\":[{\"lookupField\":\"Location\",\"outField\":\"DataCoSupplyChainDataset_Order_20Country\"}]},\"minScale\":0,\"maxScale\":0,\"definitionExpression\":null,\"templates\":[{\"name\":\"New Feature\",\"description\":\"\",\"prototype\":{\"attributes\":{\"DataCoSupplyChainDataset_Order_20Country\":null,\"DataCoSupplyChainDataset_Total_20Sales\":null,\"ROW_ID\":null}}}],\"elevationInfo\":null,\"name\":\"Order Country\",\"type\":\"DataLayer\",\"queryParameters\":{\"tableId\":\"\"}},\"featureSet\":{\"features\":[{\"attributes\":{},\"geometry\":{\"rings\":[],\"type\":\"polygon\",\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100}}}]}}]}}],\"tables\":[],\"baseMap\":{\"baseMapLayers\":[{\"id\":\"VectorTile_1970\",\"opacity\":1,\"title\":\"Light Gray Base\",\"visibility\":true,\"layerType\":\"VectorTileLayer\",\"styleUrl\":\"https://cdn.arcgis.com/sharing/rest/content/items/291da5eab3a0412593b66d384379f89f/resources/styles/root.json\"},{\"id\":\"VectorTile_7117\",\"opacity\":1,\"title\":\"Light Gray Reference\",\"visibility\":true,\"layerType\":\"VectorTileLayer\",\"styleUrl\":\"https://cdn.arcgis.com/sharing/rest/content/items/1768e8369a214dfab4e2167d5c5f2454/resources/styles/root.json\",\"isReference\":true}],\"title\":\"Light Gray Canvas\"},\"version\":\"2.26\",\"authoringApp\":\"ArcGIS for Power BI\",\"bookmarks\":[],\"initialState\":{\"viewpoint\":{\"targetGeometry\":{\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100},\"xmin\":20657338.364040013,\"ymin\":-9775061.021524621,\"xmax\":53296560.93802804,\"ymax\":10888619.456971398}}}}},\"webmapExtensions\":{\"format\":2}},\"embedCheckPassed\":false}'"
+                  "Value": "'{\"portalUrl\":\"https://www.arcgis.com\",\"version\":\"2.4\",\"isAuthorNamedUser\":false,\"map\":{\"webmap\":{\"is3d\":false,\"itemData\":{\"operationalLayers\":[{\"id\":\"MyLayer\",\"visibility\":true,\"opacity\":1,\"minScale\":0,\"maxScale\":0,\"refreshInterval\":0,\"title\":\"Região do Pedido\",\"objectIdField\":\"objectId\",\"type\":\"DataLayer\",\"layerType\":\"ArcGISFeatureLayer\",\"popupEnabled\":true,\"disablePopup\":false,\"visible\":true,\"geometryType\":\"point\",\"source\":[{\"attributes\":{},\"geometry\":{\"x\":0,\"y\":0,\"type\":\"point\",\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100}}}],\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100},\"esriMaps\":{\"isTimeEnabled\":\"false\",\"clusterInfo\":null,\"lastShareInfo\":null},\"timeInfo\":null,\"showLabels\":false,\"featureCollection\":{\"layers\":[{\"popupInfo\":{\"popupElements\":[{\"type\":\"fields\",\"fieldInfos\":[{\"fieldName\":\"_Medidas_Total_20Sales\",\"format\":{\"digitSeparator\":true,\"places\":2},\"isEditable\":true,\"label\":\"Total Sales\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"fato_vendas_Regi_C3_A3o_20do_20Pedido\",\"isEditable\":true,\"label\":\"Região do Pedido\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"ROW_ID\",\"format\":{\"digitSeparator\":true,\"places\":0},\"isEditable\":true,\"label\":\"ROW_ID\",\"tooltip\":\"\",\"visible\":true}]}],\"expressionInfos\":[],\"fieldInfos\":[{\"fieldName\":\"_Medidas_Total_20Sales\",\"format\":{\"digitSeparator\":true,\"places\":2},\"isEditable\":true,\"label\":\"Total Sales\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"fato_vendas_Regi_C3_A3o_20do_20Pedido\",\"isEditable\":true,\"label\":\"Região do Pedido\",\"tooltip\":\"\",\"visible\":true},{\"fieldName\":\"ROW_ID\",\"format\":{\"digitSeparator\":true,\"places\":0},\"isEditable\":true,\"label\":\"ROW_ID\",\"tooltip\":\"\",\"visible\":true}],\"title\":\"\",\"actions\":[]},\"effect\":null,\"layerDefinition\":{\"objectIdField\":\"objectId\",\"fields\":[{\"alias\":\"objectId\",\"editable\":false,\"name\":\"objectId\",\"nullable\":false,\"type\":\"esriFieldTypeOID\"},{\"alias\":\"Total Sales\",\"editable\":true,\"name\":\"_Medidas_Total_20Sales\",\"nullable\":true,\"type\":\"esriFieldTypeDouble\"},{\"alias\":\"Região do Pedido\",\"editable\":true,\"length\":-1,\"name\":\"fato_vendas_Regi_C3_A3o_20do_20Pedido\",\"nullable\":true,\"type\":\"esriFieldTypeString\"},{\"alias\":\"ROW_ID\",\"editable\":true,\"name\":\"ROW_ID\",\"nullable\":true,\"type\":\"esriFieldTypeInteger\"}],\"geometryType\":\"point\",\"drawingInfo\":{\"renderer\":{\"authoringInfo\":{\"classificationMethod\":\"esriClassifyNaturalBreaks\",\"type\":\"classedSize\"},\"type\":\"classBreaks\",\"visualVariables\":[],\"classBreakInfos\":[{\"classMaxValue\":399203.33,\"symbol\":{\"type\":\"esriSMS\",\"color\":[17,141,255,255],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":3,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}}},{\"classMaxValue\":870237.79,\"symbol\":{\"type\":\"esriSMS\",\"color\":[17,141,255,255],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":9.75,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}}},{\"classMaxValue\":1799618.53,\"symbol\":{\"type\":\"esriSMS\",\"color\":[17,141,255,255],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":16.5,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}}},{\"classMaxValue\":3189026.66,\"symbol\":{\"type\":\"esriSMS\",\"color\":[17,141,255,255],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":23.25,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}}},{\"classMaxValue\":6076809.1999999825,\"symbol\":{\"type\":\"esriSMS\",\"color\":[17,141,255,255],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":30,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,204],\"width\":1,\"style\":\"esriSLSSolid\"}}}],\"defaultLabel\":\"Outro\",\"defaultSymbol\":{\"type\":\"esriSMS\",\"color\":[128,128,128,255],\"angle\":0,\"xoffset\":0,\"yoffset\":0,\"size\":3,\"style\":\"esriSMSCircle\",\"outline\":{\"type\":\"esriSLS\",\"color\":[255,255,255,64],\"width\":0.75,\"style\":\"esriSLSSolid\"}},\"field\":\"_Medidas_Total_20Sales\",\"minValue\":120491.51999999999},\"transparency\":0},\"featureReduction\":null,\"locationProvider\":{\"type\":\"cachedgeocode\",\"sourceCountry\":\"world\",\"targetSR\":102100,\"lookupFields\":[{\"lookupField\":\"SingleLine\",\"outField\":\"fato_vendas_Regi_C3_A3o_20do_20Pedido\"}],\"geocodeServiceUrl\":\"https://utility.arcgis.com/usrsvcs/appservices/L7zl5sI0W1hBHWRI/rest/services/World/GeocodeServer\"},\"minScale\":0,\"maxScale\":0,\"definitionExpression\":null,\"templates\":[{\"name\":\"New Feature\",\"description\":\"\",\"prototype\":{\"attributes\":{\"_Medidas_Total_20Sales\":null,\"fato_vendas_Regi_C3_A3o_20do_20Pedido\":null,\"ROW_ID\":null}}}],\"elevationInfo\":null,\"name\":\"Região do Pedido\",\"type\":\"DataLayer\",\"queryParameters\":{\"tableId\":\"\"}},\"featureSet\":{\"features\":[{\"attributes\":{},\"geometry\":{\"x\":0,\"y\":0,\"type\":\"point\",\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100}}}]}}]}}],\"tables\":[],\"baseMap\":{\"baseMapLayers\":[{\"id\":\"VectorTile_1970\",\"opacity\":1,\"title\":\"Light Gray Base\",\"visibility\":true,\"layerType\":\"VectorTileLayer\",\"styleUrl\":\"https://cdn.arcgis.com/sharing/rest/content/items/291da5eab3a0412593b66d384379f89f/resources/styles/root.json\"},{\"id\":\"VectorTile_7117\",\"opacity\":1,\"title\":\"Light Gray Reference\",\"visibility\":true,\"layerType\":\"VectorTileLayer\",\"styleUrl\":\"https://cdn.arcgis.com/sharing/rest/content/items/1768e8369a214dfab4e2167d5c5f2454/resources/styles/root.json\",\"isReference\":true}],\"title\":\"Light Gray Canvas\"},\"version\":\"2.26\",\"authoringApp\":\"ArcGIS for Power BI\",\"bookmarks\":[],\"initialState\":{\"viewpoint\":{\"targetGeometry\":{\"spatialReference\":{\"latestWkid\":3857,\"wkid\":102100},\"xmin\":25139832.4722338,\"ymin\":-7507950.746798011,\"xmax\":57779055.04622182,\"ymax\":13155729.731698008}}}}},\"webmapExtensions\":{\"format\":2}},\"embedCheckPassed\":false}'"
                 }
               }
             }
@@ -130,6 +130,19 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "geometryCache": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\"key\":\"cachedgeocode@@world\",\"compressionMethod\":\"pako\",\"data\":\"H4sIAAAAAAAAA32VT28aQQzFvwraM4zGf8b2cO6l117aquphQzctagLRQhRVEd+93h1CqjLDntCw/Ob52c+8doen/rjtHz4N98M47DZDt37tHvrjcDh+/r390a3Jki67l/kzRIQYT8vu57B/HI7jdjh062/+/n7jkP3u44du3b34T4dxtxiex/3T0F1e/jORv3RrQ1GmAAyU/TFcdl+7tbAxxRRAs5xOy/+Yh/3z8deifxzG7aa/Rq6EwbEcKLs+f2BmrkCYNGIAI57uynSN3m+GfretQCExZDYLaIkmaBG6wqj+hSv1kxkK19DNsDuO/cMNxZkFIUlQUJ65wBFFHJtjKaGidbbhlrcrcp5ll2zFCNYZnqIQeCkuvWi+Zu/24202IZrkkMkvmL2cyaaWsmpAQWmQN/24vbtzlyt6LSYEg2AYy89nKLpYzRyQjBvQ80Qcap1zRQIYQ9acZh4RRkQNboNNrlDF22lsF/v7xfOh2i4BE04hkdmbo5F84lBldhpb3eodW5cJAEQeAy8+lTZl9wJzSKYSG9CJN3WpgURNE82RUJDkeQLRkE1gclK5UXoduFJDQrEg3oj3ZHk0Ipl4sLic1oXe8BN8k/g0iZ79ZLeRnRiBU7vq5myC+GrCae7LGJW+i6aYwcVLpsYcPR8WU1iHsTqcSgkxZGR9H87kJmc/jSCVMZpjtOjv67EnVpboaTHmdyIliCp+j6+xeTwrfS89amCToA9jIEpld5yFekY5UZAMrerLdDaoK2RTyr6p81y+WXFVJ7FGISaN83krnd79Rvu9TEqJvWFCpf+Uk5DvQ/BrWqv6sv5ail2w59wCARRlJQMrAjIHe1jVGuN62dgttHJG8xXiTr93boWYIkGAVJyHSuc2/a7/UTUBZdrLHODsgTFSVgg51jy9KKwGVbOR+MpUiv/8WSXyS9RjluBtS30//QW4JMJl9AcAAA==\"}'"
                 }
               }
             }
@@ -198,37 +211,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "0ba47f3342dc80064dd5",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DataCoSupplyChainDataset"
-              }
-            },
-            "Property": "Order Country"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "28e12d711dbd1752b7e3",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DataCoSupplyChainDataset"
-              }
-            },
-            "Property": "Total Sales"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

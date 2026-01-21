@@ -10,7 +10,7 @@ table Dim_Calendario
 
 		variation Variation
 			isDefault
-			relationship: 1a0ce3e2-fb92-41c6-940b-f20dcb2819a0
+			relationship: c7baa688-a37d-4117-9cb8-f7714648ba90
 			defaultHierarchy: LocalDateTable_ce19dc86-b8e7-41d4-9a0d-37c93712ff44.'Hierarquia de datas'
 
 		annotation SummarizationSetBy = Automatic
@@ -66,56 +66,6 @@ table Dim_Calendario
 
 		annotation SummarizationSetBy = Automatic
 
-	column Trimestre
-		lineageTag: 829a0539-d078-4ba3-ab2e-fa72b57de59a
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Trimestre]
-
-		annotation SummarizationSetBy = Automatic
-
-	column Trimestre/Ano
-		lineageTag: 1297d09c-5fba-43f0-8c71-7023a8111e53
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Trimestre/Ano]
-
-		annotation SummarizationSetBy = Automatic
-
-	column 'Semana Num'
-		formatString: 0
-		lineageTag: 7bee1b3e-6532-41c4-8e2c-29783d4d0590
-		summarizeBy: sum
-		isNameInferred
-		sourceColumn: [Semana Num]
-
-		annotation SummarizationSetBy = Automatic
-
-	column 'Dia da Semana'
-		lineageTag: ca4bece0-f503-4b11-bd8f-6932872a7d6f
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Dia da Semana]
-
-		annotation SummarizationSetBy = Automatic
-
-	column 'Dia Semana Num'
-		formatString: 0
-		lineageTag: af08cb43-fd74-4ce6-8da5-bde48ae89b7d
-		summarizeBy: sum
-		isNameInferred
-		sourceColumn: [Dia Semana Num]
-
-		annotation SummarizationSetBy = Automatic
-
-	column Semestre
-		lineageTag: 36e4905a-e395-4d2e-9a3c-d6d2a3a7069f
-		summarizeBy: none
-		isNameInferred
-		sourceColumn: [Semestre]
-
-		annotation SummarizationSetBy = Automatic
-
 	column Ano/Mês
 		lineageTag: 0139148d-ea75-4c3e-8a37-979dd63e7291
 		summarizeBy: none
@@ -129,8 +79,10 @@ table Dim_Calendario
 		mode: import
 		source =
 				
-				VAR DataInicial = DATE(2014, 01, 01) -- Ajuste conforme seu dataset (DataCo começa por volta de 2015)
-				VAR DataFinal = DATE(2020, 01, 01)   -- Ajuste para o fim do seu dataset
+				VAR DataMinima = MIN('DataCoSupplyChainDataset'[order date (DateOrders)])
+				VAR DataMaxima = MAX('DataCoSupplyChainDataset'[shipping date (DateOrders)])
+				VAR DataInicial = DATE(YEAR(DataMinima), 1, 1)
+				VAR DataFinal = DATE(YEAR(DataMaxima), 12, 31)
 				RETURN
 				ADDCOLUMNS (
 				    CALENDAR (DataInicial, DataFinal),
@@ -140,12 +92,6 @@ table Dim_Calendario
 				    "Mês Abrev", UPPER( FORMAT ( [Date], "MMM", "pt-BR" ) ),
 				    "Mês/Ano", FORMAT ( [Date], "MM/yyyy" ),
 				    "Mês/Ano Sort", YEAR ( [Date] ) * 100 + MONTH ( [Date] ),
-				    "Trimestre", "T" & QUARTER ( [Date] ),
-				    "Trimestre/Ano", QUARTER ( [Date] ) & "º Trim " & YEAR ( [Date] ),
-				    "Semana Num", WEEKNUM ( [Date], 2 ),
-				    "Dia da Semana", FORMAT ( [Date], "dddd", "pt-BR" ),
-				    "Dia Semana Num", WEEKDAY ( [Date], 2 ), -- 1 = Segunda
-				    "Semestre", IF(MONTH([Date]) <= 6, "1º Sem", "2º Sem"),
 				    "Ano/Mês", FORMAT([Date], "YYYY/MM")
 				)
 

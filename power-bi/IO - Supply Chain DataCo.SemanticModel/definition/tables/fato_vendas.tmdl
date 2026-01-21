@@ -28,11 +28,11 @@ table fato_vendas
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	column Type
+	column 'Tipo de Pagamento'
 		dataType: string
 		lineageTag: 5759cd26-9084-4787-a5d8-fd17a79c0c22
 		summarizeBy: none
-		sourceColumn: Type
+		sourceColumn: Tipo de Pagamento
 
 		annotation SummarizationSetBy = Automatic
 
@@ -54,93 +54,77 @@ table fato_vendas
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Delivery Status'
-		dataType: string
-		lineageTag: cf2a8b34-182a-4596-a217-8f3fffe04c53
-		summarizeBy: none
-		sourceColumn: Delivery Status
-
-		annotation SummarizationSetBy = Automatic
-
-	column Late_delivery_risk
-		dataType: double
+	column 'Risco de Atraso'
+		dataType: int64
 		lineageTag: c0fbbf16-61ec-4a56-98c9-e70cc7f17e8f
 		summarizeBy: sum
-		sourceColumn: Late_delivery_risk
+		sourceColumn: Risco de Atraso
 
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	column 'Category Name'
+	column 'Nome da Categoria'
 		dataType: string
 		lineageTag: 6b6c01a0-a0f1-4ea2-9bdd-162e238712c0
 		summarizeBy: none
-		sourceColumn: Category Name
+		sourceColumn: Nome da Categoria
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Customer Segment'
+	column 'Segmento do Cliente'
 		dataType: string
 		lineageTag: 5ca844e7-32ee-4fe9-9490-728e83b2fd0f
 		summarizeBy: none
-		sourceColumn: Customer Segment
+		sourceColumn: Segmento do Cliente
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Department Name'
+	column 'Nome do Departamento'
 		dataType: string
 		lineageTag: 8e93acbb-dc98-44b7-9978-3218f2738e71
 		summarizeBy: none
-		sourceColumn: Department Name
+		sourceColumn: Nome do Departamento
 
 		annotation SummarizationSetBy = Automatic
 
-	column Market
-		dataType: string
-		lineageTag: c1c03c2c-b25a-4d95-ac9a-b3d2fbda4274
-		summarizeBy: none
-		sourceColumn: Market
-
-		annotation SummarizationSetBy = Automatic
-
-	column 'Order City'
+	column 'Cidade do Pedido'
 		dataType: string
 		lineageTag: 2e7b0569-f00e-4bfd-8895-07d950779706
 		summarizeBy: none
-		sourceColumn: Order City
+		sourceColumn: Cidade do Pedido
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Order Country'
+	column 'País do Pedido'
 		dataType: string
 		lineageTag: 9e75e3b5-1543-4142-aacc-235af3fc9fd7
 		summarizeBy: none
-		sourceColumn: Order Country
+		sourceColumn: País do Pedido
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Order Region'
+	column 'Região do Pedido'
 		dataType: string
 		lineageTag: 6014c761-5619-4ba6-810c-2a55fa9ade6b
 		summarizeBy: none
-		sourceColumn: Order Region
+		sourceColumn: Região do Pedido
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Order Status'
+	column 'Situação do Pedido'
 		dataType: string
 		lineageTag: 76576158-df58-435a-a4ce-5e7f5544208e
 		summarizeBy: none
-		sourceColumn: Order Status
+		sourceColumn: Situação do Pedido
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Product Name'
+	column 'Nome do Produto'
 		dataType: string
 		lineageTag: 6949bb3a-947f-4099-9d0e-afc8434d7273
 		summarizeBy: none
-		sourceColumn: Product Name
+		sourceColumn: Nome do Produto
 
 		annotation SummarizationSetBy = Automatic
 
@@ -164,11 +148,36 @@ table fato_vendas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	column 'Shipping Mode'
+	column 'ID do Pedido'
+		dataType: int64
+		formatString: 0
+		lineageTag: 861ec635-d295-4e08-ba3b-a67d95647f1a
+		summarizeBy: sum
+		sourceColumn: ID do Pedido
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mercado Global'
 		dataType: string
-		lineageTag: d97f19ad-7d83-49e2-87fe-47f78ac640ed
+		lineageTag: 64e981c1-aaee-42c4-9faa-1ec49e1e35b2
 		summarizeBy: none
-		sourceColumn: Shipping Mode
+		sourceColumn: Mercado Global
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Modalidade de Entrega'
+		dataType: string
+		lineageTag: e8999890-cdd0-4d18-8d64-40d059651b54
+		summarizeBy: none
+		sourceColumn: Modalidade de Entrega
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Status do Pedido'
+		dataType: string
+		lineageTag: 58d17272-4416-4017-8ec9-153cab3511c4
+		summarizeBy: none
+		sourceColumn: Status do Pedido
 
 		annotation SummarizationSetBy = Automatic
 
@@ -176,52 +185,74 @@ table fato_vendas
 		mode: import
 		source = ```
 				let
-				    // Referencia a sua tabela base que ja foi limpa no passo anterior
 				    Fonte = DataCoSupplyChainDataset,
-				
-				    // Seleção das colunas estratégicas para Inteligência Operacional e Logística
+				    
+				    // Seleção e Renomeação inicial
 				    ColunasSelecionadas = Table.SelectColumns(Fonte, {
-				        "order date (DateOrders)", 
-				        "shipping date (DateOrders)", 
-				        "Type", 
-				        "Days for shipping (real)", 
-				        "Days for shipment (scheduled)", 
-				        "Delivery Status", 
-				        "Late_delivery_risk", 
-				        "Category Name", 
-				        "Customer Segment", 
-				        "Department Name", 
-				        "Market", 
-				        "Order City", 
-				        "Order Country", 
-				        "Order Region", 
-				        "Order Status", 
-				        "Product Name", 
-				        "Sales", 
-				        "Order Profit Per Order", 
-				        "Shipping Mode"
+				        "order date (DateOrders)", "shipping date (DateOrders)", "Type", 
+				        "Days for shipping (real)", "Days for shipment (scheduled)", 
+				        "Delivery Status", "Late_delivery_risk", "Category Name", 
+				        "Customer Segment", "Department Name", "Market", "Order City", 
+				        "Order Country", "Order Region", "Order Status", "Product Name", 
+				        "Sales", "Order Profit Per Order", "Shipping Mode", "Order Id"
 				    }),
 				
-				    // Garantindo que as datas não possuam horas se não for necessário (melhora o relacionamento)
-				    AjustarDatas = Table.TransformColumnTypes(ColunasSelecionadas, {
+				    // Garantindo tipos de dados corretos
+				    AjustarTipos = Table.TransformColumnTypes(ColunasSelecionadas, {
 				        {"order date (DateOrders)", type date}, 
-				        {"shipping date (DateOrders)", type date}
+				        {"shipping date (DateOrders)", type date},
+				        {"Sales", type number},
+				        {"Order Profit Per Order", type number}
 				    }),
 				
-				    // Tratamento de valores nulos ou erros em colunas numéricas vitais
-				    TratarNulos = Table.ReplaceValue(AjustarDatas, null, 0, Replacer.ReplaceValue, {"Sales", "Order Profit Per Order", "Late_delivery_risk"}),
+				    // Traduções de Conteúdo (Lógica de Negócio)
+				    TraduzirMercado = Table.AddColumn(AjustarTipos, "Mercado Global", each 
+				        if [Market] = "Europe" then "Europa"
+				        else if [Market] = "Pacific Asia" then "Ásia-Pacífico"
+				        else if [Market] = "LATAM" then "América Latina"
+				        else if [Market] = "Africa" then "África"
+				        else if [Market] = "USCA" then "EUA e Canadá"
+				        else [Market], type text),
 				
-				    // Renomeando colunas para nomes mais amigáveis no Dashboard (Storytelling)
-				    RenomearColunas = Table.RenameColumns(TratarNulos, {
+				    TraduzirModalidade = Table.AddColumn(TraduzirMercado, "Modalidade de Entrega", each 
+				        if [Shipping Mode] = "First Class" then "Primeira Classe"
+				        else if [Shipping Mode] = "Second Class" then "Segunda Classe"
+				        else if [Shipping Mode] = "Standard Class" then "Classe Padrão"
+				        else if [Shipping Mode] = "Same Day" then "Entrega no Mesmo Dia"
+				        else [Shipping Mode], type text),
+				
+				    TraduzirStatus = Table.AddColumn(TraduzirModalidade, "Status do Pedido", each 
+				        if [Delivery Status] = "Shipping on time" then "No Prazo"
+				        else if [Delivery Status] = "Late delivery" then "Em Atraso"
+				        else if [Delivery Status] = "Shipping canceled" then "Cancelado"
+				        else if [Delivery Status] = "Advance shipping" then "Antecipado"
+				        else [Delivery Status], type text),
+				
+				    // Renomeação Final de todas as colunas
+				    RenomearGeral = Table.RenameColumns(TraduzirStatus, {
 				        {"order date (DateOrders)", "Data do Pedido"},
 				        {"shipping date (DateOrders)", "Data de Envio"},
 				        {"Days for shipping (real)", "Dias Envio Real"},
 				        {"Days for shipment (scheduled)", "Dias Envio Programado"},
 				        {"Order Profit Per Order", "Lucro do Pedido"},
-				        {"Sales", "Vendas"}
-				    })
+				        {"Sales", "Vendas"},
+				        {"Type", "Tipo de Pagamento"},
+				        {"Category Name", "Nome da Categoria"},
+				        {"Customer Segment", "Segmento do Cliente"},
+				        {"Department Name", "Nome do Departamento"},
+				        {"Order City", "Cidade do Pedido"},
+				        {"Order Country", "País do Pedido"},
+				        {"Order Region", "Região do Pedido"},
+				        {"Order Status", "Situação do Pedido"},
+				        {"Product Name", "Nome do Produto"},
+				        {"Order Id", "ID do Pedido"},
+				        {"Late_delivery_risk", "Risco de Atraso"}
+				    }),
+				    
+				    // Removendo as colunas originais em inglês que foram traduzidas
+				    RemoverIngles = Table.RemoveColumns(RenomearGeral,{"Market", "Shipping Mode", "Delivery Status"})
 				in
-				    RenomearColunas
+				    RemoverIngles
 				```
 
 	annotation PBI_NavigationStepName = Navegação

@@ -5569,174 +5569,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "data_co_supply_chain_dataset.total_sales": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DataCoSupplyChainDataset",
-			          "ConceptualProperty": "Total Sales"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "total sales": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "sales": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "total sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "aggregate sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "overall sale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        }
-			      ]
-			    },
-			    "data_co_supply_chain_dataset.total_quantity": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "DataCoSupplyChainDataset",
-			          "ConceptualProperty": "Total Quantity"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "total quantity": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "aggregate quantity": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "overall quantity": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "total extent": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "total magnitude": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "total amount": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "total number": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "total measure": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "total size": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "total capacity": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "total mass": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        }
-			      ]
-			    },
 			    "data_co_supply_chain_dataset.average_unit_price": {
 			      "Definition": {
 			        "Binding": {
@@ -7322,128 +7154,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "dim_calendario.trimestre": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Dim_Calendario",
-			          "ConceptualProperty": "Trimestre"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "trimestre": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "dim_calendario.trimestre_ano": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Dim_Calendario",
-			          "ConceptualProperty": "Trimestre/Ano"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "trimestre/ano": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "trimestre ano": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ]
-			    },
-			    "dim_calendario.semana_num": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Dim_Calendario",
-			          "ConceptualProperty": "Semana Num"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "semana num": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "semana number": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        }
-			      ]
-			    },
-			    "dim_calendario.dia_da_semana": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Dim_Calendario",
-			          "ConceptualProperty": "Dia da Semana"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "dia da semana": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "dim_calendario.dia_semana_num": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Dim_Calendario",
-			          "ConceptualProperty": "Dia Semana Num"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "dia semana num": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "dia semana number": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        }
-			      ]
-			    },
-			    "dim_calendario.semestre": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Dim_Calendario",
-			          "ConceptualProperty": "Semestre"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "semestre": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
 			    "dim_calendario.ano_mê": {
 			      "Definition": {
 			        "Binding": {
@@ -8486,7 +8196,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
-			          "ConceptualProperty": "Type"
+			          "ConceptualProperty": "Tipo de Pagamento"
 			        }
 			      },
 			      "State": "Generated",
@@ -8620,133 +8330,11 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_venda.delivery_status": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "fato_vendas",
-			          "ConceptualProperty": "Delivery Status"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "delivery status": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "status": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "delivery category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "delivery importance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "delivery prestige": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "delivery prominence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "importance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "prestige": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "prominence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "delivery condition": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "delivery class": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "delivery grade": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        }
-			      ]
-			    },
 			    "fato_venda.late_delivery_risk": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
-			          "ConceptualProperty": "Late_delivery_risk"
+			          "ConceptualProperty": "Risco de Atraso"
 			        }
 			      },
 			      "State": "Generated",
@@ -8881,7 +8469,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
-			          "ConceptualProperty": "Category Name"
+			          "ConceptualProperty": "Nome da Categoria"
 			        }
 			      },
 			      "State": "Generated",
@@ -8997,7 +8585,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
-			          "ConceptualProperty": "Customer Segment"
+			          "ConceptualProperty": "Segmento do Cliente"
 			        }
 			      },
 			      "State": "Generated",
@@ -9119,7 +8707,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
-			          "ConceptualProperty": "Department Name"
+			          "ConceptualProperty": "Nome do Departamento"
 			        }
 			      },
 			      "State": "Generated",
@@ -9171,87 +8759,11 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_venda.market": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "fato_vendas",
-			          "ConceptualProperty": "Market"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "market": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "marketplace": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "souk": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "bazaar": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "shop": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "arcade": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "fair": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        }
-			      ]
-			    },
 			    "fato_venda.order_city": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
-			          "ConceptualProperty": "Order City"
+			          "ConceptualProperty": "Cidade do Pedido"
 			        }
 			      },
 			      "State": "Generated",
@@ -9373,7 +8885,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
-			          "ConceptualProperty": "Order Country"
+			          "ConceptualProperty": "País do Pedido"
 			        }
 			      },
 			      "State": "Generated",
@@ -9435,7 +8947,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
-			          "ConceptualProperty": "Order Region"
+			          "ConceptualProperty": "Região do Pedido"
 			        }
 			      },
 			      "State": "Generated",
@@ -9557,7 +9069,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
-			          "ConceptualProperty": "Order Status"
+			          "ConceptualProperty": "Situação do Pedido"
 			        }
 			      },
 			      "State": "Generated",
@@ -9679,7 +9191,7 @@ cultureInfo pt-BR
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
-			          "ConceptualProperty": "Product Name"
+			          "ConceptualProperty": "Nome do Produto"
 			        }
 			      },
 			      "State": "Generated",
@@ -9799,128 +9311,6 @@ cultureInfo pt-BR
 			        {
 			          "lucro do pedido": {
 			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "fato_venda.shipping_mode": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "fato_vendas",
-			          "ConceptualProperty": "Shipping Mode"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "shipping mode": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "mode": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "shipping manner": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "shipping method": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "shipping genre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "manner": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "method": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "genre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "shipping style": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "shipping mean": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "shipping approach": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "shipping type": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
 			          }
 			        }
 			      ]

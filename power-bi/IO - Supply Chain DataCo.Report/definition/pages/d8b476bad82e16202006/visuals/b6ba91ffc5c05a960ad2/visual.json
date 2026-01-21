@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DataCoSupplyChainDataset"
+                      "Entity": "fato_vendas"
                     }
                   },
-                  "Property": "Category Name"
+                  "Property": "Nome da Categoria"
                 }
               },
-              "queryRef": "DataCoSupplyChainDataset.Category Name",
-              "nativeQueryRef": "Category Name",
+              "queryRef": "fato_vendas.Nome da Categoria",
+              "nativeQueryRef": "Nome da Categoria",
               "active": true
             }
           ]
@@ -57,13 +57,13 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DataCoSupplyChainDataset"
+                      "Entity": "_Medidas"
                     }
                   },
                   "Property": "Total Sales"
                 }
               },
-              "queryRef": "DataCoSupplyChainDataset.Total Sales",
+              "queryRef": "_Medidas.Total Sales",
               "nativeQueryRef": "Total Sales"
             }
           ]
@@ -76,7 +76,7 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "DataCoSupplyChainDataset"
+                    "Entity": "_Medidas"
                   }
                 },
                 "Property": "Total Sales"
@@ -219,51 +219,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "e83aa2bbe02b8c0a4d49",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DataCoSupplyChainDataset"
-              }
-            },
-            "Property": "Category Name"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "98708d22aa3dc4c31882",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Profit Margin %"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "76a46b0e6d63260910d9",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DataCoSupplyChainDataset"
-              }
-            },
-            "Property": "Total Sales"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -2,132 +2,67 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "c375a598d90c0b32dc17",
   "position": {
-    "x": 655.583543240974,
-    "y": 408.3963056255248,
+    "x": 655.49523110785026,
+    "y": 408.51063829787233,
     "z": 4000,
-    "height": 293.40050377833757,
-    "width": 598.623005877414,
+    "height": 293.00073367571531,
+    "width": 600.08804108584,
     "tabOrder": 4000
   },
   "visual": {
-    "visualType": "areaChart",
+    "visualType": "tableEx",
     "query": {
       "queryState": {
-        "Category": {
+        "Values": {
           "projections": [
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Dim_Calendario"
+                      "Entity": "fato_vendas"
                     }
                   },
-                  "Property": "Ano/Mês"
+                  "Property": "Nome do Produto"
                 }
               },
-              "queryRef": "Dim_Calendario.Ano/Mês",
-              "nativeQueryRef": "Ano/Mês",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
+              "queryRef": "fato_vendas.Product Name",
+              "nativeQueryRef": "Product Name"
+            },
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "fato_vendas"
-                        }
-                      },
-                      "Property": "Vendas"
+                    "SourceRef": {
+                      "Entity": "_Medidas"
                     }
                   },
-                  "Function": 0
+                  "Property": "qtde_vendas"
                 }
               },
-              "queryRef": "Sum(fato_vendas.Vendas)",
-              "nativeQueryRef": "Soma de Vendas"
+              "queryRef": "_Medidas.qtde_vendas",
+              "nativeQueryRef": "qtde_vendas"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Medidas"
+                  }
+                },
+                "Property": "qtde_vendas"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
-    },
-    "objects": {
-      "dataPoint": [
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#014A9D'"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Sum(fato_vendas.Vendas)"
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "labelColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "categoryAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "labelColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
     },
     "visualContainerObjects": {
       "title": [
@@ -177,42 +112,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "346e7bcba0242e1809b2",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_Calendario"
-              }
-            },
-            "Property": "Ano/Mês"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "da61bc8804a0c88001c4",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "fato_vendas"
-                  }
-                },
-                "Property": "Vendas"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

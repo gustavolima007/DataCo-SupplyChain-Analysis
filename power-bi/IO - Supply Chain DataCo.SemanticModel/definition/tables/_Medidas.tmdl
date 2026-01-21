@@ -26,7 +26,7 @@ table _Medidas
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Profit Margin %' = DIVIDE(SUM('DataCoSupplyChainDataset'[Order Profit Per Order]), [Total Sales], 0)
+	measure 'Profit Margin %' = DIVIDE(SUM('fato_vendas'[Lucro do Pedido]), [Total Sales], 0)
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 17eef69a-97ad-42f9-8d05-bf5985edc560
 
@@ -35,7 +35,7 @@ table _Medidas
 			VAR PedidosNoPrazo = 
 			    CALCULATE(
 			        [Total Orders], 
-			        'DataCoSupplyChainDataset'[Days for shipping (real)] <= 'DataCoSupplyChainDataset'[Days for shipment (scheduled)]
+			        'fato_vendas'[Dias Envio Real] <= 'fato_vendas'[Dias Envio Programado]
 			    )
 			RETURN 
 			    DIVIDE(PedidosNoPrazo, [Total Orders], 0)
@@ -43,9 +43,23 @@ table _Medidas
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: ba6a6adc-2474-49c4-a208-eb0c5872a213
 
-	measure 'Total Orders' = COUNTROWS('DataCoSupplyChainDataset')
+	measure 'Total Orders' = DISTINCTCOUNT('DataCoSupplyChainDataset'[Order Id])
 		formatString: 0
 		lineageTag: 20ce25a0-bb3c-4aec-afe7-7bae61b92d66
+
+	measure qtde_vendas =
+			
+			CALCULATE(
+			    DISTINCTCOUNT('fato_vendas'[ID do Pedido]),
+			    'fato_vendas'[Status do Pedido] <> "Cancelado"
+			)
+		formatString: 0
+		lineageTag: 173a6462-4c25-4733-8ec1-4a0b67b52156
+
+	measure 'Total Sales' = SUM('fato_vendas'[Vendas])
+		lineageTag: 7469e5a6-2934-4997-b6dc-5d850091a84d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Column
 		isHidden

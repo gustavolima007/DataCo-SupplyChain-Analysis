@@ -1,4 +1,9 @@
-relationship 1a0ce3e2-fb92-41c6-940b-f20dcb2819a0
+relationship 738e1857-904a-456d-87b0-6ff89a31deb1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_vendas.'Data de Envio'
+	toColumn: LocalDateTable_03f298f8-7b6d-4e3a-bfd8-9a9f99005ec7.Date
+
+relationship c7baa688-a37d-4117-9cb8-f7714648ba90
 	joinOnDateBehavior: datePartOnly
 	fromColumn: Dim_Calendario.Date
 	toColumn: LocalDateTable_ce19dc86-b8e7-41d4-9a0d-37c93712ff44.Date
@@ -7,21 +12,17 @@ relationship 3309a6bb-1d8c-84cb-1047-e5417facfcf2
 	fromColumn: tokenized_access_logs.Date
 	toColumn: Dim_Calendario.Date
 
-relationship 6f55e5b7-61c3-c1f1-9d4c-d231e1ec14b6
-	fromColumn: DataCoSupplyChainDataset.'order date (DateOrders)'
-	toColumn: Dim_Calendario.Date
-
-relationship e28777ed-d033-93d5-3643-96246f0df93b
-	isActive: false
-	fromColumn: DataCoSupplyChainDataset.'shipping date (DateOrders)'
-	toColumn: Dim_Calendario.Date
-
-relationship 738e1857-904a-456d-87b0-6ff89a31deb1
-	joinOnDateBehavior: datePartOnly
-	fromColumn: fato_vendas.'Data de Envio'
-	toColumn: LocalDateTable_03f298f8-7b6d-4e3a-bfd8-9a9f99005ec7.Date
-
 relationship f8a99be9-010c-fc8a-d89b-23c10a20d364
 	fromColumn: fato_vendas.'Data do Pedido'
 	toColumn: Dim_Calendario.Date
+
+relationship 8fcbdf97-c9be-439f-a00e-240e2b57e2e3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DataCoSupplyChainDataset.'order date (DateOrders)'
+	toColumn: LocalDateTable_7efebd43-0c89-4633-80f7-977c9ba50429.Date
+
+relationship 3867ebd1-9578-4d1e-932f-ead8b7e7c305
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DataCoSupplyChainDataset.'shipping date (DateOrders)'
+	toColumn: LocalDateTable_ddd5e2f8-2a21-43cd-b397-9bdfeb79bf57.Date
 
