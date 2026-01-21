@@ -190,6 +190,13 @@ table fato_vendas
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'No Prazo Flag' = IF(fato_vendas[Dias Envio Real] <= fato_vendas[Dias Envio Programado], 1, 0)
+		formatString: 0
+		lineageTag: 996bb7b5-8f3f-47ab-9355-e84038038db8
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
 	partition fato_vendas = m
 		mode: import
 		source = ```
@@ -229,7 +236,7 @@ table fato_vendas
 				        else if [Mercado Global] = "Ásia-Pacífico" then "https://flagcdn.com/w40/un.png"
 				        else if [Mercado Global] = "América Latina" then "https://flagcdn.com/w40/br.png"
 				        else if [Mercado Global] = "África" then "https://flagcdn.com/w40/za.png"
-				        else if [Mercado Global] = "EUA e Canadá" then "https://flagcdn.com/w40/us.png"
+				        else if [Mercado Global] = "EUA e Canadá" then "https://raw.githubusercontent.com/gustavolima007/DataCo-SupplyChain-Analysis/main/figma/eua-ca.png"
 				        else null, type text),
 				
 				    // Traduções de Modalidade

@@ -34,11 +34,12 @@ table _Medidas
 			
 			VAR PedidosNoPrazo = 
 			    CALCULATE(
-			        [Total Orders], 
-			        'fato_vendas'[Dias Envio Real] <= 'fato_vendas'[Dias Envio Programado]
+			        DISTINCTCOUNT('fato_vendas'[ID do Pedido]), 
+			        'fato_vendas'[No Prazo Flag] = 1
 			    )
+			VAR TotalDePedidos = [Total Orders]
 			RETURN 
-			    DIVIDE(PedidosNoPrazo, [Total Orders], 0)
+			    DIVIDE(PedidosNoPrazo, TotalDePedidos, 0)
 			```
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: ba6a6adc-2474-49c4-a208-eb0c5872a213

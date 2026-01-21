@@ -8192,7 +8192,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_venda.type": {
+			    "fato_venda.tipo_de_pagamento": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
@@ -8202,98 +8202,8 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "type": {
+			          "tipo de pagamento": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "genre": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "manner": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "variety": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "brand": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "class": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "kind": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "style": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "form": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "grouping": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
 			          }
 			        }
 			      ]
@@ -8330,7 +8240,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_venda.late_delivery_risk": {
+			    "fato_venda.risco_de_atraso": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
@@ -8340,132 +8250,13 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "late delivery risk": {
+			          "risco de atraso": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Late_delivery_risk": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "risk": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "delivery risk": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "late delivery danger": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "late delivery jeopardy": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "delivery danger": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "delivery jeopardy": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "late delivery peril": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "late delivery hazard": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "late delivery menace": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "late delivery threat": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "danger": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        },
-			        {
-			          "jeopardy": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
 			          }
 			        }
 			      ]
 			    },
-			    "fato_venda.category_name": {
+			    "fato_venda.nome_da_categoria": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
@@ -8475,113 +8266,13 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "category name": {
+			          "nome da categoria": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "category nickname": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "category title": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "category label": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "category tag": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "classification name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "class name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "group name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "type name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "grouping name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "kind name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
 			          }
 			        }
 			      ]
 			    },
-			    "fato_venda.customer_segment": {
+			    "fato_venda.segmento_do_cliente": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
@@ -8591,119 +8282,13 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "customer segment": {
+			          "segmento do cliente": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "segment": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "customer division": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "customer subdivision": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "division": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "subdivision": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "customer section": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "customer sector": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "customer bit": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "customer fragment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "customer part": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "customer piece": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "fato_venda.department_name": {
+			    "fato_venda.nome_do_departamento": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
@@ -8713,53 +8298,13 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "department name": {
+			          "nome do departamento": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "department nickname": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "department title": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "department label": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "department tag": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "fato_venda.order_city": {
+			    "fato_venda.cidade_do_pedido": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
@@ -8769,119 +8314,13 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "order city": {
+			          "cidade do pedido": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "city": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "order location": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "order metropolis": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "order municipality": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "location": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "metropolis": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "municipality": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "order town": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "order metropolitan": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "town": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "metropolitan": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
 			          }
 			        }
 			      ]
 			    },
-			    "fato_venda.order_country": {
+			    "fato_venda.país_do_pedido": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
@@ -8891,59 +8330,13 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "order country": {
+			          "país do pedido": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "country": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "order nation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "order location": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "nation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "location": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
 			          }
 			        }
 			      ]
 			    },
-			    "fato_venda.order_region": {
+			    "fato_venda.região_do_pedido": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
@@ -8953,119 +8346,13 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "order region": {
+			          "região do pedido": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "region": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "order location": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.833
-			          }
-			        },
-			        {
-			          "location": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.818
-			          }
-			        },
-			        {
-			          "order province": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "province": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "order area": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "order district": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "order section": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "order zone": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "order continent": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "area": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
 			          }
 			        }
 			      ]
 			    },
-			    "fato_venda.order_status": {
+			    "fato_venda.situação_do_pedido": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
@@ -9075,119 +8362,13 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "order status": {
+			          "situação do pedido": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "status": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "order category": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "order importance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "order prestige": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "order prominence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "importance": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "prestige": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "prominence": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "order condition": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "order class": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "order grade": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
 			          }
 			        }
 			      ]
 			    },
-			    "fato_venda.product_name": {
+			    "fato_venda.nome_do_produto": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "fato_vendas",
@@ -9197,88 +8378,8 @@ cultureInfo pt-BR
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "product name": {
+			          "nome do produto": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "product nickname": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "product title": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "product label": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "product tag": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "artifact name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "item name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "merchandise name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "produce name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
 			          }
 			        }
 			      ]
@@ -9346,16 +8447,6 @@ cultureInfo pt-BR
 			          "mode br": {
 			            "State": "Generated",
 			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "Modalidade de Entrega": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -9494,9 +8585,1267 @@ cultureInfo pt-BR
 			          }
 			        }
 			      ]
+			    },
+			    "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DataCoSupplyChainDataset",
+			          "VariationSource": "order date (DateOrders)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset.order_date_DateOrders.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DataCoSupplyChainDataset",
+			          "VariationSource": "order date (DateOrders)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "order date (DateOrders) ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "order date (DateOrder) ano": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset.order_date_DateOrders.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DataCoSupplyChainDataset",
+			          "VariationSource": "order date (DateOrders)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "order date (DateOrders) trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "order date (DateOrder) trimestre": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset.order_date_DateOrders.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DataCoSupplyChainDataset",
+			          "VariationSource": "order date (DateOrders)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "order date (DateOrders) mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "order date (DateOrder) mê": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset.order_date_DateOrders.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DataCoSupplyChainDataset",
+			          "VariationSource": "order date (DateOrders)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "order date (DateOrders) dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "order date (DateOrder) dia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DataCoSupplyChainDataset",
+			          "VariationSource": "shipping date (DateOrders)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset.shipping_date_DateOrders.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DataCoSupplyChainDataset",
+			          "VariationSource": "shipping date (DateOrders)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "shipping date (DateOrders) ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "shipping date (DateOrder) ano": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset.shipping_date_DateOrders.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DataCoSupplyChainDataset",
+			          "VariationSource": "shipping date (DateOrders)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "shipping date (DateOrders) trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "shipping date (DateOrder) trimestre": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset.shipping_date_DateOrders.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DataCoSupplyChainDataset",
+			          "VariationSource": "shipping date (DateOrders)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "shipping date (DateOrders) mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "shipping date (DateOrder) mê": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset.shipping_date_DateOrders.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DataCoSupplyChainDataset",
+			          "VariationSource": "shipping date (DateOrders)",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "shipping date (DateOrders) dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "shipping date (DateOrder) dia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset.flag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DataCoSupplyChainDataset",
+			          "ConceptualProperty": "Flag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "flag": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ensign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pennant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pennon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "emblem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "streamer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "standard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "bunting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "banner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtde_vendas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "qtde_vendas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtde vendas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtde_vendas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.total_sales": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Total Sales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total sales": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sales": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "aggregate sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall sale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "fato_venda.ID_do_pedido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_vendas",
+			          "ConceptualProperty": "ID do Pedido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ID do pedido": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification do pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "identity do pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "identifier do pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "credential do pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "fato_venda.mercado_global": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_vendas",
+			          "ConceptualProperty": "Mercado Global"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mercado global": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_venda.modalidade_de_entrega": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_vendas",
+			          "ConceptualProperty": "Modalidade de Entrega"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "modalidade de entrega": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_venda.status_do_pedido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_vendas",
+			          "ConceptualProperty": "Status do Pedido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status do pedido": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category do pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "importance do pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "prestige do pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "prominence do pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "condition do pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "class do pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "grade do pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "level do pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "position do pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "rank do pedido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "fato_venda.flag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_vendas",
+			          "ConceptualProperty": "Flag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "flag": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ensign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pennant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pennon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "emblem": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "streamer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "standard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "bunting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "banner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "fato_venda_data_de_envio_ano_has_fato_venda_data_de_envio_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_vendas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_venda.data_de_envio.ano": {
+			          "Target": {
+			            "Entity": "fato_venda.data_de_envio.ano"
+			          }
+			        },
+			        "fato_venda.data_de_envio.trimestre": {
+			          "Target": {
+			            "Entity": "fato_venda.data_de_envio.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_venda.data_de_envio.ano"
+			            },
+			            "Object": {
+			              "Role": "fato_venda.data_de_envio.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_venda.data_de_envio.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fato_venda.data_de_envio.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_venda.data_de_envio.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_venda.data_de_envio.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos1"
+			        }
+			      ]
+			    },
+			    "fato_venda_data_de_envio_hierarquia_de_data_has_fato_venda_data_de_envio_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_vendas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_venda.data_de_envio.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_venda.data_de_envio.hierarquia_de_data"
+			          }
+			        },
+			        "fato_venda.data_de_envio.dia": {
+			          "Target": {
+			            "Entity": "fato_venda.data_de_envio.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_venda.data_de_envio.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_venda.data_de_envio.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "fato_venda_data_de_envio_hierarquia_de_data_has_fato_venda_data_de_envio_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_vendas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_venda.data_de_envio.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_venda.data_de_envio.hierarquia_de_data"
+			          }
+			        },
+			        "fato_venda.data_de_envio.mê": {
+			          "Target": {
+			            "Entity": "fato_venda.data_de_envio.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_venda.data_de_envio.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_venda.data_de_envio.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "fato_venda_data_de_envio_hierarquia_de_data_has_fato_venda_data_de_envio_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_vendas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_venda.data_de_envio.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_venda.data_de_envio.hierarquia_de_data"
+			          }
+			        },
+			        "fato_venda.data_de_envio.trimestre": {
+			          "Target": {
+			            "Entity": "fato_venda.data_de_envio.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_venda.data_de_envio.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_venda.data_de_envio.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "fato_venda_data_de_envio_hierarquia_de_data_has_fato_venda_data_de_envio_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_vendas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_venda.data_de_envio.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_venda.data_de_envio.hierarquia_de_data"
+			          }
+			        },
+			        "fato_venda.data_de_envio.ano": {
+			          "Target": {
+			            "Entity": "fato_venda.data_de_envio.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_venda.data_de_envio.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_venda.data_de_envio.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "fato_venda_data_de_envio_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_vendas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_venda.data_de_envio": {
+			          "Target": {
+			            "Entity": "fato_venda.data_de_envio"
+			          }
+			        },
+			        "fato_venda.data_de_envio.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_venda.data_de_envio.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_venda.data_de_envio"
+			            },
+			            "Object": {
+			              "Role": "fato_venda.data_de_envio.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_de_envios_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "dim_calendario_date_mê_has_dim_calendario_date_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario.date.mê": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.mê"
+			          }
+			        },
+			        "dim_calendario.date.dia": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.mê"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.dia"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_calendario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê"
+			        }
+			      ]
+			    },
+			    "dim_calendario_date_trimestre_has_dim_calendario_date_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario.date.trimestre": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.trimestre"
+			          }
+			        },
+			        "dim_calendario.date.mê": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.mê"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_calendario.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres"
+			        }
+			      ]
+			    },
 			    "dim_calendario_date_ano_has_dim_calendario_date_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "Dim_Calendario"
@@ -9526,7 +9875,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres"
+			          "ID": "anos_have_trimestres1"
 			        },
 			        {
 			          "Attribute": {
@@ -9539,7 +9888,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos"
+			          "ID": "trimestres_have_anos1"
 			        },
 			        {
 			          "Preposition": {
@@ -9592,7 +9941,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias"
+			          "ID": "hierarquia_de_data_have_dias1"
 			        }
 			      ]
 			    },
@@ -9625,7 +9974,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê"
+			          "ID": "hierarquia_de_data_have_mê1"
 			        }
 			      ]
 			    },
@@ -9658,7 +10007,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres"
+			          "ID": "hierarquia_de_data_have_trimestres1"
 			        }
 			      ]
 			    },
@@ -9691,7 +10040,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos"
+			          "ID": "hierarquia_de_data_have_anos1"
 			        }
 			      ]
 			    },
@@ -9820,7 +10169,238 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "data_co_supply_chain_dataset_has_dim_calendario": {
+			    "fato_venda_has_flag": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_vendas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_venda": {
+			          "Target": {
+			            "Entity": "fato_venda"
+			          }
+			        },
+			        "fato_venda.flag": {
+			          "Target": {
+			            "Entity": "fato_venda.flag"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_venda"
+			            },
+			            "Object": {
+			              "Role": "fato_venda.flag"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_venda_have_flags"
+			        }
+			      ]
+			    },
+			    "fato_venda_has_status_do_pedido": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_vendas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_venda": {
+			          "Target": {
+			            "Entity": "fato_venda"
+			          }
+			        },
+			        "fato_venda.status_do_pedido": {
+			          "Target": {
+			            "Entity": "fato_venda.status_do_pedido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_venda"
+			            },
+			            "Object": {
+			              "Role": "fato_venda.status_do_pedido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_venda_have_status_do_pedidos"
+			        }
+			      ]
+			    },
+			    "fato_venda_has_modalidade_de_entrega": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_vendas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_venda": {
+			          "Target": {
+			            "Entity": "fato_venda"
+			          }
+			        },
+			        "fato_venda.modalidade_de_entrega": {
+			          "Target": {
+			            "Entity": "fato_venda.modalidade_de_entrega"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_venda"
+			            },
+			            "Object": {
+			              "Role": "fato_venda.modalidade_de_entrega"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_venda_have_modalidade_de_entregas"
+			        }
+			      ]
+			    },
+			    "fato_venda_has_mercado_global": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_vendas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_venda": {
+			          "Target": {
+			            "Entity": "fato_venda"
+			          }
+			        },
+			        "fato_venda.mercado_global": {
+			          "Target": {
+			            "Entity": "fato_venda.mercado_global"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_venda"
+			            },
+			            "Object": {
+			              "Role": "fato_venda.mercado_global"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_venda_have_mercado_global"
+			        }
+			      ]
+			    },
+			    "fato_venda_has_ID_do_pedido": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_vendas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_venda": {
+			          "Target": {
+			            "Entity": "fato_venda"
+			          }
+			        },
+			        "fato_venda.ID_do_pedido": {
+			          "Target": {
+			            "Entity": "fato_venda.ID_do_pedido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_venda"
+			            },
+			            "Object": {
+			              "Role": "fato_venda.ID_do_pedido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_venda_have_ID_do_pedidos"
+			        }
+			      ]
+			    },
+			    "fato_venda_has_entity__medida_total_sales": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_vendas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_venda": {
+			          "Target": {
+			            "Entity": "fato_venda"
+			          }
+			        },
+			        "entity__medida.total_sales": {
+			          "Target": {
+			            "Entity": "entity__medida.total_sales"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_venda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.total_sales"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_venda_have_total_sales"
+			        }
+			      ]
+			    },
+			    "fato_venda_has_entity__medida_qtde_vendas": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_vendas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_venda": {
+			          "Target": {
+			            "Entity": "fato_venda"
+			          }
+			        },
+			        "entity__medida.qtde_vendas": {
+			          "Target": {
+			            "Entity": "entity__medida.qtde_vendas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_venda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtde_vendas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_venda_have_qtde_vendas"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_has_flag": {
 			      "Binding": {
 			        "ConceptualEntity": "DataCoSupplyChainDataset"
 			      },
@@ -9831,9 +10411,9 @@ cultureInfo pt-BR
 			            "Entity": "data_co_supply_chain_dataset"
 			          }
 			        },
-			        "dim_calendario": {
+			        "data_co_supply_chain_dataset.flag": {
 			          "Target": {
-			            "Entity": "dim_calendario"
+			            "Entity": "data_co_supply_chain_dataset.flag"
 			          }
 			        }
 			      },
@@ -9844,25 +10424,12 @@ cultureInfo pt-BR
 			              "Role": "data_co_supply_chain_dataset"
 			            },
 			            "Object": {
-			              "Role": "dim_calendario"
+			              "Role": "data_co_supply_chain_dataset.flag"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "data_co_supply_chain_datasets_have_dim_calendarios"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_calendario"
-			            },
-			            "Object": {
-			              "Role": "data_co_supply_chain_dataset"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_calendarios_have_data_co_supply_chain_datasets"
+			          "ID": "data_co_supply_chain_datasets_have_flags"
 			        }
 			      ]
 			    },
@@ -9932,39 +10499,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_venda_has_shipping_mode": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_vendas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_venda": {
-			          "Target": {
-			            "Entity": "fato_venda"
-			          }
-			        },
-			        "fato_venda.shipping_mode": {
-			          "Target": {
-			            "Entity": "fato_venda.shipping_mode"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_venda"
-			            },
-			            "Object": {
-			              "Role": "fato_venda.shipping_mode"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_venda_have_shipping_modes"
-			        }
-			      ]
-			    },
 			    "fato_venda_has_lucro_do_pedido": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_vendas"
@@ -10031,7 +10565,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_venda_has_product_name": {
+			    "fato_venda_has_nome_do_produto": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_vendas"
 			      },
@@ -10042,9 +10576,9 @@ cultureInfo pt-BR
 			            "Entity": "fato_venda"
 			          }
 			        },
-			        "fato_venda.product_name": {
+			        "fato_venda.nome_do_produto": {
 			          "Target": {
-			            "Entity": "fato_venda.product_name"
+			            "Entity": "fato_venda.nome_do_produto"
 			          }
 			        }
 			      },
@@ -10055,16 +10589,16 @@ cultureInfo pt-BR
 			              "Role": "fato_venda"
 			            },
 			            "Object": {
-			              "Role": "fato_venda.product_name"
+			              "Role": "fato_venda.nome_do_produto"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fato_venda_have_product_names"
+			          "ID": "fato_venda_have_nome_do_produtos"
 			        }
 			      ]
 			    },
-			    "fato_venda_has_order_status": {
+			    "fato_venda_has_situação_do_pedido": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_vendas"
 			      },
@@ -10075,9 +10609,9 @@ cultureInfo pt-BR
 			            "Entity": "fato_venda"
 			          }
 			        },
-			        "fato_venda.order_status": {
+			        "fato_venda.situação_do_pedido": {
 			          "Target": {
-			            "Entity": "fato_venda.order_status"
+			            "Entity": "fato_venda.situação_do_pedido"
 			          }
 			        }
 			      },
@@ -10088,16 +10622,16 @@ cultureInfo pt-BR
 			              "Role": "fato_venda"
 			            },
 			            "Object": {
-			              "Role": "fato_venda.order_status"
+			              "Role": "fato_venda.situação_do_pedido"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fato_venda_have_order_statuses"
+			          "ID": "fato_venda_have_situação_do_pedidos"
 			        }
 			      ]
 			    },
-			    "fato_venda_has_order_region": {
+			    "fato_venda_has_região_do_pedido": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_vendas"
 			      },
@@ -10108,9 +10642,9 @@ cultureInfo pt-BR
 			            "Entity": "fato_venda"
 			          }
 			        },
-			        "fato_venda.order_region": {
+			        "fato_venda.região_do_pedido": {
 			          "Target": {
-			            "Entity": "fato_venda.order_region"
+			            "Entity": "fato_venda.região_do_pedido"
 			          }
 			        }
 			      },
@@ -10121,16 +10655,16 @@ cultureInfo pt-BR
 			              "Role": "fato_venda"
 			            },
 			            "Object": {
-			              "Role": "fato_venda.order_region"
+			              "Role": "fato_venda.região_do_pedido"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fato_venda_have_order_regions"
+			          "ID": "fato_venda_have_região_do_pedidos"
 			        }
 			      ]
 			    },
-			    "fato_venda_has_order_country": {
+			    "fato_venda_has_país_do_pedido": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_vendas"
 			      },
@@ -10141,9 +10675,9 @@ cultureInfo pt-BR
 			            "Entity": "fato_venda"
 			          }
 			        },
-			        "fato_venda.order_country": {
+			        "fato_venda.país_do_pedido": {
 			          "Target": {
-			            "Entity": "fato_venda.order_country"
+			            "Entity": "fato_venda.país_do_pedido"
 			          }
 			        }
 			      },
@@ -10154,16 +10688,16 @@ cultureInfo pt-BR
 			              "Role": "fato_venda"
 			            },
 			            "Object": {
-			              "Role": "fato_venda.order_country"
+			              "Role": "fato_venda.país_do_pedido"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fato_venda_have_order_countries"
+			          "ID": "fato_venda_have_país_do_pedidos"
 			        }
 			      ]
 			    },
-			    "fato_venda_has_order_city": {
+			    "fato_venda_has_cidade_do_pedido": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_vendas"
 			      },
@@ -10174,9 +10708,9 @@ cultureInfo pt-BR
 			            "Entity": "fato_venda"
 			          }
 			        },
-			        "fato_venda.order_city": {
+			        "fato_venda.cidade_do_pedido": {
 			          "Target": {
-			            "Entity": "fato_venda.order_city"
+			            "Entity": "fato_venda.cidade_do_pedido"
 			          }
 			        }
 			      },
@@ -10187,16 +10721,16 @@ cultureInfo pt-BR
 			              "Role": "fato_venda"
 			            },
 			            "Object": {
-			              "Role": "fato_venda.order_city"
+			              "Role": "fato_venda.cidade_do_pedido"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fato_venda_have_order_cities"
+			          "ID": "fato_venda_have_cidade_do_pedidos"
 			        }
 			      ]
 			    },
-			    "fato_venda_has_market": {
+			    "fato_venda_has_nome_do_departamento": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_vendas"
 			      },
@@ -10207,9 +10741,9 @@ cultureInfo pt-BR
 			            "Entity": "fato_venda"
 			          }
 			        },
-			        "fato_venda.market": {
+			        "fato_venda.nome_do_departamento": {
 			          "Target": {
-			            "Entity": "fato_venda.market"
+			            "Entity": "fato_venda.nome_do_departamento"
 			          }
 			        }
 			      },
@@ -10220,16 +10754,16 @@ cultureInfo pt-BR
 			              "Role": "fato_venda"
 			            },
 			            "Object": {
-			              "Role": "fato_venda.market"
+			              "Role": "fato_venda.nome_do_departamento"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fato_venda_have_markets"
+			          "ID": "fato_venda_have_nome_do_departamentos"
 			        }
 			      ]
 			    },
-			    "fato_venda_has_department_name": {
+			    "fato_venda_has_segmento_do_cliente": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_vendas"
 			      },
@@ -10240,9 +10774,9 @@ cultureInfo pt-BR
 			            "Entity": "fato_venda"
 			          }
 			        },
-			        "fato_venda.department_name": {
+			        "fato_venda.segmento_do_cliente": {
 			          "Target": {
-			            "Entity": "fato_venda.department_name"
+			            "Entity": "fato_venda.segmento_do_cliente"
 			          }
 			        }
 			      },
@@ -10253,16 +10787,16 @@ cultureInfo pt-BR
 			              "Role": "fato_venda"
 			            },
 			            "Object": {
-			              "Role": "fato_venda.department_name"
+			              "Role": "fato_venda.segmento_do_cliente"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fato_venda_have_department_names"
+			          "ID": "fato_venda_have_segmento_do_clientes"
 			        }
 			      ]
 			    },
-			    "fato_venda_has_customer_segment": {
+			    "fato_venda_has_nome_da_categoria": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_vendas"
 			      },
@@ -10273,9 +10807,9 @@ cultureInfo pt-BR
 			            "Entity": "fato_venda"
 			          }
 			        },
-			        "fato_venda.customer_segment": {
+			        "fato_venda.nome_da_categoria": {
 			          "Target": {
-			            "Entity": "fato_venda.customer_segment"
+			            "Entity": "fato_venda.nome_da_categoria"
 			          }
 			        }
 			      },
@@ -10286,16 +10820,16 @@ cultureInfo pt-BR
 			              "Role": "fato_venda"
 			            },
 			            "Object": {
-			              "Role": "fato_venda.customer_segment"
+			              "Role": "fato_venda.nome_da_categoria"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fato_venda_have_customer_segments"
+			          "ID": "fato_venda_have_nome_da_categorias"
 			        }
 			      ]
 			    },
-			    "fato_venda_has_category_name": {
+			    "fato_venda_has_risco_de_atraso": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_vendas"
 			      },
@@ -10306,9 +10840,9 @@ cultureInfo pt-BR
 			            "Entity": "fato_venda"
 			          }
 			        },
-			        "fato_venda.category_name": {
+			        "fato_venda.risco_de_atraso": {
 			          "Target": {
-			            "Entity": "fato_venda.category_name"
+			            "Entity": "fato_venda.risco_de_atraso"
 			          }
 			        }
 			      },
@@ -10319,78 +10853,12 @@ cultureInfo pt-BR
 			              "Role": "fato_venda"
 			            },
 			            "Object": {
-			              "Role": "fato_venda.category_name"
+			              "Role": "fato_venda.risco_de_atraso"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fato_venda_have_category_names"
-			        }
-			      ]
-			    },
-			    "fato_venda_has_late_delivery_risk": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_vendas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_venda": {
-			          "Target": {
-			            "Entity": "fato_venda"
-			          }
-			        },
-			        "fato_venda.late_delivery_risk": {
-			          "Target": {
-			            "Entity": "fato_venda.late_delivery_risk"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_venda"
-			            },
-			            "Object": {
-			              "Role": "fato_venda.late_delivery_risk"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_venda_have_late_delivery_risks"
-			        }
-			      ]
-			    },
-			    "fato_venda_has_delivery_status": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_vendas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_venda": {
-			          "Target": {
-			            "Entity": "fato_venda"
-			          }
-			        },
-			        "fato_venda.delivery_status": {
-			          "Target": {
-			            "Entity": "fato_venda.delivery_status"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_venda"
-			            },
-			            "Object": {
-			              "Role": "fato_venda.delivery_status"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_venda_have_delivery_statuses"
+			          "ID": "fato_venda_have_risco_de_atrasos"
 			        }
 			      ]
 			    },
@@ -10460,7 +10928,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_venda_has_type": {
+			    "fato_venda_has_tipo_de_pagamento": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_vendas"
 			      },
@@ -10471,9 +10939,9 @@ cultureInfo pt-BR
 			            "Entity": "fato_venda"
 			          }
 			        },
-			        "fato_venda.type": {
+			        "fato_venda.tipo_de_pagamento": {
 			          "Target": {
-			            "Entity": "fato_venda.type"
+			            "Entity": "fato_venda.tipo_de_pagamento"
 			          }
 			        }
 			      },
@@ -10484,12 +10952,12 @@ cultureInfo pt-BR
 			              "Role": "fato_venda"
 			            },
 			            "Object": {
-			              "Role": "fato_venda.type"
+			              "Role": "fato_venda.tipo_de_pagamento"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fato_venda_have_types"
+			          "ID": "fato_venda_have_tipo_de_pagamentos"
 			        }
 			      ]
 			    },
@@ -10625,15 +11093,15 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "data_co_supply_chain_dataset_has_entity__medida_profit_margin_": {
+			    "fato_venda_has_entity__medida_profit_margin_": {
 			      "Binding": {
-			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			        "ConceptualEntity": "fato_vendas"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "data_co_supply_chain_dataset": {
+			        "fato_venda": {
 			          "Target": {
-			            "Entity": "data_co_supply_chain_dataset"
+			            "Entity": "fato_venda"
 			          }
 			        },
 			        "entity__medida.profit_margin_": {
@@ -10646,7 +11114,7 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "data_co_supply_chain_dataset"
+			              "Role": "fato_venda"
 			            },
 			            "Object": {
 			              "Role": "entity__medida.profit_margin_"
@@ -10654,7 +11122,7 @@ cultureInfo pt-BR
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "data_co_supply_chain_datasets_have_profit_margin_"
+			          "ID": "fato_venda_have_profit_margin_"
 			        }
 			      ]
 			    },
@@ -10721,204 +11189,6 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_calendarios_have_ano_mê"
-			        }
-			      ]
-			    },
-			    "dim_calendario_has_semestre": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_calendario": {
-			          "Target": {
-			            "Entity": "dim_calendario"
-			          }
-			        },
-			        "dim_calendario.semestre": {
-			          "Target": {
-			            "Entity": "dim_calendario.semestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_calendario"
-			            },
-			            "Object": {
-			              "Role": "dim_calendario.semestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_calendarios_have_semestres"
-			        }
-			      ]
-			    },
-			    "dim_calendario_has_dia_semana_num": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_calendario": {
-			          "Target": {
-			            "Entity": "dim_calendario"
-			          }
-			        },
-			        "dim_calendario.dia_semana_num": {
-			          "Target": {
-			            "Entity": "dim_calendario.dia_semana_num"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_calendario"
-			            },
-			            "Object": {
-			              "Role": "dim_calendario.dia_semana_num"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_calendarios_have_dia_semana_nums"
-			        }
-			      ]
-			    },
-			    "dim_calendario_has_dia_da_semana": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_calendario": {
-			          "Target": {
-			            "Entity": "dim_calendario"
-			          }
-			        },
-			        "dim_calendario.dia_da_semana": {
-			          "Target": {
-			            "Entity": "dim_calendario.dia_da_semana"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_calendario"
-			            },
-			            "Object": {
-			              "Role": "dim_calendario.dia_da_semana"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_calendarios_have_dia_da_semanas"
-			        }
-			      ]
-			    },
-			    "dim_calendario_has_semana_num": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_calendario": {
-			          "Target": {
-			            "Entity": "dim_calendario"
-			          }
-			        },
-			        "dim_calendario.semana_num": {
-			          "Target": {
-			            "Entity": "dim_calendario.semana_num"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_calendario"
-			            },
-			            "Object": {
-			              "Role": "dim_calendario.semana_num"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_calendarios_have_semana_nums"
-			        }
-			      ]
-			    },
-			    "dim_calendario_has_trimestre_ano": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_calendario": {
-			          "Target": {
-			            "Entity": "dim_calendario"
-			          }
-			        },
-			        "dim_calendario.trimestre_ano": {
-			          "Target": {
-			            "Entity": "dim_calendario.trimestre_ano"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_calendario"
-			            },
-			            "Object": {
-			              "Role": "dim_calendario.trimestre_ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_calendarios_have_trimestre_anos"
-			        }
-			      ]
-			    },
-			    "dim_calendario_has_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_calendario": {
-			          "Target": {
-			            "Entity": "dim_calendario"
-			          }
-			        },
-			        "dim_calendario.trimestre": {
-			          "Target": {
-			            "Entity": "dim_calendario.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_calendario"
-			            },
-			            "Object": {
-			              "Role": "dim_calendario.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_calendarios_have_trimestres"
 			        }
 			      ]
 			    },
@@ -11507,72 +11777,6 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "average_unit_price_indicates_how_expensive_data_co_supply_chain_datasets_are"
-			        }
-			      ]
-			    },
-			    "data_co_supply_chain_dataset_has_total_quantity": {
-			      "Binding": {
-			        "ConceptualEntity": "DataCoSupplyChainDataset"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "data_co_supply_chain_dataset": {
-			          "Target": {
-			            "Entity": "data_co_supply_chain_dataset"
-			          }
-			        },
-			        "data_co_supply_chain_dataset.total_quantity": {
-			          "Target": {
-			            "Entity": "data_co_supply_chain_dataset.total_quantity"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "data_co_supply_chain_dataset"
-			            },
-			            "Object": {
-			              "Role": "data_co_supply_chain_dataset.total_quantity"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "data_co_supply_chain_datasets_have_total_quantity"
-			        }
-			      ]
-			    },
-			    "data_co_supply_chain_dataset_has_total_sales": {
-			      "Binding": {
-			        "ConceptualEntity": "DataCoSupplyChainDataset"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "data_co_supply_chain_dataset": {
-			          "Target": {
-			            "Entity": "data_co_supply_chain_dataset"
-			          }
-			        },
-			        "data_co_supply_chain_dataset.total_sales": {
-			          "Target": {
-			            "Entity": "data_co_supply_chain_dataset.total_sales"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "data_co_supply_chain_dataset"
-			            },
-			            "Object": {
-			              "Role": "data_co_supply_chain_dataset.total_sales"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "data_co_supply_chain_datasets_have_total_sales"
 			        }
 			      ]
 			    },
@@ -13541,141 +13745,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "fato_venda_in_order_region": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_vendas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_venda": {
-			          "Target": {
-			            "Entity": "fato_venda"
-			          }
-			        },
-			        "fato_venda.order_region": {
-			          "Target": {
-			            "Entity": "fato_venda.order_region"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "fato_venda.order_region"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "fato_venda"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "fato_venda.order_region"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_venda_are_in_order_regions"
-			        }
-			      ]
-			    },
-			    "fato_venda_in_order_country": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_vendas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_venda": {
-			          "Target": {
-			            "Entity": "fato_venda"
-			          }
-			        },
-			        "fato_venda.order_country": {
-			          "Target": {
-			            "Entity": "fato_venda.order_country"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "fato_venda.order_country"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "fato_venda"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "fato_venda.order_country"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_venda_are_in_order_countries"
-			        }
-			      ]
-			    },
-			    "fato_venda_in_order_city": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_vendas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_venda": {
-			          "Target": {
-			            "Entity": "fato_venda"
-			          }
-			        },
-			        "fato_venda.order_city": {
-			          "Target": {
-			            "Entity": "fato_venda.order_city"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "fato_venda.order_city"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "fato_venda"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "fato_venda.order_city"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fato_venda_are_in_order_cities"
-			        }
-			      ]
-			    },
 			    "data_co_supply_chain_dataset_in_order_state": {
 			      "Binding": {
 			        "ConceptualEntity": "DataCoSupplyChainDataset"
@@ -14036,369 +14105,6 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "dim_calendario_date_trimestre_has_dim_calendario_date_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_calendario.date.trimestre": {
-			          "Target": {
-			            "Entity": "dim_calendario.date.trimestre"
-			          }
-			        },
-			        "dim_calendario.date.mê": {
-			          "Target": {
-			            "Entity": "dim_calendario.date.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_calendario.date.trimestre"
-			            },
-			            "Object": {
-			              "Role": "dim_calendario.date.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_calendario.date.mê"
-			            },
-			            "Object": {
-			              "Role": "dim_calendario.date.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "dim_calendario.date.mê"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "dim_calendario.date.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres"
-			        }
-			      ]
-			    },
-			    "dim_calendario_date_mê_has_dim_calendario_date_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_calendario.date.mê": {
-			          "Target": {
-			            "Entity": "dim_calendario.date.mê"
-			          }
-			        },
-			        "dim_calendario.date.dia": {
-			          "Target": {
-			            "Entity": "dim_calendario.date.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_calendario.date.mê"
-			            },
-			            "Object": {
-			              "Role": "dim_calendario.date.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_dias"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_calendario.date.dia"
-			            },
-			            "Object": {
-			              "Role": "dim_calendario.date.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_have_mê"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "dim_calendario.date.dia"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "dim_calendario.date.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_are_in_mê"
-			        }
-			      ]
-			    },
-			    "fato_venda_data_de_envio_has_hierarquia_de_data": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_vendas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_venda.data_de_envio": {
-			          "Target": {
-			            "Entity": "fato_venda.data_de_envio"
-			          }
-			        },
-			        "fato_venda.data_de_envio.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "fato_venda.data_de_envio.hierarquia_de_data"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_venda.data_de_envio"
-			            },
-			            "Object": {
-			              "Role": "fato_venda.data_de_envio.hierarquia_de_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "data_de_envios_have_hierarquia_de_data"
-			        }
-			      ]
-			    },
-			    "fato_venda_data_de_envio_hierarquia_de_data_has_fato_venda_data_de_envio_ano": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_vendas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_venda.data_de_envio.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "fato_venda.data_de_envio.hierarquia_de_data"
-			          }
-			        },
-			        "fato_venda.data_de_envio.ano": {
-			          "Target": {
-			            "Entity": "fato_venda.data_de_envio.ano"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_venda.data_de_envio.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "fato_venda.data_de_envio.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_anos1"
-			        }
-			      ]
-			    },
-			    "fato_venda_data_de_envio_hierarquia_de_data_has_fato_venda_data_de_envio_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_vendas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_venda.data_de_envio.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "fato_venda.data_de_envio.hierarquia_de_data"
-			          }
-			        },
-			        "fato_venda.data_de_envio.trimestre": {
-			          "Target": {
-			            "Entity": "fato_venda.data_de_envio.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_venda.data_de_envio.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "fato_venda.data_de_envio.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_trimestres1"
-			        }
-			      ]
-			    },
-			    "fato_venda_data_de_envio_hierarquia_de_data_has_fato_venda_data_de_envio_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_vendas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_venda.data_de_envio.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "fato_venda.data_de_envio.hierarquia_de_data"
-			          }
-			        },
-			        "fato_venda.data_de_envio.mê": {
-			          "Target": {
-			            "Entity": "fato_venda.data_de_envio.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_venda.data_de_envio.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "fato_venda.data_de_envio.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_mê1"
-			        }
-			      ]
-			    },
-			    "fato_venda_data_de_envio_hierarquia_de_data_has_fato_venda_data_de_envio_dia": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_vendas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_venda.data_de_envio.hierarquia_de_data": {
-			          "Target": {
-			            "Entity": "fato_venda.data_de_envio.hierarquia_de_data"
-			          }
-			        },
-			        "fato_venda.data_de_envio.dia": {
-			          "Target": {
-			            "Entity": "fato_venda.data_de_envio.dia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_venda.data_de_envio.hierarquia_de_data"
-			            },
-			            "Object": {
-			              "Role": "fato_venda.data_de_envio.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "hierarquia_de_data_have_dias1"
-			        }
-			      ]
-			    },
-			    "fato_venda_data_de_envio_ano_has_fato_venda_data_de_envio_trimestre": {
-			      "Binding": {
-			        "ConceptualEntity": "fato_vendas"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fato_venda.data_de_envio.ano": {
-			          "Target": {
-			            "Entity": "fato_venda.data_de_envio.ano"
-			          }
-			        },
-			        "fato_venda.data_de_envio.trimestre": {
-			          "Target": {
-			            "Entity": "fato_venda.data_de_envio.trimestre"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_venda.data_de_envio.ano"
-			            },
-			            "Object": {
-			              "Role": "fato_venda.data_de_envio.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "anos_have_trimestres1"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fato_venda.data_de_envio.trimestre"
-			            },
-			            "Object": {
-			              "Role": "fato_venda.data_de_envio.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_anos1"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "fato_venda.data_de_envio.trimestre"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "fato_venda.data_de_envio.ano"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_are_in_anos1"
-			        }
-			      ]
-			    },
 			    "fato_venda_data_de_envio_trimestre_has_fato_venda_data_de_envio_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "fato_vendas"
@@ -14528,6 +14234,732 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dias_are_in_mê1"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_order_date_DateOrders_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.order_date_DateOrders": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "order_date_DateOrders_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_order_date_DateOrders_hierarquia_de_data_has_data_co_supply_chain_dataset_order_date_DateOrders_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.order_date_DateOrders.ano": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos2"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_order_date_DateOrders_hierarquia_de_data_has_data_co_supply_chain_dataset_order_date_DateOrders_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.order_date_DateOrders.trimestre": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres2"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_order_date_DateOrders_hierarquia_de_data_has_data_co_supply_chain_dataset_order_date_DateOrders_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.order_date_DateOrders.mê": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê2"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_order_date_DateOrders_hierarquia_de_data_has_data_co_supply_chain_dataset_order_date_DateOrders_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.order_date_DateOrders.dia": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias2"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_order_date_DateOrders_ano_has_data_co_supply_chain_dataset_order_date_DateOrders_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.order_date_DateOrders.ano": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.ano"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.order_date_DateOrders.trimestre": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.ano"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.trimestre"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos2"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_order_date_DateOrders_trimestre_has_data_co_supply_chain_dataset_order_date_DateOrders_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.order_date_DateOrders.trimestre": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.trimestre"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.order_date_DateOrders.mê": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.trimestre"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.mê"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres2"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_order_date_DateOrders_mê_has_data_co_supply_chain_dataset_order_date_DateOrders_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.order_date_DateOrders.mê": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.mê"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.order_date_DateOrders.dia": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.order_date_DateOrders.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.mê"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.dia"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê2"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.order_date_DateOrders.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê2"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_shipping_date_DateOrders_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "shipping_date_DateOrders_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_shipping_date_DateOrders_hierarquia_de_data_has_data_co_supply_chain_dataset_shipping_date_DateOrders_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.ano": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos3"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_shipping_date_DateOrders_hierarquia_de_data_has_data_co_supply_chain_dataset_shipping_date_DateOrders_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.trimestre": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres3"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_shipping_date_DateOrders_hierarquia_de_data_has_data_co_supply_chain_dataset_shipping_date_DateOrders_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.mê": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê3"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_shipping_date_DateOrders_hierarquia_de_data_has_data_co_supply_chain_dataset_shipping_date_DateOrders_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.dia": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias3"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_shipping_date_DateOrders_ano_has_data_co_supply_chain_dataset_shipping_date_DateOrders_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.ano": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.ano"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.trimestre": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.ano"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.trimestre"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos3"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_shipping_date_DateOrders_trimestre_has_data_co_supply_chain_dataset_shipping_date_DateOrders_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.trimestre": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.trimestre"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.mê": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.trimestre"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.mê"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres3"
+			        }
+			      ]
+			    },
+			    "data_co_supply_chain_dataset_shipping_date_DateOrders_mê_has_data_co_supply_chain_dataset_shipping_date_DateOrders_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "DataCoSupplyChainDataset"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.mê": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.mê"
+			          }
+			        },
+			        "data_co_supply_chain_dataset.shipping_date_DateOrders.dia": {
+			          "Target": {
+			            "Entity": "data_co_supply_chain_dataset.shipping_date_DateOrders.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.mê"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.dia"
+			            },
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "data_co_supply_chain_dataset.shipping_date_DateOrders.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê3"
 			        }
 			      ]
 			    }

@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "c375a598d90c0b32dc17",
   "position": {
-    "x": 655.49523110785026,
-    "y": 408.51063829787233,
+    "x": 656.552737473076,
+    "y": 408.9776427176036,
     "z": 2000,
-    "height": 293.00073367571531,
-    "width": 600.08804108584,
+    "height": 294.08091365981534,
+    "width": 600.47219114725078,
     "tabOrder": 4000
   },
   "visual": {
@@ -56,6 +56,20 @@
               },
               "queryRef": "_Medidas.Total Sales",
               "nativeQueryRef": "Total Sales"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fato_vendas"
+                    }
+                  },
+                  "Property": "No Prazo Flag"
+                }
+              },
+              "queryRef": "Sum(fato_vendas.No Prazo Flag)",
+              "nativeQueryRef": "No Prazo Flag"
             }
           ]
         }
@@ -64,16 +78,16 @@
         "sort": [
           {
             "field": {
-              "Column": {
+              "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "fato_vendas"
+                    "Entity": "_Medidas"
                   }
                 },
-                "Property": "Nome do Produto"
+                "Property": "qtde_vendas"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -85,7 +99,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "389.1725022879605D"
+                  "Value": "293.46521360531096D"
                 }
               }
             }
@@ -103,7 +117,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Vendas vs. Média Móvel'"
+                  "Value": "'Vendas'"
                 }
               }
             },
@@ -125,6 +139,13 @@
                   }
                 }
               }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
             }
           }
         }
@@ -141,8 +162,80 @@
             }
           }
         }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Default'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e1361a8f909cc0e275e0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fato_vendas"
+              }
+            },
+            "Property": "Nome do Produto"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c3724b92ac00307b366e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "qtde_vendas"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "4ba7eea6a4d10cb1052b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Total Sales"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

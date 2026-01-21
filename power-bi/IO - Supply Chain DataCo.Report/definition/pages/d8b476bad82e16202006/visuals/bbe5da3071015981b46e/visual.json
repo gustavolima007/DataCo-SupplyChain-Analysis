@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "bbe5da3071015981b46e",
   "position": {
-    "x": 31.100987091875478,
-    "y": 128.29157175398635,
+    "x": 21.885091249102533,
+    "y": 410.34546092067251,
     "z": 0,
-    "height": 426.66666666666669,
-    "width": 428.61047835990894,
+    "height": 292.71309545674643,
+    "width": 179.18418460202702,
     "tabOrder": 10003
   },
   "visual": {
@@ -48,7 +48,7 @@
             "enhancedFit": {
               "expr": {
                 "Literal": {
-                  "Value": "'Normal'"
+                  "Value": "'Fit'"
                 }
               }
             },
@@ -97,7 +97,7 @@
             "imageAreaSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10L"
+                  "Value": "20L"
                 }
               }
             },
@@ -164,7 +164,7 @@
             "cellPadding": {
               "expr": {
                 "Literal": {
-                  "Value": "1L"
+                  "Value": "0L"
                 }
               }
             },
@@ -186,6 +186,20 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "fixedButtonsCount": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "maxTiles": {
+              "expr": {
+                "Literal": {
+                  "Value": "8L"
                 }
               }
             }

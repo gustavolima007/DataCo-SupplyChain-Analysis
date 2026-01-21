@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "4271c7a075c5ca3a1aea",
   "position": {
-    "x": 20.660308143800439,
-    "y": 408.51063829787233,
+    "x": 19.149454842964719,
+    "y": 121.73582007313286,
     "z": 6000,
-    "height": 277.97505502567861,
-    "width": 180.30814380044018,
+    "height": 277.66709522298839,
+    "width": 181.91982100816483,
     "tabOrder": 8000
   },
   "visual": {
@@ -20,16 +20,15 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DataCoSupplyChainDataset"
+                      "Entity": "fato_vendas"
                     }
                   },
-                  "Property": "Shipping_Mode_br"
+                  "Property": "Modalidade de Entrega"
                 }
               },
-              "queryRef": "DataCoSupplyChainDataset.Shipping_Mode_br",
+              "queryRef": "fato_vendas.Modalidade de Entrega",
               "nativeQueryRef": "Modalidade de Entrega",
-              "active": true,
-              "displayName": "Modalidade de Entrega"
+              "active": true
             }
           ]
         }
@@ -69,6 +68,47 @@
                     }
                   }
                 }
+              }
+            },
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "f",
+                    "Entity": "fato_vendas",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "f"
+                                }
+                              },
+                              "Property": "Modalidade de Entrega"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Entrega no Mesmo Dia'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
               }
             }
           }
@@ -172,23 +212,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c92e0d1f274aae0c210d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "DataCoSupplyChainDataset"
-              }
-            },
-            "Property": "Shipping_Mode_br"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
