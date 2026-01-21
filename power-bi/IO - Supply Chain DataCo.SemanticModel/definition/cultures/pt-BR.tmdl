@@ -9492,16 +9492,6 @@ cultureInfo pt-BR
 			            },
 			            "Weight": 0.591
 			          }
-			        },
-			        {
-			          "Status do Pedido": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    }

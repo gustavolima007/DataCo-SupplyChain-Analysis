@@ -511,22 +511,27 @@ table DataCoSupplyChainDataset
 
 		annotation SummarizationSetBy = Automatic
 
+	column Flag
+		dataType: string
+		lineageTag: dcf0f176-bcde-412e-9779-64bc2667b1f5
+		summarizeBy: none
+		sourceColumn: Flag
+
+		annotation SummarizationSetBy = Automatic
+
 	partition DataCoSupplyChainDataset = m
 		mode: import
 		source = ```
 				let
-				    // Alteração da fonte: de local (File.Contents) para Web (Web.Contents)
-				    // Importante usar a URL do raw.githubusercontent
 				    Fonte = 
 				        Csv.Document(
 				            Web.Contents("https://raw.githubusercontent.com/gustavolima007/DataCo-SupplyChain-Analysis/refs/heads/main/data/DataCoSupplyChainDataset.csv"),
 				            [Delimiter=",", Columns=53, Encoding=65001, QuoteStyle=QuoteStyle.None]
 				        ),
-				    // Promove cabeçalhos
+				
 				    #"Cabeçalhos Promovidos" =
 				        Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
 				
-				    // Garante que colunas monetárias começam como texto
 				    #"Monetarios como Texto" =
 				        Table.TransformColumnTypes(
 				            #"Cabeçalhos Promovidos",
@@ -542,7 +547,6 @@ table DataCoSupplyChainDataset
 				            }
 				        ),
 				
-				    // Converte monetários usando localidade correta (pt-BR)
 				    #"Monetarios Convertidos" =
 				        Table.TransformColumnTypes(
 				            #"Monetarios como Texto",
@@ -559,7 +563,6 @@ table DataCoSupplyChainDataset
 				            "pt-BR"
 				        ),
 				
-				    // Corrige escala (dataset vem multiplicado por 10.000.000)
 				    #"Monetarios Escala Corrigida" =
 				        Table.TransformColumns(
 				            #"Monetarios Convertidos",
@@ -575,7 +578,6 @@ table DataCoSupplyChainDataset
 				            }
 				        ),
 				
-				    // Arredonda todos os monetários para 2 casas decimais (padrão USD)
 				    #"Monetarios USD" =
 				        Table.TransformColumns(
 				            #"Monetarios Escala Corrigida",
@@ -591,7 +593,6 @@ table DataCoSupplyChainDataset
 				            }
 				        ),
 				
-				    // Tipagem final das demais colunas
 				    #"Tipo Alterado" =
 				        Table.TransformColumnTypes(
 				            #"Monetarios USD",
@@ -643,25 +644,64 @@ table DataCoSupplyChainDataset
 				                {"Shipping Mode", type text}
 				            }
 				        ),
+				
 				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Product Image"}),
-				    #"Personalização Adicionada" = Table.AddColumn(#"Colunas Removidas", "Market_br", each if [Market] = "Europe" then "Europa"
-				else if [Market] = "Pacific Asia" then "Ásia-Pacífico"
-				else if [Market] = "LATAM" then "América Latina"
-				else if [Market] = "Africa" then "África"
-				else if [Market] = "USCA" then "EUA e Canadá"
-				else [Market]),
-				    #"Personalização Adicionada1" = Table.AddColumn(#"Personalização Adicionada", "Shipping_Mode_br", each if [Shipping Mode] = "First Class" then "Primeira Classe"
-				else if [Shipping Mode] = "Second Class" then "Segunda Classe"
-				else if [Shipping Mode] = "Standard Class" then "Classe Padrão"
-				else if [Shipping Mode] = "Same Day" then "Entrega no Mesmo Dia"
-				else [Shipping Mode]),
-				    #"Personalização Adicionada2" = Table.AddColumn(#"Personalização Adicionada1", "Delivery_Status_br", each if [Delivery Status] = "Shipping on time" then "Entrega no Prazo"
-				else if [Delivery Status] = "Late delivery" then "Entrega em Atraso"
-				else if [Delivery Status] = "Shipping canceled" then "Envio Cancelado"
-				else if [Delivery Status] = "Advance shipping" then "Envio Antecipado"
-				else [Delivery Status])
+				
+				    // Região em Português
+				    #"Market_BR" = 
+				        Table.AddColumn(
+				            #"Colunas Removidas", 
+				            "Market_br", 
+				            each 
+				                if [Market] = "Europe" then "Europa"
+				                else if [Market] = "Pacific Asia" then "Ásia-Pacífico"
+				                else if [Market] = "LATAM" then "América Latina"
+				                else if [Market] = "Africa" then "África"
+				                else if [Market] = "USCA" then "EUA e Canadá"
+				                else [Market]
+				        ),
+				
+				    // Bandeira da Região
+				    #"Bandeira_Regiao" =
+				        Table.AddColumn(
+				            #"Market_BR",
+				            "Flag",
+				            each
+				                if [Market_br] = "Europa" then "https://flagcdn.com/w40/eu.png"
+				                else if [Market_br] = "Ásia-Pacífico" then "https://flagcdn.com/w40/un.png"
+				                else if [Market_br] = "América Latina" then "https://flagcdn.com/w40/br.png"
+				                else if [Market_br] = "África" then "https://flagcdn.com/w40/za.png"
+				                else if [Market_br] = "EUA e Canadá" then "https://flagcdn.com/w40/us.png"
+				                else null
+				        ),
+				
+				    // Traduções
+				    #"Shipping_Mode_BR" =
+				        Table.AddColumn(
+				            #"Bandeira_Regiao", 
+				            "Shipping_Mode_br", 
+				            each 
+				                if [Shipping Mode] = "First Class" then "Primeira Classe"
+				                else if [Shipping Mode] = "Second Class" then "Segunda Classe"
+				                else if [Shipping Mode] = "Standard Class" then "Classe Padrão"
+				                else if [Shipping Mode] = "Same Day" then "Entrega no Mesmo Dia"
+				                else [Shipping Mode]
+				        ),
+				
+				    #"Delivery_Status_BR" =
+				        Table.AddColumn(
+				            #"Shipping_Mode_BR", 
+				            "Delivery_Status_br", 
+				            each 
+				                if [Delivery Status] = "Shipping on time" then "Entrega no Prazo"
+				                else if [Delivery Status] = "Late delivery" then "Entrega em Atraso"
+				                else if [Delivery Status] = "Shipping canceled" then "Envio Cancelado"
+				                else if [Delivery Status] = "Advance shipping" then "Envio Antecipado"
+				                else [Delivery Status]
+				        )
+				
 				in
-				    #"Personalização Adicionada2"
+				    #"Delivery_Status_BR"
 				```
 
 	annotation PBI_NavigationStepName = Navegação

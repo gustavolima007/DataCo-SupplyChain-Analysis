@@ -4,7 +4,7 @@
   "position": {
     "x": 655.49523110785026,
     "y": 408.51063829787233,
-    "z": 4000,
+    "z": 2000,
     "height": 293.00073367571531,
     "width": 600.08804108584,
     "tabOrder": 4000
@@ -42,6 +42,20 @@
               },
               "queryRef": "_Medidas.qtde_vendas",
               "nativeQueryRef": "qtde_vendas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Total Sales"
+                }
+              },
+              "queryRef": "_Medidas.Total Sales",
+              "nativeQueryRef": "Total Sales"
             }
           ]
         }
@@ -50,19 +64,37 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "_Medidas"
+                    "Entity": "fato_vendas"
                   }
                 },
-                "Property": "qtde_vendas"
+                "Property": "Nome do Produto"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "389.1725022879605D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fato_vendas.Product Name"
+          }
+        }
+      ]
     },
     "visualContainerObjects": {
       "title": [
