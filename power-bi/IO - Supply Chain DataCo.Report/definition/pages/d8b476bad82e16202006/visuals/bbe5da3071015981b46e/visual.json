@@ -473,5 +473,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "508aeb40eb9161e0b17a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fato_vendas"
+              }
+            },
+            "Property": "Mercado Global"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

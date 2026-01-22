@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "c375a598d90c0b32dc17",
   "position": {
-    "x": 126.66666666666667,
-    "y": 425,
+    "x": 652.46753246753246,
+    "y": 408.31168831168833,
     "z": 2000,
-    "height": 295,
-    "width": 600,
+    "height": 295.06493506493507,
+    "width": 602.59740259740261,
     "tabOrder": 1000
   },
   "visual": {
@@ -23,39 +23,11 @@
                       "Entity": "fato_vendas"
                     }
                   },
-                  "Property": "Nome do Produto"
+                  "Property": "País do Pedido"
                 }
               },
-              "queryRef": "fato_vendas.Product Name",
-              "nativeQueryRef": "Product Name"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Medidas"
-                    }
-                  },
-                  "Property": "qtde_vendas"
-                }
-              },
-              "queryRef": "_Medidas.qtde_vendas",
-              "nativeQueryRef": "qtde_vendas"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Medidas"
-                    }
-                  },
-                  "Property": "Total Sales"
-                }
-              },
-              "queryRef": "_Medidas.Total Sales",
-              "nativeQueryRef": "Total Sales"
+              "queryRef": "fato_vendas.País do Pedido",
+              "nativeQueryRef": "País do Pedido"
             },
             {
               "field": {
@@ -65,11 +37,31 @@
                       "Entity": "fato_vendas"
                     }
                   },
-                  "Property": "No Prazo Flag"
+                  "Property": "Modalidade de Entrega"
                 }
               },
-              "queryRef": "Sum(fato_vendas.No Prazo Flag)",
-              "nativeQueryRef": "No Prazo Flag"
+              "queryRef": "fato_vendas.Modalidade de Entrega",
+              "nativeQueryRef": "Modalidade de Entrega"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "fato_vendas"
+                        }
+                      },
+                      "Property": "Vendas"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(fato_vendas.Vendas)",
+              "nativeQueryRef": "Total de vendas",
+              "displayName": "Total de vendas"
             }
           ]
         }
@@ -78,13 +70,18 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Aggregation": {
                 "Expression": {
-                  "SourceRef": {
-                    "Entity": "_Medidas"
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "fato_vendas"
+                      }
+                    },
+                    "Property": "Vendas"
                   }
                 },
-                "Property": "qtde_vendas"
+                "Function": 0
               }
             },
             "direction": "Descending"
@@ -99,13 +96,27 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "293.46521360531096D"
+                  "Value": "136.46395873680825D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "fato_vendas.Product Name"
+            "metadata": "fato_vendas.País do Pedido"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "177.70742038573994D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "fato_vendas.Modalidade de Entrega"
           }
         }
       ]
@@ -117,7 +128,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Vendas'"
+                  "Value": "'Vendas com risco de atraso'"
                 }
               }
             },
@@ -191,5 +202,105 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0af9a4ac0e37174d7156",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fato_vendas"
+              }
+            },
+            "Property": "Modalidade de Entrega"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a6a42d6c3a46ba2db865",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "fato_vendas"
+                  }
+                },
+                "Property": "Vendas"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "44791cdaeb5d871341d0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fato_vendas"
+              }
+            },
+            "Property": "País do Pedido"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "5598b4d7bd198d278400",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fato_vendas"
+              }
+            },
+            "Property": "Risco de Atraso"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "f",
+              "Entity": "fato_vendas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "f"
+                        }
+                      },
+                      "Property": "Risco de Atraso"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      }
+    ]
   }
 }

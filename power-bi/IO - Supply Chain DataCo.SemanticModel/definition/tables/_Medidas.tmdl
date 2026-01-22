@@ -69,6 +69,20 @@ table _Medidas
 		formatString: 0
 		lineageTag: 0154fba7-9ca5-453b-aa46-b50686c0a5a3
 
+	measure 'OTD % (SLA Atual)' = ```
+			
+			VAR PedidosNoPrazo = 
+			    CALCULATE(
+			        [Total Orders], 
+			        'fato_vendas'[No Prazo Flag] = 1
+			    )
+			RETURN 
+			    DIVIDE(PedidosNoPrazo, [Total Orders], 0)
+			```
+		lineageTag: a3e0c22d-936d-49ab-a2b9-0f088bcb7504
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Column
 		isHidden
 		formatString: 0

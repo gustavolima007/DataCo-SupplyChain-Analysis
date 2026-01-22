@@ -203,8 +203,148 @@ table fato_vendas
 				let
 				    Fonte = DataCoSupplyChainDataset,
 				    
-				    // Seleção e Renomeação inicial
-				    ColunasSelecionadas = Table.SelectColumns(Fonte, {
+				    ListaCorrecao = {
+				
+				        // ===== ENCODING QUEBRADO =====
+				        {"AfganistÃ¡n", "Afeganistão"},
+				        {"AzerbaiyÃ¡n", "Azerbaijão"},
+				        {"BÃ©lgica", "Bélgica"},
+				        {"BangladÃ©s", "Bangladesh"},
+				        {"BarÃ©in", "Barein"},
+				        {"BenÃ­n", "Benim"},
+				        {"ButÃ¡n", "Butão"},
+				        {"CamerÃºn", "Camarões"},
+				        {"Emiratos Ãrabes Unidos", "Emirados Árabes Unidos"},
+				        {"EspaÃ±a", "Espanha"},
+				        {"EtiopÃ­a", "Etiópia"},
+				        {"GabÃ³n", "Gabão"},
+				        {"HungrÃ­a", "Hungria"},
+				        {"IrÃ¡n", "Irã"},
+				        {"JapÃ³n", "Japão"},
+				        {"KazajistÃ¡n", "Cazaquistão"},
+				        {"KirguistÃ¡n", "Quirguistão"},
+				        {"LÃ­bano", "Líbano"},
+				        {"MÃ©xico", "México"},
+				        {"NÃ­ger", "Níger"},
+				        {"OmÃ¡n", "Omã"},
+				        {"PakistÃ¡n", "Paquistão"},
+				        {"PanamÃ¡", "Panamá"},
+				        {"PapÃºa Nueva Guinea", "Papua-Nova Guiné"},
+				        {"PerÃº", "Peru"},
+				        {"RepÃºblica Checa", "República Tcheca"},
+				        {"TaiwÃ¡n", "Taiwan"},
+				        {"TÃºnez", "Tunísia"},
+				        {"TayikistÃ¡n", "Tadjiquistão"},
+				        {"TurquÃ­a", "Turquia"},
+				        {"UzbekistÃ¡n", "Uzbequistão"},
+				
+				        // ===== ESPANHOL → PORTUGUÊS =====
+				        {"Alemania", "Alemanha"},
+				        {"Argelia", "Argélia"},
+				        {"Austria", "Áustria"},
+				        {"Belice", "Belize"},
+				        {"Bielorrusia", "Bielorrússia"},
+				        {"Bosnia y Herzegovina", "Bósnia e Herzegovina"},
+				        {"Camboya", "Camboja"},
+				        {"Canada", "Canadá"},
+				        {"Chad", "Chade"},
+				        {"Corea del Sur", "Coreia do Sul"},
+				        {"Costa de Marfil", "Costa do Marfim"},
+				        {"Croacia", "Croácia"},
+				        {"Dinamarca", "Dinamarca"},
+				        {"Eslovenia", "Eslovênia"},
+				        {"Finlandia", "Finlândia"},
+				        {"Francia", "França"},
+				        {"Georgia", "Geórgia"},
+				        {"Grecia", "Grécia"},
+				        {"Guayana Francesa", "Guiana Francesa"},
+				        {"India", "Índia"},
+				        {"Indonesia", "Indonésia"},
+				        {"Italia", "Itália"},
+				        {"Jordania", "Jordânia"},
+				        {"Kenia", "Quênia"},
+				        {"Libia", "Líbia"},
+				        {"Lituania", "Lituânia"},
+				        {"Marruecos", "Marrocos"},
+				        {"Namibia", "Namíbia"},
+				        {"Nueva Zelanda", "Nova Zelândia"},
+				        {"PaÃ­ses Bajos", "Países Baixos"},
+				        {"Polonia", "Polônia"},
+				        {"Rumania", "Romênia"},
+				        {"Rusia", "Rússia"},
+				        {"Suecia", "Suécia"},
+				        {"Suiza", "Suíça"},
+				        {"Tailandia", "Tailândia"},
+				        {"Ucrania", "Ucrânia"},
+				        {"Venezuela", "Venezuela"},
+				        {"Zambia", "Zâmbia"},
+				        {"Zimbabue", "Zimbábue"},
+				
+				        // ===== PADRONIZAÇÃO DE NOMES =====
+				        {"RD do Congo", "República Democrática do Congo"},
+				        {"Republica del Congo", "República do Congo"},
+				        {"Guinea-Bissau", "Guiné-Bissau"},
+				        {"Hong Kong", "Hong Kong"},
+				        {"Myanmar (Birmania)", "Myanmar"},
+				        {"SudAfrica", "África do Sul"},
+				        {"Singapur", "Singapura"},
+				        {"Sierra Leona", "Serra Leoa"},
+				        {"Yibuti", "Djibuti"},
+				        {"Yemen", "Iêmen"},
+				        {"Suazilandia", "Essuatíni"},
+				        {"Macedonia", "Macedônia"},
+				        {"Trinidad y Tobago", "Trinidad e Tobago"},
+				        {"Bosnia y Herzegovina", "Bósnia e Herzegovina"},
+				        {"Guinea Ecuatorial", "Guiné Equatorial"},
+				
+				        // ===== RESTANTES (ENCODING + ESPANHOL + PADRONIZAÇÃO) =====    
+				        {"Albania", "Albânia"},
+				        {"Armenia", "Armênia"},
+				        {"Australia", "Austrália"},
+				        {"Bolivia", "Bolívia"},
+				        {"Bulgaria", "Bulgária"},
+				        {"Colombia", "Colômbia"},
+				        {"Ecuador", "Equador"},
+				        {"Egipto", "Egito"},
+				        {"Estonia", "Estônia"},
+				        {"Ghana", "Gana"},
+				        {"Guinea", "Guiné"},
+				        {"Liberia", "Libéria"},
+				        {"Malasia", "Malásia"},
+				        {"Mauritania", "Mauritânia"},
+				        {"Moldavia", "Moldávia"},
+				        {"Mozambique", "Moçambique"},
+				        {"Nicaragua", "Nicarágua"},
+				        {"Nigeria", "Nigéria"},
+				        {"Paraguay", "Paraguai"},
+				        {"Siria", "Síria"},
+				        {"Surinam", "Suriname"},
+				        {"Tanzania", "Tanzânia"},
+				        {"Uruguay", "Uruguai"},
+				        {"Vietnam", "Vietnã"},
+				
+				        // Encoding quebrado que ainda sobrou
+				        {"Arabia SaudÃ­", "Arábia Saudita"},
+				        {"HaitÃ­", "Haiti"},
+				        {"RepÃºblica Centroafricana", "República Centro-Africana"},
+				        {"RepÃºblica de Gambia", "Gâmbia"},
+				        {"RepÃºblica del Congo", "República do Congo"},
+				        {"RepÃºblica DemocrÃ¡tica del Congo", "República Democrática do Congo"},
+				        {"SÃ¡hara Occidental", "Saara Ocidental"},
+				        {"SudÃ¡n", "Sudão"},
+				        {"SudÃ¡n del Sur", "Sudão do Sul"},
+				        {"TurkmenistÃ¡n", "Turcomenistão"}
+				    },
+				
+				    // 2. Aplicação em massa das substituições na coluna "Order Country"
+				    CorrigirPaises = List.Accumulate(
+				        ListaCorrecao, 
+				        Fonte, 
+				        (estado, atual) => Table.ReplaceValue(estado, atual{0}, atual{1}, Replacer.ReplaceValue, {"Order Country"})
+				    ),
+				
+				    // 3. Seleção de Colunas Relevantes
+				    ColunasSelecionadas = Table.SelectColumns(CorrigirPaises, {
 				        "order date (DateOrders)", "shipping date (DateOrders)", "Type", 
 				        "Days for shipping (real)", "Days for shipment (scheduled)", 
 				        "Delivery Status", "Late_delivery_risk", "Category Name", 
@@ -213,15 +353,18 @@ table fato_vendas
 				        "Sales", "Order Profit Per Order", "Shipping Mode", "Order Id"
 				    }),
 				
-				    // Garantindo tipos de dados corretos
+				    // 4. Tipagem de Dados
 				    AjustarTipos = Table.TransformColumnTypes(ColunasSelecionadas, {
 				        {"order date (DateOrders)", type date}, 
 				        {"shipping date (DateOrders)", type date},
 				        {"Sales", type number},
-				        {"Order Profit Per Order", type number}
+				        {"Order Profit Per Order", type number},
+				        {"Days for shipping (real)", Int64.Type},
+				        {"Days for shipment (scheduled)", Int64.Type},
+				        {"Late_delivery_risk", Int64.Type}
 				    }),
 				
-				    // Traduções de Mercado
+				    // 5. Traduções de Mercado
 				    TraduzirMercado = Table.AddColumn(AjustarTipos, "Mercado Global", each 
 				        if [Market] = "Europe" then "Europa"
 				        else if [Market] = "Pacific Asia" then "Ásia-Pacífico"
@@ -230,7 +373,7 @@ table fato_vendas
 				        else if [Market] = "USCA" then "EUA e Canadá"
 				        else [Market], type text),
 				
-				    // Bandeira da Região
+				    // 6. Adição de Flags (URLs para visual de mapa/tabela)
 				    AdicionarBandeira = Table.AddColumn(TraduzirMercado, "Flag", each
 				        if [Mercado Global] = "Europa" then "https://flagcdn.com/w40/eu.png"
 				        else if [Mercado Global] = "Ásia-Pacífico" then "https://flagcdn.com/w40/un.png"
@@ -239,7 +382,7 @@ table fato_vendas
 				        else if [Mercado Global] = "EUA e Canadá" then "https://raw.githubusercontent.com/gustavolima007/DataCo-SupplyChain-Analysis/main/figma/eua-ca.png"
 				        else null, type text),
 				
-				    // Traduções de Modalidade
+				    // 7. Traduções de Modalidade e Status
 				    TraduzirModalidade = Table.AddColumn(AdicionarBandeira, "Modalidade de Entrega", each 
 				        if [Shipping Mode] = "First Class" then "Primeira Classe"
 				        else if [Shipping Mode] = "Second Class" then "Segunda Classe"
@@ -247,7 +390,6 @@ table fato_vendas
 				        else if [Shipping Mode] = "Same Day" then "Entrega no Mesmo Dia"
 				        else [Shipping Mode], type text),
 				
-				    // Traduções de Status
 				    TraduzirStatus = Table.AddColumn(TraduzirModalidade, "Status do Pedido", each 
 				        if [Delivery Status] = "Shipping on time" then "No Prazo"
 				        else if [Delivery Status] = "Late delivery" then "Em Atraso"
@@ -255,7 +397,7 @@ table fato_vendas
 				        else if [Delivery Status] = "Advance shipping" then "Antecipado"
 				        else [Delivery Status], type text),
 				
-				    // Renomeação Final
+				    // 8. Renomeação Final para Português
 				    RenomearGeral = Table.RenameColumns(TraduzirStatus, {
 				        {"order date (DateOrders)", "Data do Pedido"},
 				        {"shipping date (DateOrders)", "Data de Envio"},
@@ -276,10 +418,10 @@ table fato_vendas
 				        {"Late_delivery_risk", "Risco de Atraso"}
 				    }),
 				    
-				    // Removendo colunas em inglês
-				    RemoverIngles = Table.RemoveColumns(RenomearGeral,{"Market", "Shipping Mode", "Delivery Status"})
+				    // 9. Limpeza final de colunas redundantes
+				    RemoverColunasOriginais = Table.RemoveColumns(RenomearGeral, {"Market", "Shipping Mode", "Delivery Status"})
 				in
-				    RemoverIngles
+				    RemoverColunasOriginais
 				```
 
 	annotation PBI_NavigationStepName = Navegação

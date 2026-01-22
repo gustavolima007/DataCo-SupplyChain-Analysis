@@ -18,9 +18,9 @@ ref table DescriptionDataCoSupplyChain
 ref table Dim_Calendario
 ref table _Medidas
 ref table DateTableTemplate_d4f58237-d5e2-4ef0-8a19-36b3d906f959
+ref table LocalDateTable_ce19dc86-b8e7-41d4-9a0d-37c93712ff44
 ref table fato_vendas
 ref table LocalDateTable_03f298f8-7b6d-4e3a-bfd8-9a9f99005ec7
-ref table LocalDateTable_ce19dc86-b8e7-41d4-9a0d-37c93712ff44
 ref table LocalDateTable_7efebd43-0c89-4633-80f7-977c9ba50429
 ref table LocalDateTable_ddd5e2f8-2a21-43cd-b397-9bdfeb79bf57
 

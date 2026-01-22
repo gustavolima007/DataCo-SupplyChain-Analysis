@@ -184,5 +184,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "9f42f27ce74670bc000c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fato_vendas"
+              }
+            },
+            "Property": "Modalidade de Entrega"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

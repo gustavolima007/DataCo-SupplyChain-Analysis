@@ -1,20 +1,20 @@
+relationship 3309a6bb-1d8c-84cb-1047-e5417facfcf2
+	fromColumn: tokenized_access_logs.Date
+	toColumn: Dim_Calendario.Date
+
 relationship 738e1857-904a-456d-87b0-6ff89a31deb1
 	joinOnDateBehavior: datePartOnly
 	fromColumn: fato_vendas.'Data de Envio'
 	toColumn: LocalDateTable_03f298f8-7b6d-4e3a-bfd8-9a9f99005ec7.Date
 
+relationship f8a99be9-010c-fc8a-d89b-23c10a20d364
+	fromColumn: fato_vendas.'Data do Pedido'
+	toColumn: Dim_Calendario.Date
+
 relationship c7baa688-a37d-4117-9cb8-f7714648ba90
 	joinOnDateBehavior: datePartOnly
 	fromColumn: Dim_Calendario.Date
 	toColumn: LocalDateTable_ce19dc86-b8e7-41d4-9a0d-37c93712ff44.Date
-
-relationship 3309a6bb-1d8c-84cb-1047-e5417facfcf2
-	fromColumn: tokenized_access_logs.Date
-	toColumn: Dim_Calendario.Date
-
-relationship f8a99be9-010c-fc8a-d89b-23c10a20d364
-	fromColumn: fato_vendas.'Data do Pedido'
-	toColumn: Dim_Calendario.Date
 
 relationship 8fcbdf97-c9be-439f-a00e-240e2b57e2e3
 	joinOnDateBehavior: datePartOnly
