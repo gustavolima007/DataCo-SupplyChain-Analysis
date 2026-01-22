@@ -1,27 +1,18 @@
 table _Medidas
 	lineageTag: a84cffb2-cca5-48c0-b65b-519145e65e2b
 
-	measure 'Média Móvel 3M Vendas' = ```
+	measure 'Média Móvel 3M Vendas' =
 			
-			VAR MesesVisiveis = 3
-			VAR UltimaData = MAX('Dim_Calendario'[Date])
-			VAR Periodo = 
-			    DATESINPERIOD(
-			        'Dim_Calendario'[Date], 
-			        UltimaData, 
-			        -MesesVisiveis, 
-			        MONTH
-			    )
+			VAR UltimaDataComVenda = MAX('fato_vendas'[Data do Pedido])
+			VAR DataAtualContexto = MAX('Dim_Calendario'[Date])
+			VAR Periodo = DATESINPERIOD('Dim_Calendario'[Date], DataAtualContexto, -3, MONTH)
+			
 			RETURN
-			    IF(
-			        ISFILTERED('Dim_Calendario'[Date]),
-			        AVERAGEX(
-			            Periodo,
-			            [Total Sales] -- Certifique-se de já ter uma medida simples de [Total Sales]
-			        ),
-			        BLANK()
-			    )
-			```
+			IF(
+			    DataAtualContexto <= UltimaDataComVenda,
+			    AVERAGEX(Periodo, [Total Sales]),
+			    BLANK()
+			)
 		lineageTag: d056560d-8d46-45a1-a98f-f72351879c9d
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -61,6 +52,22 @@ table _Medidas
 		lineageTag: 7469e5a6-2934-4997-b6dc-5d850091a84d
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'SLA Sugerido (P90)' = ```
+			
+			PERCENTILEX.INC(
+			    'fato_vendas', 
+			    'fato_vendas'[Dias Envio Real], 
+			    0.90
+			)
+			```
+		lineageTag: bd44ecc4-fd06-4df3-ac59-e20d730e1b29
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'SLA para 100% OTD' = MAX('fato_vendas'[Dias Envio Real])
+		formatString: 0
+		lineageTag: 0154fba7-9ca5-453b-aa46-b50686c0a5a3
 
 	column Column
 		isHidden

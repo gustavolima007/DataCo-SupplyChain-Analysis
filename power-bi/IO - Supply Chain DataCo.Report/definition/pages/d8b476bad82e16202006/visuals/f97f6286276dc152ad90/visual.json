@@ -7,7 +7,7 @@
     "z": 9000,
     "height": 86.666666666666671,
     "width": 191.11111111111111,
-    "tabOrder": 10002
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -416,23 +416,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "4dc82321e4ee0174730e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Medidas"
-              }
-            },
-            "Property": "Profit Margin %"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
