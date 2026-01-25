@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "_Medidas.Total Sales",
-              "nativeQueryRef": "Total Sales"
+              "nativeQueryRef": "Total Sales",
+              "format": "\\$#,0.00;(\\$#,0.00);\\$#,0.00"
             }
           ]
         }
@@ -416,5 +417,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "73e36f8224982ae79197",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Total Sales"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

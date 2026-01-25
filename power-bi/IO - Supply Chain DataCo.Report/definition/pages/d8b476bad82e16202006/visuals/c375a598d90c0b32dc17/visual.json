@@ -61,7 +61,8 @@
               },
               "queryRef": "Sum(fato_vendas.Vendas)",
               "nativeQueryRef": "Total de vendas",
-              "displayName": "Total de vendas"
+              "displayName": "Total de vendas",
+              "format": "\\$#,0.00;(\\$#,0.00);\\$#,0.00"
             }
           ]
         }
