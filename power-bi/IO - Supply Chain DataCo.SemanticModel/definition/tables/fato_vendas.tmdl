@@ -197,6 +197,66 @@ table fato_vendas
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Categoria BR' = ```
+			
+			SWITCH (
+			    TRUE(),
+			
+			    'fato_vendas'[Nome da Categoria] = "Accessories", "Acessórios",
+			    'fato_vendas'[Nome da Categoria] = "As Seen on  TV!", "Promocionais",
+			    'fato_vendas'[Nome da Categoria] = "Baby", "Bebês",
+			    'fato_vendas'[Nome da Categoria] = "Baseball & Softball", "Esportivos",
+			    'fato_vendas'[Nome da Categoria] = "Basketball", "Esportivos",
+			    'fato_vendas'[Nome da Categoria] = "Books", "Livros",
+			    'fato_vendas'[Nome da Categoria] = "Boxing & MMA", "Esportivos",
+			    'fato_vendas'[Nome da Categoria] = "Cameras", "Câmeras",
+			    'fato_vendas'[Nome da Categoria] = "Camping & Hiking", "Camping",
+			    'fato_vendas'[Nome da Categoria] = "Cardio Equipment", "Fitness",
+			    'fato_vendas'[Nome da Categoria] = "CDs", "Mídias",
+			    'fato_vendas'[Nome da Categoria] = "Children's Clothing", "Vestuário",
+			    'fato_vendas'[Nome da Categoria] = "Cleats", "Calçados",
+			    'fato_vendas'[Nome da Categoria] = "Consumer Electronics", "Eletrônicos",
+			    'fato_vendas'[Nome da Categoria] = "Crafts", "Artesanato",
+			    'fato_vendas'[Nome da Categoria] = "DVDs", "Mídias",
+			    'fato_vendas'[Nome da Categoria] = "Electronics", "Eletrônicos",
+			    'fato_vendas'[Nome da Categoria] = "Fishing", "Pesca",
+			    'fato_vendas'[Nome da Categoria] = "Fitness Accessories", "Fitness",
+			    'fato_vendas'[Nome da Categoria] = "Garden", "Jardim",
+			    'fato_vendas'[Nome da Categoria] = "Girls' Apparel", "Vestuário",
+			    'fato_vendas'[Nome da Categoria] = "Golf Apparel", "Vestuário",
+			    'fato_vendas'[Nome da Categoria] = "Golf Bags & Carts", "Esportivos",
+			    'fato_vendas'[Nome da Categoria] = "Golf Balls", "Esportivos",
+			    'fato_vendas'[Nome da Categoria] = "Golf Gloves", "Esportivos",
+			    'fato_vendas'[Nome da Categoria] = "Health and Beauty", "Saúde",
+			    'fato_vendas'[Nome da Categoria] = "Hockey", "Esportivos",
+			    'fato_vendas'[Nome da Categoria] = "Hunting & Shooting", "Controlados",
+			    'fato_vendas'[Nome da Categoria] = "Indoor/Outdoor Games", "Jogos",
+			    'fato_vendas'[Nome da Categoria] = "Kids' Golf Clubs", "Esportivos",
+			    'fato_vendas'[Nome da Categoria] = "Lacrosse", "Esportivos",
+			    'fato_vendas'[Nome da Categoria] = "Men's Clothing", "Vestuário",
+			    'fato_vendas'[Nome da Categoria] = "Men's Footwear", "Calçados",
+			    'fato_vendas'[Nome da Categoria] = "Men's Golf Clubs", "Esportivos",
+			    'fato_vendas'[Nome da Categoria] = "Music", "Mídias",
+			    'fato_vendas'[Nome da Categoria] = "Pet Supplies", "Pets",
+			    'fato_vendas'[Nome da Categoria] = "Shop By Sport", "Esportivos",
+			    'fato_vendas'[Nome da Categoria] = "Soccer", "Esportivos",
+			    'fato_vendas'[Nome da Categoria] = "Strength Training", "Fitness",
+			    'fato_vendas'[Nome da Categoria] = "Tennis & Racquet", "Esportivos",
+			    'fato_vendas'[Nome da Categoria] = "Toys", "Brinquedos",
+			    'fato_vendas'[Nome da Categoria] = "Trade-In", "Recondicionados",
+			    'fato_vendas'[Nome da Categoria] = "Water Sports", "Esportivos",
+			    'fato_vendas'[Nome da Categoria] = "Women's Clothing", "Vestuário",
+			    'fato_vendas'[Nome da Categoria] = "Women's Golf Clubs", "Esportivos",
+			
+			    "Outros"
+			)
+			
+			```
+		lineageTag: 5110061a-af83-4aa1-902c-20514aad91ea
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition fato_vendas = m
 		mode: import
 		source = ```

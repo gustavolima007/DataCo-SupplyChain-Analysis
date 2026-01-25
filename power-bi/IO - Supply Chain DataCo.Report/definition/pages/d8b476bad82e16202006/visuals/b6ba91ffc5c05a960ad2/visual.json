@@ -23,12 +23,13 @@
                       "Entity": "fato_vendas"
                     }
                   },
-                  "Property": "Nome da Categoria"
+                  "Property": "Categoria BR"
                 }
               },
-              "queryRef": "fato_vendas.Nome da Categoria",
-              "nativeQueryRef": "Nome da Categoria",
-              "active": true
+              "queryRef": "fato_vendas.Nome da Categoria BR",
+              "nativeQueryRef": "Categoria",
+              "active": true,
+              "displayName": "Categoria"
             }
           ]
         },
@@ -64,7 +65,8 @@
                 }
               },
               "queryRef": "_Medidas.Total Sales",
-              "nativeQueryRef": "Total Sales"
+              "nativeQueryRef": "Total de vendas",
+              "displayName": "Total de vendas"
             }
           ]
         }
@@ -219,5 +221,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "11fe8980071cc5ed8baa",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Profit Margin %"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d7605e023078ec90a420",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Medidas"
+              }
+            },
+            "Property": "Total Sales"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "56aba5161e903a0c52d5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "fato_vendas"
+              }
+            },
+            "Property": "Categoria BR"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }
